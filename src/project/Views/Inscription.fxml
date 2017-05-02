@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="14.0" layoutY="702.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Vos informations personnelles seront vendues au plus offrant" />
+      <TextField layoutX="148.0" layoutY="323.0" promptText="Login" />
+      <CheckBox layoutX="557.0" layoutY="345.0" mnemonicParsing="false" text="Gluten" />
+      <Text layoutX="547.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Allergies?" underline="true">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Text>
+      <Text layoutX="64.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informations personnelles" underline="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <CheckBox layoutX="660.0" layoutY="345.0" mnemonicParsing="false" text="Crustacés" />
+      <CheckBox layoutX="557.0" layoutY="378.0" mnemonicParsing="false" text="Oeufs" />
+      <CheckBox layoutX="660.0" layoutY="378.0" mnemonicParsing="false" text="Poissons" />
+      <CheckBox layoutX="557.0" layoutY="411.0" mnemonicParsing="false" text="Arachides" />
+      <CheckBox layoutX="660.0" layoutY="411.0" mnemonicParsing="false" text="Soja" />
+      <CheckBox layoutX="557.0" layoutY="441.0" mnemonicParsing="false" text="Lait" />
+      <CheckBox layoutX="660.0" layoutY="441.0" mnemonicParsing="false" text="Graines de sésame" />
+      <CheckBox layoutX="557.0" layoutY="470.0" mnemonicParsing="false" text="Moutarde" />
+      <CheckBox layoutX="661.0" layoutY="470.0" mnemonicParsing="false" text="Fast food" />
+      <Text layoutX="901.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Préférences" underline="true">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Text>
+      <Slider blockIncrement="0.0" layoutX="922.0" layoutY="338.0" majorTickUnit="1.0" max="3.0" min="1.0" minorTickCount="1" prefHeight="50.0" prefWidth="197.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" />
+      <Text layoutX="933.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nb de glaçons">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="923.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sauce préférée" wrappingWidth="202.53672885894775">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <MenuButton layoutX="934.0" layoutY="442.0" mnemonicParsing="false" text="Ketchup">
+        <items>
+            <MenuItem mnemonicParsing="false" text="Ranch" />
+          <MenuItem mnemonicParsing="false" text="Barbecue" />
+            <MenuItem mnemonicParsing="false" text="Mayonnaise" />
+          <MenuItem mnemonicParsing="false" text="Ketchup" />
+        </items>
+      </MenuButton>
+      <PasswordField layoutX="45.0" layoutY="376.0" promptText="Password">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </PasswordField>
+      <PasswordField layoutX="236.0" layoutY="376.0" promptText="Confirm password">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </PasswordField>
+      <ImageView fitHeight="189.0" fitWidth="200.0" layoutX="540.0" layoutY="24.0">
+         <image>
+            <Image url="@../img/LOGO.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
