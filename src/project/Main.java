@@ -24,7 +24,7 @@ public class Main extends Application {
             AnchorPane page = FXMLLoader.load(Main.class.getResource("../project/Views/Accueil_BQ.fxml"));
             Scene scene = new Scene(page);
             stage.setScene(scene);
-            stage.setTitle("Le FXML c'est de l'eau");
+            stage.setTitle("Le FXML c'est de l'eau");//testttt
             stage.show();
             primaryStage = stage;
         } catch (Exception ex) {
