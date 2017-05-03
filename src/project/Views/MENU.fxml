@@ -14,11 +14,6 @@
    <children>
   <AnchorPane layoutY="-4.0" minHeight="0.0" minWidth="0.0" prefHeight="682.0" prefWidth="1280.0">
          <children>
-            <ImageView accessibleRole="BUTTON" fitHeight="230.0" fitWidth="305.0" layoutX="624.0" layoutY="190.0">
-               <image>
-                  <Image url="@../../../../menu1.jpg" />
-               </image>
-            </ImageView>
             <Text layoutX="189.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu  enfant" />
             <Text layoutX="739.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu normal " />
             <ImageView accessibleRole="BUTTON" fitHeight="253.0" fitWidth="296.0" layoutX="120.0" layoutY="178.0">
@@ -37,6 +32,11 @@
                   <Font size="28.0" />
                </font>
             </Text>
+            <ImageView fitHeight="205.0" fitWidth="296.0" layoutX="628.0" layoutY="239.0">
+               <image>
+                  <Image url="@menu_normal.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
       <TextField alignment="TOP_CENTER" layoutX="1094.0" layoutY="-1.0" text="En ce moment" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
