@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PostOrder">
+   <children>
+      <ImageView fitHeight="396.0" fitWidth="601.0" layoutY="2.0">
+         <image>
+            <Image url="@../img/Autres/LOGO.png" />
+         </image>
+      </ImageView>
+      <Canvas blendMode="LIGHTEN" height="112.0" layoutX="108.0" layoutY="151.0" width="360.0" />
+      <DialogPane contentText="Votre numéro de commande est : " expanded="true" headerText="Merci d'avoir commandé cher Burger Queen" layoutX="108.0" layoutY="163.0">
+         <buttonTypes>
+            <ButtonType fx:constant="FINISH" />
+         </buttonTypes>
+      </DialogPane>
+   </children>
+</AnchorPane>
