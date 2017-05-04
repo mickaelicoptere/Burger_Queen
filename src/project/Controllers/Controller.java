@@ -49,7 +49,5 @@ public class Controller {
         Main.primaryStage.setScene(scene);
     }
 
-    /*test*/
-
 
 }

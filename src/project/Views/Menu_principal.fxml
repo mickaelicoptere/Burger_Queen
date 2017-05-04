@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="Payer" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Controller">
+<AnchorPane fx:id="Payer" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Controller">
    <children>
       <TextField alignment="TOP_CENTER" layoutX="1094.0" layoutY="-1.0" text="En ce moment" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
          <font>
@@ -68,7 +68,7 @@
       </ImageView>
       <Button alignment="TOP_CENTER" layoutX="115.0" layoutY="314.0" onAction="#toMenus" prefHeight="31.0" prefWidth="148.0" text="Menus" />
       <Button alignment="TOP_CENTER" layoutX="484.0" layoutY="314.0" prefHeight="31.0" prefWidth="148.0" text="Boissons" />
-      <Button layoutX="820.0" layoutY="314.0" prefHeight="31.0" prefWidth="148.0" text="Petits plaisirs" textAlignment="CENTER" />
+      <Button layoutX="820.0" layoutY="314.0" prefHeight="31.0" prefWidth="148.0" text="Petits plaisirs" />
       <Button alignment="TOP_CENTER" layoutX="97.0" layoutY="618.0" prefHeight="31.0" prefWidth="148.0" text="Desserts" />
       <ImageView accessibleRole="BUTTON" fitHeight="149.0" fitWidth="200.0" layoutX="451.0" layoutY="467.0">
          <image>
