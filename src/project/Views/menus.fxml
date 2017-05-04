@@ -2,7 +2,6 @@
 
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextField?>
@@ -13,38 +12,17 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="Payer" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Controller">
+<AnchorPane fx:id="Payer" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Controller">
    <children>
       <TabPane prefHeight="722.0" prefWidth="1283.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
-          <Tab text="Menu">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="678.0" prefWidth="1245.0">
-                     <children>
-                        <ImageView fitHeight="149.0" fitWidth="200.0" layoutX="149.0" layoutY="37.0">
-                           <image>
-                              <Image url="@../img/menu_enfant.jpg" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="159.0" fitWidth="200.0" layoutX="697.0" layoutY="19.0">
-                           <image>
-                              <Image url="@../img/menu1.jpg" />
-                           </image>
-                        </ImageView>
-                        <Text layoutX="202.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu  enfant" />
-                        <Text layoutX="751.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu normal " />
-                        <Slider accessibleText="taille menu" layoutX="383.0" layoutY="46.0" max="3.0" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" />
-                        <Slider accessibleText="taille menu" layoutX="912.0" layoutY="42.0" max="3.0" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" />
-                     </children></AnchorPane>
-            </content>
-          </Tab>
             <Tab text="Sandwich">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <ImageView fitHeight="135.0" fitWidth="152.0" layoutX="87.0" layoutY="78.0">
                            <image>
-                              <Image url="@../img/article-2635207-0C4BF341000005DC-528_622x618.jpg" />
+                              <Image url="@../img/Burgers/article-2635207-0C4BF341000005DC-528_622x618.jpg" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
@@ -52,7 +30,7 @@
                         </ImageView>
                         <ImageView fitHeight="136.0" fitWidth="152.0" layoutX="816.0" layoutY="427.0">
                            <image>
-                              <Image url="@../img/hamburger1.png" />
+                              <Image url="@../img/Burgers/hamburger1.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
@@ -60,7 +38,7 @@
                         </ImageView>
                         <ImageView fitHeight="134.0" fitWidth="147.0" layoutX="456.0" layoutY="427.0">
                            <image>
-                              <Image url="@../img/hamburger2.png" />
+                              <Image url="@../img/Burgers/hamburger2.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
@@ -68,7 +46,7 @@
                         </ImageView>
                         <ImageView fitHeight="136.0" fitWidth="151.0" layoutX="81.0" layoutY="426.0">
                            <image>
-                              <Image url="@../img/hamburger3.png" />
+                              <Image url="@../img/Burgers/hamburger3.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
@@ -76,7 +54,7 @@
                         </ImageView>
                         <ImageView fitHeight="133.0" fitWidth="151.0" layoutX="434.0" layoutY="61.0">
                            <image>
-                              <Image url="@../img/royaldeluxe_mcdonalds.png" />
+                              <Image url="@../img/Burgers/royaldeluxe_mcdonalds.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
@@ -129,25 +107,35 @@
                   </AnchorPane>
               </content>
             </Tab>
+            <Tab text="Accompagnements">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="Boissons">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
           <Tab text="Desserts">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <ImageView fitHeight="200.0" fitWidth="110.0" layoutX="113.0" layoutY="104.0">
                            <image>
-                              <Image url="@../img/dessert.jpg" />
+                              <Image url="@../img/Desserts/dessert.jpg" />
                            </image>
                         </ImageView>
                         <Text layoutX="142.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="milkshake" />
                         <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="412.0" layoutY="104.0">
                            <image>
-                              <Image url="@../img/madeleines.jpg" />
+                              <Image url="@../img/Desserts/madeleines.jpg" />
                            </image>
                         </ImageView>
                         <Text layoutX="482.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Madeleines" />
                         <ImageView fitHeight="148.0" fitWidth="232.0" layoutX="709.0" layoutY="156.0">
                            <image>
-                              <Image url="@../img/Portal-Cake.jpg" />
+                              <Image url="@../img/Desserts/Portal-Cake.jpg" />
                            </image>
                         </ImageView>
                         <Text layoutX="784.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The cake is a lie" />

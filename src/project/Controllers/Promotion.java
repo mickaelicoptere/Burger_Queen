@@ -1,4 +1,5 @@
 import java.util.Vector;
+import project.*;
 
 public class Promotion {
 	private date _dateDebut;
