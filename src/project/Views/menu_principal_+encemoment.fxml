@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Payer" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Controller">
+   <children>
+      <TreeView layoutX="1069.0" layoutY="65.0" prefHeight="523.0" prefWidth="186.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="65.0" />
+      <Button layoutX="1069.0" layoutY="608.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="186.0" text="Payer" AnchorPane.bottomAnchor="37.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="608.0" />
+      <TextField alignment="TOP_CENTER" layoutX="1069.0" layoutY="65.0" prefHeight="30.0" prefWidth="186.0" text="Ma commande">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutY="694.0" mnemonicParsing="false" text="Retour" />
+      <TextField alignment="TOP_LEFT" layoutX="1069.0" layoutY="573.0" prefHeight="25.0" prefWidth="186.0" text="Total :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField alignment="TOP_LEFT" layoutX="1069.0" layoutY="694.0" prefHeight="24.0" prefWidth="186.0" text="Annuler la commande">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+      </TextField>
+      <ImageView accessibleRole="BUTTON" fitHeight="151.0" fitWidth="74.0" layoutX="152.0" layoutY="150.0">
+         <image>
+            <Image url="@../img/Boissons/boisson.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="144.0" fitWidth="175.0" layoutX="806.0" layoutY="171.0">
+         <image>
+            <Image url="@../img/Accompagnements/Frites.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="151.0" fitWidth="74.0" layoutX="134.0" layoutY="466.0">
+         <image>
+            <Image url="@../img/Desserts/dessert.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="109.0" fitWidth="148.0" layoutX="499.0" layoutY="189.0" onMouseClicked="#toMenus">
+         <image>
+            <Image url="@../img/Menus/menu1.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <Button alignment="TOP_CENTER" layoutX="499.0" layoutY="316.0" onAction="#toMenus" prefHeight="31.0" prefWidth="148.0" text="Menus" />
+      <Button alignment="TOP_CENTER" layoutX="121.0" layoutY="316.0" prefHeight="31.0" prefWidth="148.0" text="Boissons" />
+      <Button layoutX="820.0" layoutY="314.0" prefHeight="31.0" prefWidth="148.0" text="Accompagnements" />
+      <Button alignment="TOP_CENTER" layoutX="97.0" layoutY="618.0" prefHeight="31.0" prefWidth="148.0" text="Desserts" />
+      <Button alignment="TOP_CENTER" layoutX="820.0" layoutY="618.0" prefHeight="31.0" prefWidth="148.0" text="Apascher" />
+      <TextField layoutX="12.0" layoutY="14.0" prefHeight="75.0" prefWidth="206.0" text="Bienvenue">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </TextField>
+      <AnchorPane layoutX="374.0" layoutY="20.0" prefHeight="109.0" prefWidth="502.0">
+         <children>
+            <ImageView fitHeight="75.0" fitWidth="138.0" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Autres/burger_zinger_black.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="75.0" fitWidth="101.0" layoutX="201.0">
+               <image>
+                  <Image url="@../img/Burgers/hamburger3.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="75.0" fitWidth="106.0" layoutX="395.0" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Burgers/royaldeluxe_mcdonalds.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text layoutX="21.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dark Burger" />
+            <Text layoutX="208.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Croissant Burger" />
+            <Text layoutX="406.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Normal Burger" />
+            <Text layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="En ce moment !" textAlignment="CENTER" wrappingWidth="502.00000762939453">
+               <font>
+                  <Font name="Serif Italic" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="130.0" fitWidth="200.0" layoutX="794.0" layoutY="466.0">
+         <image>
+            <Image url="@../img/Apascher/cheeseburger.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="189.0" fitWidth="200.0" layoutX="446.0" layoutY="447.0" opacity="0.61" rotate="-22.8">
+         <image>
+            <Image url="@../img/Autres/LOGO.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

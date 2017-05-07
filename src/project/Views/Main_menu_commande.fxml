@@ -52,6 +52,9 @@
                            <image>
                               <Image url="@../img/Burgers/Burger1.png" />
                            </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </ImageView>
                      </children>
                   </AnchorPane>
