@@ -36,7 +36,7 @@
       </TextField>
       <ImageView accessibleRole="BUTTON" fitHeight="151.0" fitWidth="74.0" layoutX="521.0" layoutY="158.0">
          <image>
-            <Image url="@../img/boisson.png" />
+            <Image url="@../img/Boissons/boisson.png" />
          </image>
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
@@ -44,7 +44,7 @@
       </ImageView>
       <ImageView accessibleRole="BUTTON" fitHeight="144.0" fitWidth="175.0" layoutX="806.0" layoutY="171.0">
          <image>
-            <Image url="@../img/Frites.png" />
+            <Image url="@../img/Accompagnements/Frites.png" />
          </image>
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
@@ -52,7 +52,7 @@
       </ImageView>
       <ImageView accessibleRole="BUTTON" fitHeight="151.0" fitWidth="74.0" layoutX="134.0" layoutY="466.0">
          <image>
-            <Image url="@../img/dessert.jpg" />
+            <Image url="@../img/Desserts/dessert.jpg" />
          </image>
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
@@ -60,7 +60,7 @@
       </ImageView>
       <ImageView accessibleRole="BUTTON" fitHeight="109.0" fitWidth="148.0" layoutX="115.0" layoutY="179.0" onMouseClicked="#toMenus">
          <image>
-            <Image url="@../img/menu1.jpg" />
+            <Image url="@../img/Menus/menu1.jpg" />
          </image>
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
@@ -72,7 +72,7 @@
       <Button alignment="TOP_CENTER" layoutX="97.0" layoutY="618.0" prefHeight="31.0" prefWidth="148.0" text="Desserts" />
       <ImageView accessibleRole="BUTTON" fitHeight="149.0" fitWidth="200.0" layoutX="451.0" layoutY="467.0">
          <image>
-            <Image url="@../img/menu_enfant.jpg" />
+            <Image url="@../img/Menus/menu_enfant.jpg" />
          </image>
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
@@ -81,7 +81,7 @@
       <Button alignment="TOP_CENTER" layoutX="477.0" layoutY="618.0" prefHeight="31.0" prefWidth="148.0" text="Menu enfant" />
       <ImageView accessibleRole="BUTTON" fitHeight="149.0" fitWidth="200.0" layoutX="793.0" layoutY="467.0">
          <image>
-            <Image url="@../img/wrap.jpg" />
+            <Image url="@../img/Apascher/wrap.jpg" />
          </image>
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />

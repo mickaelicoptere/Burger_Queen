@@ -12,12 +12,12 @@
    <children>
       <ImageView id="Wallpaper" fitHeight="720.0" fitWidth="1280.0" preserveRatio="true">
          <image>
-            <Image url="@../img/WALLPAPER2.jpg" />
+            <Image url="@../img/Autres/WALLPAPER2.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="189.0" fitWidth="256.0" layoutX="1080.0" preserveRatio="true">
          <image>
-            <Image url="@../img/LOGO.png" />
+            <Image url="@../img/Autres/LOGO.png" />
          </image>
       </ImageView>
       <ProgressIndicator id="chargement" layoutX="1235.0" layoutY="673.0" progress="0.0" />

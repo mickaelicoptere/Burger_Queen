@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/project/Views/menus.fxml" afterPath="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Meilleur menu principal + en ce moment">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project/Views/Main_menu_commande.fxml" afterPath="$PROJECT_DIR$/src/project/Views/Main_menu_commande.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project/Views/Menu_principal.fxml" afterPath="$PROJECT_DIR$/src/project/Views/Menu_principal.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_V1/project/Views/Accueil_BQ.fxml" afterPath="$PROJECT_DIR$/out/production/Projet_V1/project/Views/Accueil_BQ.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_V1/project/Views/Inscription.fxml" afterPath="$PROJECT_DIR$/out/production/Projet_V1/project/Views/Inscription.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_V1/project/Views/MENU.fxml" afterPath="$PROJECT_DIR$/out/production/Projet_V1/project/Views/MENU.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_V1/project/Views/Menu_principal.fxml" afterPath="$PROJECT_DIR$/out/production/Projet_V1/project/Views/Menu_principal.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project/Controllers/Controller.java" afterPath="$PROJECT_DIR$/src/project/Controllers/Controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project/Main.java" afterPath="$PROJECT_DIR$/src/project/Main.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,61 +80,37 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/project/Controllers/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="39" column="29" lean-forward="false" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#928#929#0" expanded="true" />
+                <element signature="e#964#965#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Main_menu_commande.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/project/Views/Main_menu_commande.fxml">
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1494171760250" expanded="true" signature="3473:4948" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="3497:4929" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="3594:4904" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="3626:4872" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="3774:4129" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="3809:3959" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="4277:4601" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="4312:4431" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="4982:7523" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="5006:7504" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="5103:7479" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="5135:7447" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="5275:5588" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="5310:5418" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="5728:6042" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="5763:5872" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="6148:6470" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="6183:6300" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="6611:6932" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="6646:6762" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="7557:9534" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="7581:9515" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="7678:9490" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="7710:9477" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="7851:8167" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="7886:7997" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="8307:8625" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="8342:8455" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="8766:9081" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="8801:8911" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="9566:11593" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="9588:11576" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="9683:11553" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="9715:11540" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="10270:10586" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="10305:10416" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="10727:11046" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="10762:10876" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="11187:11507" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="11222:11337" ph="..." />
                 <marker date="1494171760250" expanded="true" signature="11507:11540" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="11777:11883" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="11793:11864" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="12370:12455" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="12386:12436" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="12664:12749" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="12680:12730" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="12884:12990" ph="..." />
-                <marker date="1494171760250" expanded="true" signature="12900:12971" ph="..." />
               </folding>
             </state>
           </provider>
@@ -143,7 +122,7 @@
       <file leaf-file-name="Menu_principal.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/project/Views/Menu_principal.fxml">
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="393">
+            <state relative-caret-position="1411">
               <caret line="83" column="41" lean-forward="false" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
               <folding />
             </state>
@@ -153,15 +132,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu_principal_+encemoment.fxml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu_principal_+encemoment.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/project/Views/menu_principal_+encemoment.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
             <state />
           </provider>
         </entry>
@@ -230,6 +209,12 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="mickaelicoptere &lt;mickael.lanier@etu.unice.fr&gt;" />
+      </list>
+    </option>
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -256,13 +241,13 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Controllers/Controller.java" />
         <option value="$PROJECT_DIR$/src/project/Views/menus.fxml" />
-        <option value="$PROJECT_DIR$/src/project/Controllers/Controller.java" />
-        <option value="$PROJECT_DIR$/src/project/Main.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/project/Views/Login_bq.fxml" />
         <option value="$PROJECT_DIR$/src/project/Views/Main_menu_commande.fxml" />
         <option value="$PROJECT_DIR$/src/project/Views/Menu_principal.fxml" />
         <option value="$PROJECT_DIR$/src/project/Views/menu_principal_+encemoment.fxml" />
+        <option value="$PROJECT_DIR$/src/project/Main.java" />
+        <option value="$PROJECT_DIR$/src/project/Controllers/Controller.java" />
       </list>
     </option>
   </component>
@@ -277,10 +262,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="22" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="x" value="953" />
+    <option name="y" value="30" />
+    <option name="width" value="974" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -298,6 +283,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -371,10 +357,6 @@
               <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Menus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -394,66 +376,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BurgerQueen_1.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Burger_Queen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Boissons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BurgerQueen_1.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Burger_Queen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Autres" />
+              <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -784,7 +713,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493899260161</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Meilleur menu principal + en ce moment">
+      <created>1494173801268</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1494173801268</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -800,7 +736,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
+    <frame x="953" y="30" width="974" height="1057" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26124197" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -810,14 +746,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20663811" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2064865" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13539445" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.285558" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -836,6 +771,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -895,7 +831,8 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="test" />
     <MESSAGE value="propreté des fxml &gt; 9000" />
-    <option name="LAST_COMMIT_MESSAGE" value="propreté des fxml &gt; 9000" />
+    <MESSAGE value="Meilleur menu principal + en ce moment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Meilleur menu principal + en ce moment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -928,17 +865,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Views/menus.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="187" lean-forward="false" selection-start-line="15" selection-start-column="187" selection-end-line="15" selection-end-column="187" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Views/menus.fxml" />
     <entry file="file://$PROJECT_DIR$/src/project/Views/Page_en_ce_moment.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -993,17 +920,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Views/menus.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Views/menus.fxml" />
     <entry file="file://$PROJECT_DIR$/src/project/Views/Accueil_BQ.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1062,17 +979,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Views/menus.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Views/menus.fxml" />
     <entry file="file://$PROJECT_DIR$/src/project/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1200,20 +1107,6 @@
     <entry file="file://$PROJECT_DIR$/../Accueil_BQ.fxml" />
     <entry file="file://$PROJECT_DIR$/src/Views/sample.fxml" />
     <entry file="file://$PROJECT_DIR$/../Test/src/sample/Page_en_ce_moment.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/project/Controllers/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="48" column="42" lean-forward="false" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="62" lean-forward="false" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1247,89 +1140,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Views/Accueil_BQ.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Views/Main_menu_commande.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1494171760250" expanded="true" signature="3473:4948" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="3497:4929" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="3594:4904" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="3626:4872" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="3774:4129" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="3809:3959" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="4277:4601" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="4312:4431" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="4982:7523" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="5006:7504" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="5103:7479" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="5135:7447" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="5275:5588" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="5310:5418" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="5728:6042" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="5763:5872" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="6148:6470" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="6183:6300" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="6611:6932" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="6646:6762" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="7557:9534" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="7581:9515" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="7678:9490" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="7710:9477" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="7851:8167" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="7886:7997" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="8307:8625" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="8342:8455" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="8766:9081" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="8801:8911" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="9566:11593" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="9588:11576" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="9683:11553" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="9715:11540" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="10270:10586" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="10305:10416" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="10727:11046" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="10762:10876" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="11187:11507" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="11222:11337" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="11507:11540" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="11777:11883" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="11793:11864" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="12370:12455" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="12386:12436" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="12664:12749" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="12680:12730" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="12884:12990" ph="..." />
-            <marker date="1494171760250" expanded="true" signature="12900:12971" ph="..." />
-          </folding>
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Views/menus.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Views/menus.fxml" />
     <entry file="file://$PROJECT_DIR$/src/project/Views/Page_en_ce_moment.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1365,6 +1176,28 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Views/Menu_principal.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="83" column="41" lean-forward="false" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Views/menu_principal_+encemoment.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/project/Views/post_order.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1376,10 +1209,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Views/Menu_principal.fxml">
+    <entry file="file://$PROJECT_DIR$/src/project/Views/Accueil_BQ.fxml">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="83" column="41" lean-forward="false" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
+        <state relative-caret-position="0">
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -1387,15 +1220,37 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/Views/menu_principal_+encemoment.fxml">
-      <provider selected="true" editor-type-id="text-editor">
+    <entry file="file://$PROJECT_DIR$/src/project/Views/Main_menu_commande.fxml">
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1494171760250" expanded="true" signature="11507:11540" ph="..." />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/Controllers/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="29" lean-forward="false" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#928#929#0" expanded="true" />
+            <element signature="e#964#965#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

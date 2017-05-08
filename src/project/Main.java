@@ -27,9 +27,17 @@ public class Main extends Application {
             stage.setTitle("Le FXML c'est de l'eau");//testttt
             stage.show();
             primaryStage = stage;
+
         } catch (Exception ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
+
+    public static void showMainscene() throws Exception {
+        FXMLLoader loader;
+        loader = new FXMLLoader(
+                loader.setLocation(Main.class.getResource("../Views/Main_menu_commande+encemoment.fxml"));
+        );
+
 
     }
 
