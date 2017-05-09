@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="various tests switch scene">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet_V1/project/Views/Accueil_BQ.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet_V1/project/Views/MENU.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Projet_V1/project/Views/Menu_principal.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/project/Views/Accueil_BQ.fxml" afterPath="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_V1/project/Controllers/Controller.class" afterPath="$PROJECT_DIR$/out/production/Projet_V1/project/Controllers/Controller.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_V1/project/Main.class" afterPath="$PROJECT_DIR$/out/production/Projet_V1/project/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Projet_V1/project/Views/Inscription.fxml" afterPath="$PROJECT_DIR$/out/production/Projet_V1/project/Views/Inscription.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project/Controllers/Controller.java" afterPath="$PROJECT_DIR$/src/project/Controllers/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project/Main.java" afterPath="$PROJECT_DIR$/src/project/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project/Views/Inscription.fxml" afterPath="$PROJECT_DIR$/src/project/Views/Inscription.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project/Views/Login_bq.fxml" afterPath="$PROJECT_DIR$/src/project/Views/Login_bq.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project/Views/Main_menu_commande.fxml" afterPath="$PROJECT_DIR$/src/project/Views/Main_menu_commande.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/project/Views/menu_principal_+encemoment.fxml" afterPath="$PROJECT_DIR$/src/project/Views/menu_principal_+encemoment.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,7 +79,7 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/project/Controllers/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-323">
+            <state relative-caret-position="-205">
               <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -102,9 +92,9 @@
         <entry file="file://$PROJECT_DIR$/src/project/Views/Main_menu_commande.fxml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="236">
-              <caret line="220" column="27" lean-forward="true" selection-start-line="220" selection-start-column="27" selection-end-line="220" selection-end-column="27" />
+              <caret line="223" column="15" lean-forward="true" selection-start-line="223" selection-start-column="15" selection-end-line="223" selection-end-column="15" />
               <folding>
-                <marker date="1494355935431" expanded="true" signature="11507:11540" ph="..." />
+                <marker date="1494356068496" expanded="true" signature="11507:11540" ph="..." />
               </folding>
             </state>
           </provider>
@@ -667,7 +657,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494272421365</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updated UI + boutons pris en charge">
+      <created>1494356073044</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1494356073044</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -684,7 +681,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26124197" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -695,8 +691,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32869378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20449679" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20449679" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -781,7 +777,9 @@
     <MESSAGE value="propreté des fxml &gt; 9000" />
     <MESSAGE value="Meilleur menu principal + en ce moment" />
     <MESSAGE value="various tests switch scene" />
-    <option name="LAST_COMMIT_MESSAGE" value="various tests switch scene" />
+    <MESSAGE value="Updated UI + boutons pris en charge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated UI + boutons pris en charge" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1047,10 +1045,10 @@
         <state relative-caret-position="255">
           <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
           <folding>
-            <marker date="1494354550724" expanded="true" signature="1835:2041" ph="..." />
-            <marker date="1494354550724" expanded="true" signature="1835:2055" ph="..." />
-            <marker date="1494354550724" expanded="true" signature="1920:2026" ph="..." />
-            <marker date="1494354550724" expanded="true" signature="1937:2007" ph="..." />
+            <marker date="1494356068550" expanded="true" signature="1891:2097" ph="..." />
+            <marker date="1494356068550" expanded="true" signature="1891:2111" ph="..." />
+            <marker date="1494356068550" expanded="true" signature="1976:2082" ph="..." />
+            <marker date="1494356068550" expanded="true" signature="1993:2063" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1085,21 +1083,21 @@
         <state relative-caret-position="-493">
           <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
-            <marker date="1494355524039" expanded="true" signature="4161:4246" ph="..." />
-            <marker date="1494355524039" expanded="true" signature="4177:4227" ph="..." />
-            <marker date="1494355524039" expanded="true" signature="4333:5977" ph="..." />
-            <marker date="1494355524039" expanded="true" signature="4353:5957" ph="..." />
-            <marker date="1494355524039" expanded="true" signature="4432:4674" ph="..." />
-            <marker date="1494355524039" expanded="true" signature="4455:4552" ph="..." />
-            <marker date="1494355524039" expanded="true" signature="4576:4649" ph="..." />
-            <marker date="1494355524039" expanded="true" signature="4748:4982" ph="..." />
-            <marker date="1494355524039" expanded="true" signature="4771:4860" ph="..." />
-            <marker date="1494355524039" expanded="true" signature="4884:4957" ph="..." />
-            <marker date="1494355524039" expanded="true" signature="5077:5322" ph="..." />
-            <marker date="1494355524039" expanded="true" signature="5100:5200" ph="..." />
-            <marker date="1494355524039" expanded="true" signature="5224:5297" ph="..." />
-            <marker date="1494355524039" expanded="true" signature="5812:5936" ph="..." />
-            <marker date="1494355524039" expanded="true" signature="5834:5916" ph="..." />
+            <marker date="1494356068387" expanded="true" signature="4261:4346" ph="..." />
+            <marker date="1494356068387" expanded="true" signature="4277:4327" ph="..." />
+            <marker date="1494356068387" expanded="true" signature="4433:6077" ph="..." />
+            <marker date="1494356068387" expanded="true" signature="4453:6057" ph="..." />
+            <marker date="1494356068387" expanded="true" signature="4532:4774" ph="..." />
+            <marker date="1494356068387" expanded="true" signature="4555:4652" ph="..." />
+            <marker date="1494356068387" expanded="true" signature="4676:4749" ph="..." />
+            <marker date="1494356068387" expanded="true" signature="4848:5082" ph="..." />
+            <marker date="1494356068387" expanded="true" signature="4871:4960" ph="..." />
+            <marker date="1494356068387" expanded="true" signature="4984:5057" ph="..." />
+            <marker date="1494356068387" expanded="true" signature="5177:5422" ph="..." />
+            <marker date="1494356068387" expanded="true" signature="5200:5300" ph="..." />
+            <marker date="1494356068387" expanded="true" signature="5324:5397" ph="..." />
+            <marker date="1494356068387" expanded="true" signature="5912:6036" ph="..." />
+            <marker date="1494356068387" expanded="true" signature="5934:6016" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1132,9 +1130,9 @@
     <entry file="file://$PROJECT_DIR$/src/project/Views/Main_menu_commande.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
-          <caret line="220" column="27" lean-forward="true" selection-start-line="220" selection-start-column="27" selection-end-line="220" selection-end-column="27" />
+          <caret line="223" column="15" lean-forward="true" selection-start-line="223" selection-start-column="15" selection-end-line="223" selection-end-column="15" />
           <folding>
-            <marker date="1494355935431" expanded="true" signature="11507:11540" ph="..." />
+            <marker date="1494356068496" expanded="true" signature="11507:11540" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1154,7 +1152,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/project/Controllers/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
+        <state relative-caret-position="-205">
           <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
