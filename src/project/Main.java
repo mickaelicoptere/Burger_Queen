@@ -21,23 +21,16 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         try {
-            AnchorPane page = FXMLLoader.load(Main.class.getResource("../project/Views/Accueil_BQ.fxml"));
+            AnchorPane page = FXMLLoader.load(Main.class.getResource("../project/Views/Login_bq.fxml"));
             Scene scene = new Scene(page);
             stage.setScene(scene);
-            stage.setTitle("Le FXML c'est de l'eau");//testttt
+            stage.setTitle("Bienvenue chez Burger Queen !");
             stage.show();
             primaryStage = stage;
 
         } catch (Exception ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
-
-    public static void showMainscene() throws Exception {
-        FXMLLoader loader;
-        loader = new FXMLLoader(
-                loader.setLocation(Main.class.getResource("../Views/Main_menu_commande+encemoment.fxml"));
-        );
-
 
     }
 

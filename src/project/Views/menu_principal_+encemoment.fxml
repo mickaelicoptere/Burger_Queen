@@ -46,7 +46,7 @@
             <Cursor fx:constant="OPEN_HAND" />
          </cursor>
       </ImageView>
-      <ImageView accessibleRole="BUTTON" fitHeight="151.0" fitWidth="74.0" layoutX="134.0" layoutY="466.0">
+      <ImageView accessibleRole="BUTTON" fitHeight="151.0" fitWidth="74.0" layoutX="158.0" layoutY="466.0">
          <image>
             <Image url="@../img/Desserts/dessert.jpg" />
          </image>
@@ -62,11 +62,36 @@
             <Cursor fx:constant="OPEN_HAND" />
          </cursor>
       </ImageView>
-      <Button alignment="TOP_CENTER" layoutX="499.0" layoutY="316.0" onAction="#toMenus" prefHeight="31.0" prefWidth="148.0" text="Menus" />
-      <Button alignment="TOP_CENTER" layoutX="121.0" layoutY="316.0" prefHeight="31.0" prefWidth="148.0" text="Boissons" />
-      <Button layoutX="820.0" layoutY="314.0" prefHeight="31.0" prefWidth="148.0" text="Accompagnements" />
-      <Button alignment="TOP_CENTER" layoutX="97.0" layoutY="618.0" prefHeight="31.0" prefWidth="148.0" text="Desserts" />
-      <Button alignment="TOP_CENTER" layoutX="820.0" layoutY="618.0" prefHeight="31.0" prefWidth="148.0" text="Apascher" />
+      <Button alignment="TOP_CENTER" layoutX="499.0" layoutY="316.0" onAction="#toCommande" prefHeight="31.0"
+              prefWidth="148.0" text="Menus">
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+      </Button>
+      <Button alignment="TOP_CENTER" layoutX="121.0" layoutY="316.0" onAction="#toCommande" prefHeight="31.0"
+              prefWidth="148.0" text="Boissons">
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+      </Button>
+      <Button layoutX="820.0" layoutY="314.0" onAction="#toCommande" prefHeight="31.0" prefWidth="148.0"
+              text="Accompagnements">
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+      </Button>
+      <Button alignment="TOP_CENTER" layoutX="121.0" layoutY="618.0" onAction="#toCommande" prefHeight="31.0"
+              prefWidth="148.0" text="Desserts">
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+      </Button>
+      <Button alignment="TOP_CENTER" layoutX="820.0" layoutY="618.0" onAction="#toCommande" prefHeight="31.0"
+              prefWidth="148.0" text="Apascher">
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+      </Button>
       <TextField layoutX="12.0" layoutY="14.0" prefHeight="75.0" prefWidth="206.0" text="Bienvenue">
          <font>
             <Font size="35.0" />

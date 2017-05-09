@@ -206,13 +206,22 @@
          </font>
       </TextField>
       <TreeView layoutX="1069.0" layoutY="65.0" prefHeight="523.0" prefWidth="186.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="65.0" />
-      <Button layoutX="1069.0" layoutY="608.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="186.0" text="Payer" AnchorPane.bottomAnchor="37.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="608.0" />
+      <Button layoutX="1069.0" layoutY="608.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="186.0" text="Payer"
+              AnchorPane.bottomAnchor="37.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="608.0">
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+      </Button>
       <TextField alignment="TOP_CENTER" layoutX="1072.0" layoutY="65.0" prefHeight="30.0" prefWidth="186.0" text="Ma commande">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <Button layoutX="14.0" layoutY="682.0" mnemonicParsing="false" text="Retour" />
+      <Button layoutX="14.0" layoutY="682.0" mnemonicParsing="false" onAction="#toAccueil" text="Retour">
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+      </Button>
       <TextField alignment="TOP_LEFT" layoutX="1072.0" layoutY="558.0" prefHeight="30.0" prefWidth="186.0" text="Total :">
          <font>
             <Font size="14.0" />
