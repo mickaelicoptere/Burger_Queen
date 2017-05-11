@@ -158,7 +158,8 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </ImageView>
-                        <Text layoutX="149.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grey Goose" />
+                        <Text layoutX="149.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="Eau minérale"/>
                         <Text layoutX="527.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Limonade" />
                         <Text layoutX="883.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coca cola" />
                      </children></AnchorPane>
