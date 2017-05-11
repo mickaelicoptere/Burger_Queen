@@ -10,54 +10,32 @@ import project.Main;
 public class Controller {
 
     public void toMenus() throws Exception {
-        FXMLLoader loader = new FXMLLoader(
-                getClass().getResource(
-                        "../Views/menu_principal_+encemoment.fxml"
-                )
-        );
-
-        Parent root = (Parent) loader.load();
-        Scene scene = new Scene(root);
-        Main.primaryStage.setScene(scene);
+        changePage("menu_principal_+encemoment");
     }
 
     public void toAccueil() throws Exception {
-        FXMLLoader loader = new FXMLLoader(
-                getClass().getResource(
-                        "../Views/AccueilBQ.fxml"
-                )
-        );
-        Parent root = (Parent) loader.load();
-        Scene scene = new Scene(root);
-        Main.primaryStage.setScene(scene);
+        changePage("menu_principal_+encemoment");
     }
 
     public void toSubscribe() throws Exception {
-        FXMLLoader loader = new FXMLLoader(
-                getClass().getResource(
-                        "../Views/Inscription.fxml"
-                )
-        );
-        Parent root = (Parent) loader.load();
-        Scene scene = new Scene(root);
-        Main.primaryStage.setScene(scene);
+        changePage("Inscription");
     }
 
     public void toLogin() throws Exception {
-        FXMLLoader loader = new FXMLLoader(
-                getClass().getResource(
-                        "../Views/Login_bq.fxml"
-                )
-        );
-        Parent root = (Parent) loader.load();
-        Scene scene = new Scene(root);
-        Main.primaryStage.setScene(scene);
+        changePage("Login_bq");
     }
 
     public void toCommande() throws Exception {
+        changePage("Main_menu_commande");
+    }
+
+    public void changePage(String unePage) throws Exception {
+        String page = (String) unePage;
+        String pageLoaded = "../Views/".concat(page).concat(".fxml");
+
         FXMLLoader loader = new FXMLLoader(
                 getClass().getResource(
-                        "../Views/Main_menu_commande.fxml"
+                        pageLoaded
                 )
         );
         Parent root = (Parent) loader.load();
