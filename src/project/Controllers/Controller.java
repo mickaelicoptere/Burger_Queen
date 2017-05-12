@@ -14,12 +14,13 @@ import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
+import javafx.event.ActionEvent;
 
-import java.awt.event.ActionEvent;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import java.awt.event.ActionEvent;
+
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -46,13 +47,13 @@ public class Controller implements Initializable {
     }
 
     @FXML
-    void MakeLogin(ActionEvent event) throws Exception {
+    void makeLogin(ActionEvent event) throws Exception {
         String username = user.getText();
         String password = pass.getText();
         if (username.equals("test") && password.equals("test")) {
-            toMenus();
+            changePage("menu_principal_+encemoment");
         } else {
-            System.out.println("Mauvais identifiants");
+            System.out.println("Error");
         }
     }
 

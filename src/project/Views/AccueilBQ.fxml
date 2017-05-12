@@ -22,7 +22,7 @@
             </image>
         </ImageView>
         <ProgressIndicator id="chargement" layoutX="1235.0" layoutY="673.0" progress="0.0"/>
-        <Button layoutX="201.0" layoutY="465.0" mnemonicParsing="false" onAction="#toMenus" text="Sur Place"
+        <Button layoutX="201.0" layoutY="465.0" mnemonicParsing="false" onAction="#toLogin" text="Sur Place"
                 textOverrun="CLIP">
             <font>
                 <Font size="49.0"/>
@@ -31,7 +31,7 @@
                 <Cursor fx:constant="HAND"/>
             </cursor>
         </Button>
-        <Button layoutX="818.0" layoutY="465.0" mnemonicParsing="false" onAction="#toMenus" text="A emporter">
+        <Button layoutX="818.0" layoutY="465.0" mnemonicParsing="false" onAction="#toLogin" text="A emporter">
             <font>
                 <Font size="49.0"/>
             </font>

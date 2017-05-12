@@ -21,7 +21,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         try {
-            AnchorPane page = FXMLLoader.load(Main.class.getResource("../project/Views/Login_bq.fxml"));
+            AnchorPane page = FXMLLoader.load(Main.class.getResource("../project/Views/AccueilBQ.fxml"));
             Scene scene = new Scene(page);
             stage.setScene(scene);
             stage.setTitle("Bienvenue chez Burger Queen !");

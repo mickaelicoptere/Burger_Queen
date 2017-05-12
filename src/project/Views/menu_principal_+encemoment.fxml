@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TreeView?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -19,7 +21,6 @@
             <Font size="14.0" />
          </font>
       </TextField>
-      <Button layoutY="694.0" mnemonicParsing="false" text="Retour" />
       <TextField alignment="TOP_LEFT" layoutX="1069.0" layoutY="573.0" prefHeight="25.0" prefWidth="186.0" text="Total :">
          <font>
             <Font size="14.0" />
@@ -62,36 +63,6 @@
             <Cursor fx:constant="OPEN_HAND" />
          </cursor>
       </ImageView>
-      <Button alignment="TOP_CENTER" layoutX="499.0" layoutY="316.0" onAction="#toCommande" prefHeight="31.0"
-              prefWidth="148.0" text="Menus">
-         <cursor>
-            <Cursor fx:constant="HAND"/>
-         </cursor>
-      </Button>
-      <Button alignment="TOP_CENTER" layoutX="121.0" layoutY="316.0" onAction="#toCommande" prefHeight="31.0"
-              prefWidth="148.0" text="Boissons">
-         <cursor>
-            <Cursor fx:constant="HAND"/>
-         </cursor>
-      </Button>
-      <Button layoutX="820.0" layoutY="314.0" onAction="#toCommande" prefHeight="31.0" prefWidth="148.0"
-              text="Accompagnements">
-         <cursor>
-            <Cursor fx:constant="HAND"/>
-         </cursor>
-      </Button>
-      <Button alignment="TOP_CENTER" layoutX="121.0" layoutY="618.0" onAction="#toCommande" prefHeight="31.0"
-              prefWidth="148.0" text="Desserts">
-         <cursor>
-            <Cursor fx:constant="HAND"/>
-         </cursor>
-      </Button>
-      <Button alignment="TOP_CENTER" layoutX="820.0" layoutY="618.0" onAction="#toCommande" prefHeight="31.0"
-              prefWidth="148.0" text="Apascher">
-         <cursor>
-            <Cursor fx:constant="HAND"/>
-         </cursor>
-      </Button>
       <TextField layoutX="12.0" layoutY="14.0" prefHeight="75.0" prefWidth="206.0" text="Bienvenue">
          <font>
             <Font size="35.0" />
@@ -143,5 +114,83 @@
             <Image url="@../img/Autres/LOGO.png" />
          </image>
       </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="137.0" layoutY="322.0" mnemonicParsing="false" onAction="#toCommande"
+                 prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: #F82831;" text="Boissons"
+                 textFill="WHITE">
+         <font>
+            <Font size="18.0"/>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+         <effect>
+            <DropShadow height="4.0" radius="1.5" width="4.0"/>
+         </effect>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="521.0" layoutY="322.0" mnemonicParsing="false" onAction="#toCommande"
+                 prefHeight="22.0" prefWidth="105.0" style="-fx-background-color: #F82831;" text="Menus"
+                 textFill="WHITE">
+         <font>
+            <Font size="18.0"/>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+         <effect>
+            <DropShadow height="4.0" radius="1.5" width="4.0"/>
+         </effect>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="781.0" layoutY="322.0" mnemonicParsing="false" onAction="#toCommande"
+                 prefHeight="38.0" prefWidth="192.0" style="-fx-background-color: #F82831;" text="Accompagnements"
+                 textFill="WHITE">
+         <font>
+            <Font size="18.0"/>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+         <effect>
+            <DropShadow height="4.0" radius="1.5" width="4.0"/>
+         </effect>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="131.0" layoutY="626.0" mnemonicParsing="false" onAction="#toCommande"
+                 prefHeight="39.0" prefWidth="117.0" style="-fx-background-color: #F82831;" text="Desserts"
+                 textFill="WHITE">
+         <font>
+            <Font size="18.0"/>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+         <effect>
+            <DropShadow height="4.0" radius="1.5" width="4.0"/>
+         </effect>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="841.0" layoutY="607.0" mnemonicParsing="false" onAction="#toCommande"
+                 prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: #F82831;" text="Apascher"
+                 textFill="WHITE">
+         <font>
+            <Font size="18.0"/>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+         <effect>
+            <DropShadow height="4.0" radius="1.5" width="4.0"/>
+         </effect>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="679.0" mnemonicParsing="false" onAction="#toLogin"
+                 prefHeight="30.0" prefWidth="101.0" style="-fx-background-color: grey;" text="Déconnexion"
+                 textFill="WHITE">
+         <font>
+            <Font size="14.0"/>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+         <effect>
+            <DropShadow height="4.0" radius="1.5" width="4.0"/>
+         </effect>
+      </JFXButton>
    </children>
 </AnchorPane>
