@@ -77,17 +77,18 @@ public class Controller implements Initializable {
         changePage("Main_menu_commande");
     }
 
-    public void changePage(String unePage) throws Exception {
-        String page = (String) unePage;
-        String pageLoaded = "../Views/".concat(page).concat(".fxml");
+    private void changePage(String unePage) throws Exception {
+        String pageLoaded = "../Views/".concat(unePage).concat(".fxml");
 
         FXMLLoader loader = new FXMLLoader(
                 getClass().getResource(
                         pageLoaded
                 )
         );
-        Parent root = (Parent) loader.load();
+        Parent root = loader.load();
         Scene scene = new Scene(root);
         Main.primaryStage.setScene(scene);
     }
+
+    //testcommit
 }
