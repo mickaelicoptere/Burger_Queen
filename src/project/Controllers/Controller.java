@@ -9,26 +9,16 @@ import project.Main;
 
 import java.lang.String;
 
-import com.jfoenix.controls.*;
+//import com.jfoenix.controls.*;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
-import javafx.fxml.FXML;
+//import javafx.fxml.FXML;
 import javafx.event.ActionEvent;
 
 
 import java.net.URL;
 import java.util.ResourceBundle;
-
-
-import java.awt.event.ActionListener;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-
 
 public class Controller implements Initializable {
 
