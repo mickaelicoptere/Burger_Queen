@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Payer" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.111"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Controller">
+    <children>
+        <TreeView layoutX="1069.0" layoutY="65.0" prefHeight="523.0" prefWidth="186.0" AnchorPane.rightAnchor="25.0"
+                  AnchorPane.topAnchor="65.0"/>
+        <Button layoutX="1069.0" layoutY="608.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="186.0"
+                text="Payer" AnchorPane.bottomAnchor="37.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="608.0"/>
+        <TextField alignment="TOP_CENTER" layoutX="1069.0" layoutY="65.0" prefHeight="30.0" prefWidth="186.0"
+                   text="Ma commande">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextField>
+        <Button layoutY="694.0" mnemonicParsing="false" onAction="#toMenus" text="Retour"/>
+        <TextField alignment="TOP_LEFT" layoutX="1069.0" layoutY="573.0" prefHeight="25.0" prefWidth="186.0"
+                   text="Total :">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextField>
+        <TextField alignment="TOP_LEFT" layoutX="1069.0" layoutY="694.0" prefHeight="24.0" prefWidth="186.0"
+                   text="Annuler la commande">
+            <font>
+                <Font name="System Italic" size="11.0"/>
+            </font>
+        </TextField>
+        <ImageView accessibleRole="BUTTON" fitHeight="200.0" fitWidth="101.0" layoutX="471.0" layoutY="227.0">
+            <image>
+                <Image url="@../img/Boissons/boisson.png"/>
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </ImageView>
+        <TextField layoutX="12.0" layoutY="14.0" prefHeight="75.0" prefWidth="250.0" text="Nos Boissons">
+            <font>
+                <Font size="35.0"/>
+            </font>
+        </TextField>
+        <ImageView fitHeight="200.0" fitWidth="62.0" layoutX="231.0" layoutY="237.0">
+            <image>
+                <Image url="@../img/Boissons/coca_cola.png"/>
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </ImageView>
+        <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="708.0" layoutY="227.0">
+            <image>
+                <Image url="@../img/Boissons/Sprite.png"/>
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </ImageView>
+        <Text layoutX="251.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cola"/>
+        <Text layoutX="487.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eau minérale"/>
+        <Text layoutX="782.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Limonade"/>
+    </children>
+</AnchorPane>

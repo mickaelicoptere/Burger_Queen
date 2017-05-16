@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="logo" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.111"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Controller">
+    <children>
+        <ImageView id="Wallpaper" fitHeight="720.0" fitWidth="1280.0" preserveRatio="true">
+            <image>
+                <Image url="@../img/Autres/WALLPAPER2.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="189.0" fitWidth="256.0" layoutX="1080.0" preserveRatio="true">
+            <image>
+                <Image url="@../img/Autres/LOGO.png"/>
+            </image>
+        </ImageView>
+        <ProgressIndicator id="chargement" layoutX="1235.0" layoutY="673.0" progress="0.0"/>
+        <JFXButton buttonType="RAISED" layoutX="237.0" layoutY="503.0" mnemonicParsing="false" onAction="#toLogin"
+                   prefHeight="55.0" prefWidth="170.0" style="-fx-background-color: #F82831; -fx-border-radius: 5 5 5;"
+                   text="Sur Place" textFill="WHITE">
+            <font>
+                <Font size="18.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+            <effect>
+                <DropShadow height="4.0" radius="1.5" width="4.0"/>
+            </effect>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="853.0" layoutY="503.0" mnemonicParsing="false" onAction="#toLogin"
+                   prefHeight="55.0" prefWidth="154.0" style="-fx-background-color: #F82831; -fx-border-radius: 5 5 5;"
+                   text="A emporter" textFill="WHITE">
+            <font>
+                <Font size="18.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+            <effect>
+                <DropShadow height="4.0" radius="1.5" width="4.0"/>
+            </effect>
+        </JFXButton>
+    </children>
+</AnchorPane>
