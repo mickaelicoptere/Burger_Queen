@@ -16,7 +16,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-: #2C6CC3;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0"
+            prefWidth="1280.0" style="-: #2C6CC3;" xmlns="http://javafx.com/javafx/8.0.111"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Controller">
    <children>
       <Text layoutX="14.0" layoutY="702.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Vos informations personnelles seront vendues au plus offrant" />
       <Text layoutX="547.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Allergies?" underline="true">
@@ -44,7 +46,7 @@
             <Font size="18.0" />
          </font>
       </Text>
-      <MenuButton layoutX="953.0" layoutY="471.0" mnemonicParsing="false" text="Ketchup">
+       <MenuButton layoutX="953.0" layoutY="471.0" mnemonicParsing="false" text="Ketchup">
         <items>
             <MenuItem mnemonicParsing="false" text="Ranch" />
           <MenuItem mnemonicParsing="false" text="Barbecue" />
@@ -57,51 +59,60 @@
             <Image url="@../img/Autres/LOGO.png" />
          </image>
       </ImageView>
-      <JFXButton buttonType="RAISED" layoutX="600.0" layoutY="609.0" mnemonicParsing="false" onAction="#toLogin" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #F82831;" text="Terminé" textFill="WHITE">
+       <JFXButton buttonType="RAISED" layoutX="600.0" layoutY="609.0" mnemonicParsing="false" onAction="#toLogin"
+                  prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #F82831;" text="Terminé"
+                  textFill="WHITE">
          <font>
-            <Font size="18.0" />
+             <Font size="18.0"/>
          </font>
          <cursor>
-            <Cursor fx:constant="HAND" />
+             <Cursor fx:constant="HAND"/>
          </cursor>
-         <effect>
-            <DropShadow height="4.0" radius="1.5" width="4.0" />
-         </effect>
-      </JFXButton>
-      <AnchorPane layoutX="30.0" layoutY="322.0" prefHeight="117.0" prefWidth="388.0" style="-fx-background-color: #2C6CC3; -fx-background-radius: 5 5 5 5; -fx-opacity: 80%;">
-         <children>
-            <JFXTextField focusColor="WHITE" layoutX="85.0" layoutY="14.0" prefHeight="24.0" prefWidth="197.0" promptText="Login" unFocusColor="#c5c5c5">
-               <font>
-                  <Font size="17.0" />
-               </font>
-            </JFXTextField>
-            <JFXPasswordField focusColor="BLACK" layoutX="14.0" layoutY="69.0" prefHeight="24.0" prefWidth="141.0" promptText="Password" unFocusColor="#c5c5c5">
-               <font>
-                  <Font size="17.0" />
-               </font>
-            </JFXPasswordField>
-            <JFXPasswordField focusColor="BLACK" layoutX="218.0" layoutY="69.0" prefHeight="25.0" prefWidth="156.0" promptText="Password" unFocusColor="#c5c5c5">
-               <font>
-                  <Font size="17.0" />
-               </font>
-            </JFXPasswordField>
-         </children>
-      </AnchorPane>
-      <AnchorPane layoutX="511.0" layoutY="322.0" prefHeight="266.0" prefWidth="294.0" style="-fx-background-radius: 5 5 5; -fx-background-color: #33cc00; -fx-opacity: 80%;">
-         <children>
-            <JFXToggleButton layoutX="5.0" layoutY="7.0" prefHeight="40.0" prefWidth="105.0" text="Gluten" />
-            <JFXToggleButton layoutY="56.0" prefHeight="39.0" prefWidth="129.0" text="Crustacés" />
-            <JFXToggleButton layoutX="-5.0" layoutY="105.0" prefHeight="40.0" prefWidth="115.0" text="Oeufs" />
-            <JFXToggleButton layoutX="-7.0" layoutY="154.0" prefHeight="24.0" prefWidth="129.0" text="Poissons" />
-            <JFXToggleButton layoutY="210.0" prefHeight="0.0" prefWidth="129.0" text="Arachides" />
-            <JFXToggleButton layoutX="129.0" layoutY="7.0" prefHeight="50.0" prefWidth="105.0" text="Soja" />
-            <JFXToggleButton layoutX="139.0" layoutY="56.0" prefHeight="50.0" prefWidth="167.0" text="Graines de sésame" />
-            <JFXToggleButton layoutX="129.0" layoutY="105.0" prefHeight="50.0" prefWidth="105.0" text="Lait" />
-            <JFXToggleButton layoutX="139.0" layoutY="154.0" prefHeight="50.0" prefWidth="121.0" text="Moutarde" />
-            <JFXToggleButton layoutX="135.0" layoutY="210.0" prefHeight="0.0" prefWidth="129.0" text="Fast food" />
-         </children>
-      </AnchorPane>
-      <JFXSlider blockIncrement="2.0" layoutX="920.0" layoutY="353.0" max="4.0" showTickLabels="true" showTickMarks="true" value="2.0" />
-      <JFXComboBox editable="true" layoutX="911.0" layoutY="427.0" promptText="Sauce préférée" />
+           <effect>
+               <DropShadow height="4.0" radius="1.5" width="4.0"/>
+           </effect>
+       </JFXButton>
+       <AnchorPane layoutX="30.0" layoutY="322.0" prefHeight="117.0" prefWidth="388.0"
+                   style="-fx-background-color: #2C6CC3; -fx-background-radius: 5 5 5 5; -fx-opacity: 80%;">
+           <children>
+               <JFXTextField focusColor="WHITE" layoutX="85.0" layoutY="14.0" prefHeight="24.0" prefWidth="197.0"
+                             promptText="Login" unFocusColor="#c5c5c5">
+                   <font>
+                       <Font size="17.0"/>
+                   </font>
+               </JFXTextField>
+               <JFXPasswordField focusColor="BLACK" layoutX="14.0" layoutY="69.0" prefHeight="24.0" prefWidth="141.0"
+                                 promptText="Password" unFocusColor="#c5c5c5">
+                   <font>
+                       <Font size="17.0"/>
+                   </font>
+               </JFXPasswordField>
+               <JFXPasswordField focusColor="BLACK" layoutX="218.0" layoutY="69.0" prefHeight="25.0" prefWidth="156.0"
+                                 promptText="Password" unFocusColor="#c5c5c5">
+                   <font>
+                       <Font size="17.0"/>
+                   </font>
+               </JFXPasswordField>
+           </children>
+       </AnchorPane>
+       <AnchorPane layoutX="511.0" layoutY="322.0" prefHeight="266.0" prefWidth="294.0"
+                   style="-fx-background-radius: 5 5 5; -fx-background-color: #33cc00; -fx-opacity: 80%;">
+           <children>
+               <JFXToggleButton layoutX="5.0" layoutY="7.0" prefHeight="40.0" prefWidth="105.0" text="Gluten"/>
+               <JFXToggleButton layoutY="56.0" prefHeight="39.0" prefWidth="129.0" text="Crustacés"/>
+               <JFXToggleButton layoutX="-5.0" layoutY="105.0" prefHeight="40.0" prefWidth="115.0" text="Oeufs"/>
+               <JFXToggleButton layoutX="-7.0" layoutY="154.0" prefHeight="24.0" prefWidth="129.0" text="Poissons"/>
+               <JFXToggleButton layoutY="210.0" prefHeight="0.0" prefWidth="129.0" text="Arachides"/>
+               <JFXToggleButton layoutX="129.0" layoutY="7.0" prefHeight="50.0" prefWidth="105.0" text="Soja"/>
+               <JFXToggleButton layoutX="139.0" layoutY="56.0" prefHeight="50.0" prefWidth="167.0"
+                                text="Graines de sésame"/>
+               <JFXToggleButton layoutX="129.0" layoutY="105.0" prefHeight="50.0" prefWidth="105.0" text="Lait"/>
+               <JFXToggleButton layoutX="139.0" layoutY="154.0" prefHeight="50.0" prefWidth="121.0" text="Moutarde"/>
+               <JFXToggleButton layoutX="135.0" layoutY="210.0" prefHeight="0.0" prefWidth="129.0" text="Fast food"/>
+           </children>
+       </AnchorPane>
+       <JFXSlider blockIncrement="2.0" layoutX="920.0" layoutY="353.0" max="4.0" showTickLabels="true"
+                  showTickMarks="true" value="2.0"/>
+       <JFXComboBox editable="true" layoutX="911.0" layoutY="427.0" promptText="Sauce préférée"/>
    </children>
 </AnchorPane>

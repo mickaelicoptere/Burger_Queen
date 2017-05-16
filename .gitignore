@@ -1,3 +1,10 @@
+# Fichiers projet
+.idea/*
+out/*
+Projet_V1.iml
+
+
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
