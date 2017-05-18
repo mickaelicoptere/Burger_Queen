@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 import javafx.scene.layout.AnchorPane;
 import project.Main;
 
+import java.io.IOException;
 import java.awt.*;
 import java.lang.String;
 
@@ -57,15 +58,21 @@ public class Controller implements Initializable {
     }
 
     @FXML
-    void makeLogin(ActionEvent event) throws Exception {
-        String username = user.getText();
-        String password = pass.getText();
-        if (username.equals("test") && password.equals("test")) {
-            changePage("menu_principal_+encemoment");
-        } else {
-            System.out.println("Error");
+    //TODO finir makeLogin
+    /*void makeLogin(ActionEvent event) throws IOException {
+        try {
+            String username = user.getText();
+            String password = pass.getText();
+
+            if (username.getMdp().equals(password)) {
+                changePage("menu_principal_+encemoment");
+            } else {
+                System.out.println("Error");
+            }
+        }catch (exception e){
+            System.out.println("Oups, mauvais login");
         }
-    }
+    }*/
 
     @FXML
     public void toMenus() throws Exception {
