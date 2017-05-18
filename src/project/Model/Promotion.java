@@ -1,38 +1,38 @@
 package project.Model;
 
-import java.util.Vector;
+import java.util.*;
 
 public class Promotion {
-	private date _dateDebut;
-	private date _dateFin;
-	private String _condition;
-	public Vector<Item> _unnamed_Item_ = new Vector<Item>();
+	private Date dateDebut;
+	private Date dateFin;
+	private String condition;
 
-	public date getDateDebut() {
-		return this._dateDebut;
+
+	public Date getDateDebut() {
+		return this.dateDebut;
 	}
 
-	public void setDateDebut(date aDateDebut) {
-		this._dateDebut = aDateDebut;
+	public void setDateDebut(Date DateDebut) {
+		this.dateDebut = DateDebut;
 	}
 
-	public date getDateFin() {
-		return this._dateFin;
+	public Date getDateFin() {
+		return this.dateFin;
 	}
 
-	public void setDateFin(date aDateFin) {
-		this._dateFin = aDateFin;
+	public void setDateFin(Date DateFin) {
+		this.dateFin = DateFin;
 	}
 
 	public String getCondition() {
-		return this._condition;
+		return this.condition;
 	}
 
-	public void setCondition(String aCondition) {
-		this._condition = aCondition;
+	public void setCondition(String Condition) {
+		this.condition = Condition;
 	}
 
-	public Promotion getListe(Object aString_condition) {
+	public Promotion getListe(Object String_condition) {
 		throw new UnsupportedOperationException();
 	}
 }

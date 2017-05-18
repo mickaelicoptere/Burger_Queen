@@ -1,16 +1,16 @@
 package project.Model;
 
-import java.util.Vector;
-
 public class Allergene {
-	private String _libelle;
-	public Vector<Ingredient> _unnamed_Ingredient_ = new Vector<Ingredient>();
+	private String libelle;
+
+	public Allergene () { this.libelle = null; }
+	public Allergene (String libelle) { this.libelle = libelle; }
 
 	public String getLibelle() {
-		return this._libelle;
+		return this.libelle;
 	}
 
 	public void setLibelle(String aLibelle) {
-		this._libelle = aLibelle;
+		libelle = aLibelle;
 	}
 }
