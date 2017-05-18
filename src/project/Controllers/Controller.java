@@ -59,22 +59,22 @@ public class Controller implements Initializable {
 
     }
 
-    @FXML
-    //TODO finir makeLogin
-    void makeLogin(ActionEvent event) throws IOException {
-        try {
-            Utilisateur username = user.getText();
-            String password = pass.getText();
-
-            if (username.getMdp().equals(password)) {
-                changePage("menu_principal_+encemoment");
-            } else {
-                System.out.println("Error");
-            }
-        }catch (exception e){
-            System.out.println("Oups, mauvais login");
-        }
-    }
+//    @FXML
+//    //TODO finir makeLogin
+//    void makeLogin(ActionEvent event) throws IOException {
+//        try {
+//            Utilisateur username = user.getText();
+//            String password = pass.getText();
+//
+//            if (username.getMdp().equals(password)) {
+//                changePage("menu_principal_+encemoment");
+//            } else {
+//                System.out.println("Error");
+//            }
+//        }catch (exception e){
+//            System.out.println("Oups, mauvais login");
+//        }
+//    }
 
     @FXML
     public void toMenus() throws Exception {
