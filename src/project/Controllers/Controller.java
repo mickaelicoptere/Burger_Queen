@@ -7,6 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import project.Main;
 
+import java.io.IOException;
 import java.lang.String;
 
 import com.jfoenix.controls.*;
@@ -47,15 +48,21 @@ public class Controller implements Initializable {
     }
 
     @FXML
-    void makeLogin(ActionEvent event) throws Exception {
-        String username = user.getText();
-        String password = pass.getText();
-        if (username.equals("test") && password.equals("test")) {
-            changePage("menu_principal_+encemoment");
-        } else {
-            System.out.println("Error");
+    //TODO finir makeLogin
+    /*void makeLogin(ActionEvent event) throws IOException {
+        try {
+            String username = user.getText();
+            String password = pass.getText();
+
+            if (username.getMdp().equals(password)) {
+                changePage("menu_principal_+encemoment");
+            } else {
+                System.out.println("Error");
+            }
+        }catch (exception e){
+            System.out.println("Oups, mauvais login");
         }
-    }
+    }*/
 
     public void toMenus() throws Exception {
         changePage("menu_principal_+encemoment");
