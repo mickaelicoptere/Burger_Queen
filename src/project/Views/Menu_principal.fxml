@@ -9,89 +9,94 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="Payer" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Controller">
-   <children>
-      <TextField alignment="TOP_CENTER" layoutX="1094.0" layoutY="-1.0" text="En ce moment" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
-         <font>
-            <Font name="System Italic" size="15.0" />
-         </font>
-      </TextField>
-      <TreeView layoutX="1069.0" layoutY="65.0" prefHeight="523.0" prefWidth="186.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="65.0" />
-      <Button layoutX="1069.0" layoutY="608.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="186.0" text="Payer" AnchorPane.bottomAnchor="37.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="608.0" />
-      <TextField alignment="TOP_CENTER" layoutX="1069.0" layoutY="65.0" prefHeight="30.0" prefWidth="186.0" text="Ma commande">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </TextField>
-      <Button layoutY="694.0" mnemonicParsing="false" text="Retour" />
-      <TextField alignment="TOP_LEFT" layoutX="1069.0" layoutY="573.0" prefHeight="25.0" prefWidth="186.0" text="Total :">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </TextField>
-      <TextField alignment="TOP_LEFT" layoutX="1069.0" layoutY="694.0" prefHeight="24.0" prefWidth="186.0" text="Annuler la commande">
-         <font>
-            <Font name="System Italic" size="11.0" />
-         </font>
-      </TextField>
-      <ImageView accessibleRole="BUTTON" fitHeight="151.0" fitWidth="74.0" layoutX="521.0" layoutY="158.0">
-         <image>
-            <Image url="@../img/Boissons/boisson.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="OPEN_HAND" />
-         </cursor>
-      </ImageView>
-      <ImageView accessibleRole="BUTTON" fitHeight="144.0" fitWidth="175.0" layoutX="806.0" layoutY="171.0">
-         <image>
-            <Image url="@../img/Accompagnements/Frites.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="OPEN_HAND" />
-         </cursor>
-      </ImageView>
-      <ImageView accessibleRole="BUTTON" fitHeight="151.0" fitWidth="74.0" layoutX="134.0" layoutY="466.0">
-         <image>
-            <Image url="@../img/Desserts/dessert.jpg" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="OPEN_HAND" />
-         </cursor>
-      </ImageView>
-      <ImageView accessibleRole="BUTTON" fitHeight="109.0" fitWidth="148.0" layoutX="115.0" layoutY="179.0" onMouseClicked="#toMenus">
-         <image>
-            <Image url="@../img/Menus/menu1.jpg" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="OPEN_HAND" />
-         </cursor>
-      </ImageView>
-      <Button alignment="TOP_CENTER" layoutX="115.0" layoutY="314.0" onAction="#toMenus" prefHeight="31.0" prefWidth="148.0" text="Menus" />
-      <Button alignment="TOP_CENTER" layoutX="484.0" layoutY="314.0" prefHeight="31.0" prefWidth="148.0" text="Boissons" />
-      <Button layoutX="820.0" layoutY="314.0" prefHeight="31.0" prefWidth="148.0" text="Petits plaisirs" />
-      <Button alignment="TOP_CENTER" layoutX="97.0" layoutY="618.0" prefHeight="31.0" prefWidth="148.0" text="Desserts" />
-      <ImageView accessibleRole="BUTTON" fitHeight="149.0" fitWidth="200.0" layoutX="451.0" layoutY="467.0">
-         <image>
-            <Image url="@../img/Menus/menu_enfant.jpg" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="OPEN_HAND" />
-         </cursor>
-      </ImageView>
-      <Button alignment="TOP_CENTER" layoutX="477.0" layoutY="618.0" prefHeight="31.0" prefWidth="148.0" text="Menu enfant" />
-      <ImageView accessibleRole="BUTTON" fitHeight="149.0" fitWidth="200.0" layoutX="793.0" layoutY="467.0">
-         <image>
-            <Image url="@../img/Apascher/wrap.jpg" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="OPEN_HAND" />
-         </cursor>
-      </ImageView>
-      <Button alignment="TOP_CENTER" layoutX="820.0" layoutY="618.0" prefHeight="31.0" prefWidth="148.0" text="Wrap" />
-      <TextField layoutX="12.0" layoutY="14.0" prefHeight="75.0" prefWidth="206.0" text="Bienvenue">
-         <font>
-            <Font size="35.0" />
-         </font>
-      </TextField>
-   </children>
+<AnchorPane fx:id="Payer" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.112"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Controller">
+   <TextField alignment="TOP_CENTER" layoutX="1094.0" layoutY="-1.0" text="En ce moment" AnchorPane.rightAnchor="25.0"
+              AnchorPane.topAnchor="25.0">
+      <font>
+         <Font name="System Italic" size="15.0"/>
+      </font>
+   </TextField>
+   <TreeView layoutX="1069.0" layoutY="65.0" prefHeight="523.0" prefWidth="186.0" AnchorPane.rightAnchor="25.0"
+             AnchorPane.topAnchor="65.0"/>
+   <Button layoutX="1069.0" layoutY="608.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="186.0" text="Payer"
+           AnchorPane.bottomAnchor="37.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="608.0"/>
+   <TextField alignment="TOP_CENTER" layoutX="1069.0" layoutY="65.0" prefHeight="30.0" prefWidth="186.0"
+              text="Ma commande">
+      <font>
+         <Font size="14.0"/>
+      </font>
+   </TextField>
+   <Button layoutY="694.0" mnemonicParsing="false" text="Retour"/>
+   <TextField alignment="TOP_LEFT" layoutX="1069.0" layoutY="573.0" prefHeight="25.0" prefWidth="186.0" text="Total :">
+      <font>
+         <Font size="14.0"/>
+      </font>
+   </TextField>
+   <TextField alignment="TOP_LEFT" layoutX="1069.0" layoutY="694.0" prefHeight="24.0" prefWidth="186.0"
+              text="Annuler la commande">
+      <Font name="System Italic" size="11.0"/>
+   </TextField>
+   <ImageView accessibleRole="BUTTON" fitHeight="151.0" fitWidth="74.0" layoutX="521.0" layoutY="158.0">
+      <image>
+         <Image url="@../img/Boissons/boisson.png"/>
+      </image>
+      <cursor>
+         <Cursor fx:constant="OPEN_HAND"/>
+      </cursor>
+   </ImageView>
+   <ImageView accessibleRole="BUTTON" fitHeight="144.0" fitWidth="175.0" layoutX="806.0" layoutY="171.0">
+      <image>
+         <Image url="@../img/Accompagnements/Frites.png"/>
+      </image>
+      <cursor>
+         <Cursor fx:constant="OPEN_HAND"/>
+      </cursor>
+   </ImageView>
+   <ImageView accessibleRole="BUTTON" fitHeight="151.0" fitWidth="74.0" layoutX="134.0" layoutY="466.0">
+      <image>
+         <Image url="@../img/Desserts/dessert.jpg"/>
+      </image>
+      <cursor>
+         <Cursor fx:constant="OPEN_HAND"/>
+      </cursor>
+   </ImageView>
+   <ImageView accessibleRole="BUTTON" fitHeight="109.0" fitWidth="148.0" layoutX="115.0" layoutY="179.0"
+              onMouseClicked="#toMenus">
+      <image>
+         <Image url="@../img/Menus/menu1.jpg"/>
+      </image>
+      <cursor>
+         <Cursor fx:constant="OPEN_HAND"/>
+      </cursor>
+   </ImageView>
+   <Button alignment="TOP_CENTER" layoutX="115.0" layoutY="314.0" onAction="#toMenus" prefHeight="31.0"
+           prefWidth="148.0" text="Menus"/>
+   <Button alignment="TOP_CENTER" layoutX="484.0" layoutY="314.0" prefHeight="31.0" prefWidth="148.0" text="Boissons"/>
+   <Button layoutX="820.0" layoutY="314.0" prefHeight="31.0" prefWidth="148.0" text="Petits plaisirs"/>
+   <Button alignment="TOP_CENTER" layoutX="97.0" layoutY="618.0" prefHeight="31.0" prefWidth="148.0" text="Desserts"/>
+   <ImageView accessibleRole="BUTTON" fitHeight="149.0" fitWidth="200.0" layoutX="451.0" layoutY="467.0">
+      <image>
+         <Image url="@../img/Menus/menu-enfant.png"/>
+      </image>
+      <cursor>
+         <Cursor fx:constant="OPEN_HAND"/>
+      </cursor>
+   </ImageView>
+   <Button alignment="TOP_CENTER" layoutX="477.0" layoutY="618.0" prefHeight="31.0" prefWidth="148.0"
+           text="project.Classes.Menu enfant"/>
+   <ImageView accessibleRole="BUTTON" fitHeight="149.0" fitWidth="200.0" layoutX="793.0" layoutY="467.0">
+      <image>
+         <Image url="@../img/Apascher/wrap.png"/>
+      </image>
+      <cursor>
+         <Cursor fx:constant="OPEN_HAND"/>
+      </cursor>
+   </ImageView>
+   <Button alignment="TOP_CENTER" layoutX="820.0" layoutY="618.0" prefHeight="31.0" prefWidth="148.0" text="Wrap"/>
+   <TextField layoutX="12.0" layoutY="14.0" prefHeight="75.0" prefWidth="206.0" text="Bienvenue">
+      <font>
+         <Font size="35.0"/>
+      </font>
+   </TextField>
 </AnchorPane>
