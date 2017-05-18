@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0"
+            prefWidth="1280.0" style="-: #2C6CC3;" xmlns="http://javafx.com/javafx/8.0.111"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Inscription">
+    <children>
+        <Text layoutX="14.0" layoutY="702.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="*Vos informations personnelles seront vendues au plus offrant"/>
+        <Text layoutX="145.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Allergies?" underline="true">
+            <font>
+                <Font size="43.0"/>
+            </font>
+        </Text>
+        <Text layoutX="780.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Préférences"
+              underline="true">
+            <font>
+                <Font size="41.0"/>
+            </font>
+        </Text>
+        <Text layoutX="810.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nb de glaçons"
+              wrappingWidth="148.9999771118164">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Text>
+        <Text layoutX="817.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sauce préférée"
+              wrappingWidth="135.53672885894775">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Text>
+        <ImageView fitHeight="189.0" fitWidth="200.0" layoutX="540.0" layoutY="24.0">
+            <image>
+                <Image url="@../img/Autres/LOGO.png"/>
+            </image>
+        </ImageView>
+        <JFXButton buttonType="RAISED" layoutX="591.0" layoutY="650.0" mnemonicParsing="false" onAction="#toLogin"
+                   prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #F82831;" text="Terminé"
+                   textFill="WHITE">
+            <font>
+                <Font size="18.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+            <effect>
+                <DropShadow height="4.0" radius="1.5" width="4.0"/>
+            </effect>
+        </JFXButton>
+        <AnchorPane layoutX="22.0" layoutY="269.0" prefHeight="349.0" prefWidth="523.0"
+                    style="-fx-background-radius: 5 5 5; -fx-background-color: #33cc00; -fx-opacity: 80%;">
+            <children>
+                <JFXToggleButton layoutX="5.0" layoutY="7.0" prefHeight="62.0" prefWidth="149.0" text="Gluten">
+                    <font>
+                        <Font size="19.0"/>
+                    </font>
+                </JFXToggleButton>
+                <JFXToggleButton layoutX="7.0" layoutY="69.0" prefHeight="62.0" prefWidth="159.0" text="Crustacés">
+                    <font>
+                        <Font size="19.0"/>
+                    </font>
+                </JFXToggleButton>
+                <JFXToggleButton layoutX="-8.0" layoutY="130.0" prefHeight="62.0" prefWidth="159.0" text="Oeufs">
+                    <font>
+                        <Font size="19.0"/>
+                    </font>
+                </JFXToggleButton>
+                <JFXToggleButton layoutX="3.0" layoutY="200.0" prefHeight="62.0" prefWidth="167.0" text="Poissons">
+                    <font>
+                        <Font size="19.0"/>
+                    </font>
+                </JFXToggleButton>
+                <JFXToggleButton layoutX="-4.0" layoutY="273.0" prefHeight="62.0" prefWidth="182.0" text="Arachides">
+                    <font>
+                        <Font size="19.0"/>
+                    </font>
+                </JFXToggleButton>
+                <JFXToggleButton layoutX="251.0" layoutY="14.0" prefHeight="62.0" prefWidth="149.0" text="Soja">
+                    <font>
+                        <Font size="19.0"/>
+                    </font>
+                </JFXToggleButton>
+                <JFXToggleButton layoutX="251.0" layoutY="82.0" prefHeight="62.0" prefWidth="267.0"
+                                 text="Graines de sésame">
+                    <font>
+                        <Font size="19.0"/>
+                    </font>
+                </JFXToggleButton>
+                <JFXToggleButton layoutX="246.0" layoutY="144.0" prefHeight="62.0" prefWidth="159.0" text="Lait">
+                    <font>
+                        <Font size="19.0"/>
+                    </font>
+                </JFXToggleButton>
+                <JFXToggleButton layoutX="247.0" layoutY="211.0" prefHeight="62.0" prefWidth="210.0" text="Moutarde">
+                    <font>
+                        <Font size="19.0"/>
+                    </font>
+                </JFXToggleButton>
+                <JFXToggleButton layoutX="261.0" layoutY="273.0" prefHeight="62.0" prefWidth="182.0" text="Fast food">
+                    <font>
+                        <Font size="19.0"/>
+                    </font>
+                </JFXToggleButton>
+            </children>
+        </AnchorPane>
+        <JFXSlider blockIncrement="2.0" layoutX="780.0" layoutY="360.0" max="4.0" prefHeight="62.0" prefWidth="243.0"
+                   showTickLabels="true" showTickMarks="true" value="2.0"/>
+        <JFXComboBox fx:id="sauces" editable="true" layoutX="789.0" layoutY="500.0" prefHeight="39.0" prefWidth="225.0"
+                     promptText="Sauce préférée"/>
+    </children>
+</AnchorPane>

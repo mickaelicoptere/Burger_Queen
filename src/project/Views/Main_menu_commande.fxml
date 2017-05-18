@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TreeView?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -56,6 +58,16 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </ImageView>
+                        <JFXButton layoutX="28.0" layoutY="654.0" onAction="#toAccueil"
+                                   style="-fx-background-color: #F82831; -fx-border-radius: 5 5 5;" text="Retour"
+                                   textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND"/>
+                           </cursor>
+                           <effect>
+                              <DropShadow/>
+                           </effect>
+                        </JFXButton>
                      </children>
                   </AnchorPane>
               </content>
@@ -218,11 +230,6 @@
             <Font size="14.0" />
          </font>
       </TextField>
-      <Button layoutX="14.0" layoutY="682.0" mnemonicParsing="false" onAction="#toAccueil" text="Retour">
-         <cursor>
-            <Cursor fx:constant="HAND"/>
-         </cursor>
-      </Button>
       <TextField alignment="TOP_LEFT" layoutX="1072.0" layoutY="558.0" prefHeight="30.0" prefWidth="186.0" text="Total :">
          <font>
             <Font size="14.0" />
