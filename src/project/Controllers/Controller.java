@@ -49,9 +49,9 @@ public class Controller implements Initializable {
 
     @FXML
     //TODO finir makeLogin
-    /*void makeLogin(ActionEvent event) throws IOException {
+    void makeLogin(ActionEvent event) throws IOException {
         try {
-            String username = user.getText();
+            Utilisateur username = user.getText();
             String password = pass.getText();
 
             if (username.getMdp().equals(password)) {
@@ -62,7 +62,7 @@ public class Controller implements Initializable {
         }catch (exception e){
             System.out.println("Oups, mauvais login");
         }
-    }*/
+    }
 
     public void toMenus() throws Exception {
         changePage("menu_principal_+encemoment");
