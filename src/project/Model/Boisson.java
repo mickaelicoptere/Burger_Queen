@@ -1,16 +1,16 @@
 package project.Model;
 
-import java.util.Vector;
-
 public class Boisson extends Item {
-	private String _taille;
-	public Vector<Menu> _unnamed_Menu_ = new Vector<Menu>();
+	private String taille;
+
+	public Boisson () { this.taille = null; }
+	public Boisson (String taille) { this.taille = taille; }
 
 	public String getTaille() {
-		return this._taille;
+		return this.taille;
 	}
 
-	public void setTaille(String aTaille) {
-		this._taille = aTaille;
+	public void setTaille(String Taille) {
+		this.taille = Taille;
 	}
 }
