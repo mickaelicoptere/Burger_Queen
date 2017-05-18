@@ -5,8 +5,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Stage;
+import javafx.scene.layout.AnchorPane;
 import project.Main;
 
+import java.awt.*;
 import java.lang.String;
 
 import com.jfoenix.controls.*;
@@ -32,6 +35,10 @@ import javax.swing.JTextField;
 
 public class Controller implements Initializable {
 
+    private static String[] historique = new String[256];
+    private static int lastHistorique;
+
+    public AnchorPane Payer;
     @FXML
     private JFXButton connexion;
 
@@ -40,6 +47,9 @@ public class Controller implements Initializable {
 
     @FXML
     public JFXPasswordField pass;
+
+    @FXML
+    public AnchorPane MainAnchor;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -57,28 +67,36 @@ public class Controller implements Initializable {
         }
     }
 
+    @FXML
     public void toMenus() throws Exception {
         changePage("menu_principal_+encemoment");
     }
 
+    @FXML
     public void toAccueil() throws Exception {
         changePage("menu_principal_+encemoment");
     }
 
+    @FXML
     public void toSubscribe() throws Exception {
         changePage("Inscription");
     }
 
+    @FXML
     public void toLogin() throws Exception {
         changePage("Login_bq");
     }
 
+    @FXML
     public void toCommande() throws Exception {
         changePage("Main_menu_commande");
     }
 
+    @FXML
     private void changePage(String unePage) throws Exception {
         String pageLoaded = "../Views/".concat(unePage).concat(".fxml");
+        historique[lastHistorique] = unePage;
+        lastHistorique++;
 
         FXMLLoader loader = new FXMLLoader(
                 getClass().getResource(
@@ -90,5 +108,10 @@ public class Controller implements Initializable {
         Main.primaryStage.setScene(scene);
     }
 
-    //testcommit
+    @FXML
+    private void previousPage() throws Exception {
+        int i = lastHistorique - 2;
+        String pageToLoad = historique[i];
+        changePage(pageToLoad);
+    }
 }
