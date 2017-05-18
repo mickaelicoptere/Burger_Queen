@@ -1,25 +1,20 @@
 package project.Model;
 
 public class Composition {
-	private boolean _deBase;
-	private boolean _optionnel;
-	private boolean _extra;
-	public Produit_principal _unnamed_Produit_principal_;
-	public Ingredient _unnamed_Ingredient_;
+	private boolean deBase;
+	private boolean optionnel;
+	private boolean extra;
 
-	public void setUnnamed_Produit_principal_(Produit_principal aUnnamed_Produit_principal_) {
-		this._unnamed_Produit_principal_ = aUnnamed_Produit_principal_;
-	}
+	public Composition () { this.deBase = false; this.extra=false; this.extra=false; }
+	public Composition (boolean deBase, boolean optionnel, boolean extra) { this.deBase = deBase; this.optionnel=optionnel; this.extra=extra; }
 
-	public Produit_principal getUnnamed_Produit_principal_() {
-		return this._unnamed_Produit_principal_;
-	}
+	public boolean getDeBase () { return deBase; }
+	public boolean getOptionnel () { return optionnel; }
+	public boolean getExtra () { return extra; }
 
-	public void setUnnamed_Ingredient_(Ingredient aUnnamed_Ingredient_) {
-		this._unnamed_Ingredient_ = aUnnamed_Ingredient_;
-	}
+	public void setDeBase (boolean deBase) { this.deBase=deBase; }
+	public void setOptionnel (boolean optionnel) { this.deBase=optionnel; }
+	public void setExtra (boolean extra) { this.deBase=extra; }
 
-	public Ingredient getUnnamed_Ingredient_() {
-		return this._unnamed_Ingredient_;
-	}
+	public String toString () {return ("De Base : "+deBase+"\n"+"Optionnel : "+optionnel+"\n"+"Extra : "+extra); }
 }
