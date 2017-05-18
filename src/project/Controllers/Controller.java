@@ -30,6 +30,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import project.Model.*;
+
 
 public class Controller implements Initializable {
 
