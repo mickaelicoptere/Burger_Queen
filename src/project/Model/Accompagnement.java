@@ -1,17 +1,22 @@
 package project.Model;
 
-import java.util.Vector;
-
 public class Accompagnement extends Item {
-	private String _taille;
-	public Vector<Menu> _unnamed_Menu_ = new Vector<Menu>();
-	public Vector<Ingredient> _unnamed_Ingredient_ = new Vector<Ingredient>();
+	private String taille;
+
+
+	public Accompagnement(String taille) { this.taille = taille; }
 
 	public String getTaille() {
-		return this._taille;
+		return this.taille;
+	}
+	public void setTaille(String Taille) {
+		this.taille = Taille;
 	}
 
-	public void setTaille(String aTaille) {
-		this._taille = aTaille;
+
+	public String toString() {
+		return "Accompagnement "+this+"\n"+
+				"Taille='" + taille + '\''
+				;
 	}
 }

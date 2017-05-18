@@ -1,99 +1,61 @@
 package project.Model;
 
-import java.util.Vector;
-
 public class Utilisateur {
-	private String _nom;
-	private String _prenom;
-	private String _mail;
-	private int _tel;
-	private int _id;
-	private String _mdp;
-	private boolean _ice;
-	public Preference _unnamed_Preference_;
-	public Vector<Commande> _unnamed_Commande_ = new Vector<Commande>();
+	private String nom;
+	private String prenom;
+	private String mail;
+	private int tel;
+	private String mdp;
+	private boolean ice;
+
+
+	public Utilisateur(String nom, String prenom, String mail, int tel, String mdp, boolean ice) { this.nom=nom; this.prenom=prenom; this.mail=mail; this.tel=tel; this.mdp=mdp; this.ice=ice; }
+
 
 	public String getNom() {
-		return this._nom;
+		return this.nom;
 	}
+    public void setNom(String nom) { this.nom = nom; }
 
-	public void setNom(String aNom) {
-		this._nom = aNom;
+    public String getPrenom() {
+		return this.prenom;
 	}
+    public void setPrenom(String prenom) { this.prenom = prenom; }
 
-	public String getPrenom() {
-		return this._prenom;
+    public String getMail() {
+		return this.mail;
 	}
-
-	public void setPrenom(String aPrenom) {
-		this._prenom = aPrenom;
-	}
-
-	public String getMail() {
-		return this._mail;
-	}
-
-	public void setMail(String aMail) {
-		this._mail = aMail;
-	}
+	public void setMail(String aMail) { this.mail = aMail; }
 
 	public int getTel() {
-		return this._tel;
+		return this.tel;
 	}
-
 	public void setTel(int aTel) {
-		this._tel = aTel;
-	}
-
-	public int getId() {
-		return this._id;
-	}
-
-	public void setId(int aId) {
-		this._id = aId;
+		this.tel = aTel;
 	}
 
 	public String getMdp() {
-		return this._mdp;
+		return this.mdp;
 	}
-
-	public void setMdp(String aMdp) {
-		this._mdp = aMdp;
-	}
-
-	public void changeMdp(Object aString_newMdp) {
-		throw new UnsupportedOperationException();
-	}
-
-	public void changeMail(Object aString_newMail) {
-		throw new UnsupportedOperationException();
-	}
-
-	public void changeTel(Object aInt_newTel) {
-		throw new UnsupportedOperationException();
-	}
-
-	public void addMail(Object aString_newMail) {
-		throw new UnsupportedOperationException();
-	}
-
-	public void addTel(Object aInt_newTel) {
-		throw new UnsupportedOperationException();
+	public void setMdp(String Mdp) {
+		this.mdp = Mdp;
 	}
 
 	public boolean getIce() {
-		return this._ice;
+		return this.ice;
+	}
+	public void setIce(boolean Ice) {
+		this.ice = Ice;
 	}
 
-	public void setIce(boolean aIce) {
-		this._ice = aIce;
-	}
+	public String toString() {
+	    return
+            "Utilisateur : "+this+"\n"+
+            "Nom : "+this.nom+"\n"+
+            "Prenom : "+this.prenom+"\n"+
+            "Mail : "+this.mail+"\n"+
+            "Tel : "+this.tel+"\n"+
+            "Mot de Passe : *************\n"+
+            "Glace : "+this.ice;}
 
-	public void getAttribute() {
-		throw new UnsupportedOperationException();
-	}
-
-	public void setAttribute(Object aAttribute) {
-		throw new UnsupportedOperationException();
-	}
 }
