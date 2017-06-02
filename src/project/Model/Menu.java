@@ -37,10 +37,6 @@ public class Menu extends Item {
 
     @Override
     public String toString() {
-        return "Menu{" +
-                "Boisson=" + Boisson +
-                ", Accompagnement=" + Accompagnement +
-                ", Produit_principal=" + Produit_principal +
-                '}';
+        return "Menu " + this + " : " + getProduit_principal() + " - " + getAccompagnement() + " - " + getBoisson();
     }
 }
