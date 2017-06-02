@@ -34,4 +34,13 @@ public class Menu extends Item {
     public void setProduit_principal(project.Model.Produit_principal produit_principal) {
         Produit_principal = produit_principal;
     }
+
+    @Override
+    public String toString() {
+        return "Menu{" +
+                "Boisson=" + Boisson +
+                ", Accompagnement=" + Accompagnement +
+                ", Produit_principal=" + Produit_principal +
+                '}';
+    }
 }
