@@ -3,15 +3,24 @@ package project.Model;
 import java.util.Vector;
 
 public class Preference {
-	private String _sauce;
-	public Vector<Allergene> _unnamed_Allergene_ = new Vector<Allergene>();
-	public Utilisateur _unnamed_Utilisateur_;
+	private String sauce;
 
-	public String getSauce() {
-		return this._sauce;
-	}
+    public Preference(String sauce) {
+        this.sauce = sauce;
+    }
 
-	public void setSauce(String aSauce) {
-		this._sauce = aSauce;
-	}
+    public String getSauce() {
+        return sauce;
+    }
+
+    public void setSauce(String sauce) {
+        this.sauce = sauce;
+    }
+
+
+    public String toString() {
+        return "Preference{" + this + " " +
+                "sauce='" + sauce + '\'' +
+                '}';
+    }
 }

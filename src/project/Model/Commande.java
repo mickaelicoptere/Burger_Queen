@@ -10,9 +10,6 @@ public class Commande {
 	public double getPrixCommande() { return prixCommande; }
 	public void setPrixCommande(double prixCommande) { this.prixCommande = prixCommande; }
 
-	public double calcPrix() {
-
-	}
 	public String toString() {
 		return "Commande : "+ this + "\n" +
 				"Prix : " + prixCommande + "\n" +

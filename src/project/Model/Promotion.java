@@ -32,7 +32,12 @@ public class Promotion {
 		this.condition = Condition;
 	}
 
-	public Promotion getListe(Object String_condition) {
-		throw new UnsupportedOperationException();
+	@Override
+	public String toString() {
+		return "Promotion{" + this + " " +
+				"dateDebut=" + dateDebut +
+				", dateFin=" + dateFin +
+				", condition='" + condition + '\'' +
+				'}';
 	}
 }

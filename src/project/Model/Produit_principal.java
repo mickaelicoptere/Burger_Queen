@@ -5,15 +5,24 @@ import project.Classes.Item;
 import java.util.Vector;
 
 public class Produit_principal extends Item {
-	private String _description;
-	public Vector<Menu> _unnamed_Menu_ = new Vector<Menu>();
-	public Vector<Composition> _unnamed_Composition_ = new Vector<Composition>();
+	private String description;
 
-	public String getDescription() {
-		return this._description;
-	}
+    public Produit_principal(String description) {
+        this.description = description;
+    }
 
-	public void setDescription(String aDescription) {
-		this._description = aDescription;
-	}
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+
+    public String toString() {
+        return "Produit_principal{" + this + " " +
+                "description='" + description + '\'' +
+                '}';
+    }
 }
