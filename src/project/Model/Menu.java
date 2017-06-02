@@ -1,5 +1,7 @@
 package project.Model;
 
+import project.Classes.Item;
+
 public class Menu extends Item {
 	private project.Model.Boisson Boisson;
 	private project.Model.Accompagnement Accompagnement;

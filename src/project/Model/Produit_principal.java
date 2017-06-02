@@ -1,5 +1,7 @@
 package project.Model;
 
+import project.Classes.Item;
+
 import java.util.Vector;
 
 public class Produit_principal extends Item {

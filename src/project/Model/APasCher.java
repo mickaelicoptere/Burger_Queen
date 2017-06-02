@@ -1,5 +1,7 @@
 package project.Model;
 
+import project.Classes.Item;
+
 public class APasCher extends Item {
 	private String description;
 

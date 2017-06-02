@@ -1,5 +1,7 @@
 package project.Model;
 
+import project.Classes.Item;
+
 public class Boisson extends Item {
 	private String taille;
 

@@ -1,4 +1,4 @@
-package project.Model;
+/*package project.Model;
 
 import java.util.Vector;
 
@@ -23,4 +23,4 @@ public class Item {
 	public void setPrix(double aPrix) {
 		this._prix = aPrix;
 	}
-}
+}*/

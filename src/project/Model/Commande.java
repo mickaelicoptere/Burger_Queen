@@ -1,4 +1,4 @@
-package project.Model;
+/*package project.Model;
 
 public class Commande {
 	private double prixCommande;
@@ -19,4 +19,4 @@ public class Commande {
 				"A Emporter : " + aEmporter
 				;
 	}
-}
+}*/
