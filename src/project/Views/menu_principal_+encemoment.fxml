@@ -2,9 +2,7 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.Cursor?>
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.TreeView?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -14,23 +12,6 @@
 
 <AnchorPane fx:id="Payer" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Controller">
    <children>
-      <TreeView layoutX="1069.0" layoutY="65.0" prefHeight="523.0" prefWidth="186.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="65.0" />
-      <Button layoutX="1069.0" layoutY="608.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="186.0" text="Payer" AnchorPane.bottomAnchor="37.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="608.0" />
-      <TextField alignment="TOP_CENTER" layoutX="1069.0" layoutY="65.0" prefHeight="30.0" prefWidth="186.0" text="Ma commande">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </TextField>
-      <TextField alignment="TOP_LEFT" layoutX="1069.0" layoutY="573.0" prefHeight="25.0" prefWidth="186.0" text="Total :">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </TextField>
-      <TextField alignment="TOP_LEFT" layoutX="1069.0" layoutY="694.0" prefHeight="24.0" prefWidth="186.0" text="Annuler la commande">
-         <font>
-            <Font name="System Italic" size="11.0" />
-         </font>
-      </TextField>
       <ImageView accessibleRole="BUTTON" fitHeight="151.0" fitWidth="74.0" layoutX="152.0" layoutY="150.0">
          <image>
             <Image url="@../img/Boissons/boisson.png" />
@@ -49,7 +30,7 @@
       </ImageView>
       <ImageView accessibleRole="BUTTON" fitHeight="151.0" fitWidth="74.0" layoutX="158.0" layoutY="466.0">
          <image>
-            <Image url="@../img/Desserts/dessert.jpg" />
+            <Image url="@../img/Desserts/dessert.png"/>
          </image>
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
@@ -104,17 +85,12 @@
             </Text>
          </children>
       </AnchorPane>
-      <ImageView fitHeight="130.0" fitWidth="200.0" layoutX="794.0" layoutY="466.0">
+      <ImageView fitHeight="130.0" fitWidth="200.0" layoutX="811.0" layoutY="466.0">
          <image>
             <Image url="@../img/Apascher/cheeseburger.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="189.0" fitWidth="200.0" layoutX="446.0" layoutY="447.0" opacity="0.61" rotate="-22.8">
-         <image>
-            <Image url="@../img/Autres/LOGO.png" />
-         </image>
-      </ImageView>
-      <JFXButton buttonType="RAISED" layoutX="137.0" layoutY="322.0" mnemonicParsing="false" onAction="#toCommande"
+      <JFXButton buttonType="RAISED" layoutX="137.0" layoutY="322.0" mnemonicParsing="false" onAction="#toBoissons"
                  prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: #F82831;" text="Boissons"
                  textFill="WHITE">
          <font>
@@ -127,7 +103,7 @@
             <DropShadow height="4.0" radius="1.5" width="4.0"/>
          </effect>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="521.0" layoutY="322.0" mnemonicParsing="false" onAction="#toCommande"
+      <JFXButton buttonType="RAISED" layoutX="521.0" layoutY="322.0" mnemonicParsing="false" onAction="#toMenuBurgers"
                  prefHeight="22.0" prefWidth="105.0" style="-fx-background-color: #F82831;" text="Menus"
                  textFill="WHITE">
          <font>
@@ -140,9 +116,9 @@
             <DropShadow height="4.0" radius="1.5" width="4.0"/>
          </effect>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="781.0" layoutY="322.0" mnemonicParsing="false" onAction="#toCommande"
-                 prefHeight="38.0" prefWidth="192.0" style="-fx-background-color: #F82831;" text="Accompagnements"
-                 textFill="WHITE">
+      <JFXButton buttonType="RAISED" layoutX="781.0" layoutY="322.0" mnemonicParsing="false"
+                 onAction="#toAccompagnements" prefHeight="38.0" prefWidth="192.0"
+                 style="-fx-background-color: #F82831;" text="Accompagnements" textFill="WHITE">
          <font>
             <Font size="18.0"/>
          </font>
@@ -153,7 +129,7 @@
             <DropShadow height="4.0" radius="1.5" width="4.0"/>
          </effect>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="131.0" layoutY="626.0" mnemonicParsing="false" onAction="#toCommande"
+      <JFXButton buttonType="RAISED" layoutX="131.0" layoutY="626.0" mnemonicParsing="false" onAction="#toDesserts"
                  prefHeight="39.0" prefWidth="117.0" style="-fx-background-color: #F82831;" text="Desserts"
                  textFill="WHITE">
          <font>
@@ -166,7 +142,7 @@
             <DropShadow height="4.0" radius="1.5" width="4.0"/>
          </effect>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="841.0" layoutY="607.0" mnemonicParsing="false" onAction="#toCommande"
+      <JFXButton buttonType="RAISED" layoutX="858.0" layoutY="626.0" mnemonicParsing="false" onAction="#toApascher"
                  prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: #F82831;" text="Apascher"
                  textFill="WHITE">
          <font>
@@ -192,5 +168,52 @@
             <DropShadow height="4.0" radius="1.5" width="4.0"/>
          </effect>
       </JFXButton>
+      <ImageView fitHeight="109.0" fitWidth="148.0" layoutX="492.0" layoutY="487.0">
+         <image>
+            <Image url="@../img/Burgers/royaldeluxe_mcdonalds.png"/>
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="508.0" layoutY="626.0" mnemonicParsing="false" onAction="#toBurgers"
+                 prefHeight="39.0" prefWidth="117.0" style="-fx-background-color: #F82831;" text="Burgers"
+                 textFill="WHITE">
+         <font>
+            <Font size="18.0"/>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+         <effect>
+            <DropShadow height="4.0" radius="1.5" width="4.0"/>
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="1044.0" layoutY="667.0" prefHeight="25.0" prefWidth="199.0"
+                 style="-fx-background-color: #F82831;" text="Annuler la commande" textFill="WHITE">
+         <effect>
+            <DropShadow/>
+         </effect>
+      </JFXButton>
+      <AnchorPane layoutX="1044.0" layoutY="52.0" prefHeight="579.0" prefWidth="203.0"
+                  style="-fx-border-color: black; -fx-border-radius: 5 5 5;">
+         <children>
+            <JFXButton layoutX="5.0" layoutY="494.0" prefHeight="80.0" prefWidth="199.0"
+                       style="-fx-background-color: #909090;" text="Payer" textFill="WHITE">
+               <effect>
+                  <DropShadow/>
+               </effect>
+               <font>
+                  <Font size="24.0"/>
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="7.0" layoutY="-1.0" prefHeight="31.0" prefWidth="199.0"
+                       style="-fx-background-color: #909090;" text="Ma commande" textFill="WHITE">
+               <effect>
+                  <DropShadow/>
+               </effect>
+               <font>
+                  <Font size="15.0"/>
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

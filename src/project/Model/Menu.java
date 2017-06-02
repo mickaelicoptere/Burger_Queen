@@ -1,4 +1,4 @@
-package project.Model;
+/*package project.Model;
 
 import project.Classes.Item;
 
@@ -41,4 +41,4 @@ public class Menu extends Item {
     public String toString() {
         return "Menu " + this + " : " + getProduit_principal() + " - " + getAccompagnement() + " - " + getBoisson();
     }
-}
+}*/

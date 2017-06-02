@@ -7,6 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.layout.AnchorPane;
+import org.omg.CORBA.PUBLIC_MEMBER;
 import project.Main;
 
 import java.io.IOException;
@@ -93,6 +94,51 @@ public class Controller implements Initializable {
     @FXML
     public void toCommande() throws Exception {
         changePage("Main_menu_commande");
+    }
+
+    @FXML
+    public void toBoissons() throws Exception {
+        changePage("Boissons");
+    }
+
+    @FXML
+    public void toApascher() throws Exception {
+        changePage("Apascher");
+    }
+
+    @FXML
+    public void toBurgers() throws Exception {
+        changePage("Burgers");
+    }
+
+    @FXML
+    public void toDesserts() throws Exception {
+        changePage("Desserts");
+    }
+
+    @FXML
+    public void toAccompagnements() throws Exception {
+        changePage("Accompagnements");
+    }
+
+    @FXML
+    public void toMenuBurgers() throws Exception {
+        changePage("MENU_Burger");
+    }
+
+    @FXML
+    public void toMenuAccompagnements() throws Exception {
+        changePage("MENU_Accompagnements");
+    }
+
+    @FXML
+    public void toMenuBoissons() throws Exception {
+        changePage("MENU_Boissons");
+    }
+
+    @FXML
+    public void toMenuDesserts() throws Exception {
+        changePage("MENU_Desserts");
     }
 
     @FXML
