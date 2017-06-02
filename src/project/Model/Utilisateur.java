@@ -1,0 +1,61 @@
+package project.Model;
+
+public class Utilisateur {
+	private String nom;
+	private String prenom;
+	private String mail;
+	private int tel;
+	private String mdp;
+	private boolean ice;
+
+
+	public Utilisateur(String nom, String prenom, String mail, int tel, String mdp, boolean ice) { this.nom=nom; this.prenom=prenom; this.mail=mail; this.tel=tel; this.mdp=mdp; this.ice=ice; }
+
+
+	public String getNom() {
+		return this.nom;
+	}
+    public void setNom(String nom) { this.nom = nom; }
+
+    public String getPrenom() {
+		return this.prenom;
+	}
+    public void setPrenom(String prenom) { this.prenom = prenom; }
+
+    public String getMail() {
+		return this.mail;
+	}
+	public void setMail(String aMail) { this.mail = aMail; }
+
+	public int getTel() {
+		return this.tel;
+	}
+	public void setTel(int aTel) {
+		this.tel = aTel;
+	}
+
+	public String getMdp() {
+		return this.mdp;
+	}
+	public void setMdp(String Mdp) {
+		this.mdp = Mdp;
+	}
+
+	public boolean getIce() {
+		return this.ice;
+	}
+	public void setIce(boolean Ice) {
+		this.ice = Ice;
+	}
+
+	public String toString() {
+	    return
+            "Utilisateur : "+this+"\n"+
+            "Nom : "+this.nom+"\n"+
+            "Prenom : "+this.prenom+"\n"+
+            "Mail : "+this.mail+"\n"+
+            "Tel : "+this.tel+"\n"+
+            "Mot de Passe : *************\n"+
+            "Glace : "+this.ice;}
+
+}
