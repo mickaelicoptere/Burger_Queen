@@ -35,7 +35,7 @@ public class Menu extends Item {
         Produit_principal = produit_principal;
     }
 
-    @Override
+
     public String toString() {
         return "Menu " + this + " : " + getProduit_principal() + " - " + getAccompagnement() + " - " + getBoisson();
     }
