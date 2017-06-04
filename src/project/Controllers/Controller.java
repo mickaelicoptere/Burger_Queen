@@ -83,7 +83,12 @@ public class Controller implements Initializable {
 
     @FXML
     public void toSubscribe() throws Exception {
-        changePage("Inscription");
+        changePage("infos_perso");
+    }
+
+    @FXML
+    public void toPref() throws Exception {
+        changePage("Préférences");
     }
 
     @FXML

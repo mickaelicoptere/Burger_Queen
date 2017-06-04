@@ -58,4 +58,17 @@ public class Utilisateur {
             "Mot de Passe : *************\n"+
             "Glace : "+this.ice;}
 
+	public void changeMdp(String newMdp) {
+		this.mdp = newMdp;
+	}
+
+	public void changeMail(String newMail) {
+		this.mail = newMail;
+	}
+
+	public void changeTel(int newTel) {
+		this.tel = newTel;
+	}
+
+
 }
