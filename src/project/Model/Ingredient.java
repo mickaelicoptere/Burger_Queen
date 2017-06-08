@@ -1,28 +1,66 @@
-//package project.Model;
-//
-//import java.util.Vector;
-//
-//public class Ingredient {
-//	private boolean _presenceStock;
-//	private String _libelle;
-//	public Vector<Composition> _unnamed_Composition_ = new Vector<Composition>();
-//	public Vector<Accompagnement> _unnamed_Accompagnement_ = new Vector<Accompagnement>();
-//	public Vector<APasCher> _unnamed_APasCher_ = new Vector<APasCher>();
-//	public Vector<Allergene> _unnamed_Allergene_ = new Vector<Allergene>();
-//
-//	public boolean getPresenceStock() {
-//		return this._presenceStock;
-//	}
-//
-//	public void setPresenceStock(boolean aPresenceStock) {
-//		this._presenceStock = aPresenceStock;
-//	}
-//
-//	public String getLibelle() {
-//		return this._libelle;
-//	}
-//
-//	public void setLibelle(String aLibelle) {
-//		this._libelle = aLibelle;
-//	}
-//}
+package project.Model;
+
+
+import java.util.Arrays;
+
+public class Ingredient {
+	private boolean presenceStock;
+	private String libelle;
+	private Allergene[] allergene = {};
+
+	public Ingredient(String libelle) {
+		this.libelle = libelle;
+	}
+
+    public boolean isPresenceStock() {
+        return presenceStock;
+    }
+
+    public void setPresenceStock(boolean presenceStock) {
+        this.presenceStock = presenceStock;
+    }
+
+    public String getLibelle() {
+        return libelle;
+    }
+
+    public void setLibelle(String libelle) {
+        this.libelle = libelle;
+    }
+
+
+    public String toString() {
+        return "Ingredient{" +
+                "presenceStock=" + presenceStock +
+                ", libelle='" + libelle + '\'' +
+                ", allergene=" + Arrays.toString(allergene) +
+                '}';
+    }
+
+    public void addAllergene (Allergene newAllergene) {
+        int i = 0;
+        while ((i < allergene.length) && (allergene[i] == null)) {
+            i ++;
+        }
+        if (allergene[i] == null) {
+            allergene[i] = newAllergene;
+        }
+    }
+    
+    public void delAllerge (Allergene pastAllergene) {
+        int i = 0;
+        while ((i < allergene.length) && (allergene[i] != pastAllergene)) {
+            i++;
+            if (allergene[i].equals(pastAllergene)) {
+                allergene[i] = null;
+                for (int j=i; j < allergene.length; j++) {
+                    allergene[j] = allergene[j+1];
+                }
+            }
+        }
+    }
+
+    public String listAllergene () {
+	    return Arrays.toString(allergene);
+    }
+}

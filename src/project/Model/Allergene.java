@@ -1,16 +1,15 @@
 package project.Model;
 
 public class Allergene {
-	private String libelle;
+	private String description;
 
-	public Allergene() { this.libelle = null; }
-	public Allergene(String libelle) { this.libelle = libelle; }
+	public Allergene(String libelle) { this.description = libelle; }
 
 	public String getLibelle() {
-		return this.libelle;
+		return this.description;
 	}
 
 	public void setLibelle(String Libelle) {
-		libelle = Libelle;
+		description = Libelle;
 	}
 }
