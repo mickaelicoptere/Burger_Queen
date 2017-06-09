@@ -2,8 +2,8 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.Cursor?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -36,19 +36,6 @@
             <Cursor fx:constant="OPEN_HAND" />
          </cursor>
       </ImageView>
-      <ImageView accessibleRole="BUTTON" fitHeight="109.0" fitWidth="148.0" layoutX="499.0" layoutY="189.0" onMouseClicked="#toMenus">
-         <image>
-            <Image url="@../img/Menus/menu1.jpg" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="OPEN_HAND" />
-         </cursor>
-      </ImageView>
-      <TextField layoutX="12.0" layoutY="14.0" prefHeight="75.0" prefWidth="206.0" text="Bienvenue">
-         <font>
-            <Font size="35.0" />
-         </font>
-      </TextField>
       <AnchorPane layoutX="374.0" layoutY="20.0" prefHeight="109.0" prefWidth="502.0">
          <children>
             <ImageView fitHeight="75.0" fitWidth="138.0" preserveRatio="true">
@@ -215,5 +202,19 @@
             </JFXButton>
          </children>
       </AnchorPane>
+      <Text layoutX="18.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue "
+            wrappingWidth="280.9999809265137">
+         <font>
+            <Font name="Yu Gothic Regular" size="37.0"/>
+         </font>
+         <effect>
+            <Reflection/>
+         </effect>
+      </Text>
+      <ImageView fitHeight="144.0" fitWidth="158.0" layoutX="495.0" layoutY="154.0">
+         <image>
+            <Image url="@../img/Menus/menuburger.png"/>
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

@@ -168,4 +168,10 @@ public class Controller implements Initializable {
         String pageToLoad = historique[i];
         changePage(pageToLoad);
     }
+
+    /*@FXML
+    public void addToCart() throws Exception {
+
+    }*/
+
 }

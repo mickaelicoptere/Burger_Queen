@@ -5,8 +5,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import project.Model.*;
 
 
 public class Main extends Application {
@@ -21,7 +24,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         try {
-            Init_produits.main();
+            //Init_produits.main();
             AnchorPane page = FXMLLoader.load(Main.class.getResource("../project/Views/AccueilBQ.fxml"));
             Scene scene = new Scene(page);
             stage.setScene(scene);
@@ -33,7 +36,7 @@ public class Main extends Application {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
 
+        project.Model.Utilisateur user1 = new Utilisateur("Sopalin", "john", "john.sopalin@wesh.com", 6696969, "1234", true);
     }
-
 
 }

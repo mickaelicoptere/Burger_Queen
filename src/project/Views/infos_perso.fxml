@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0"
+            prefWidth="1280.0" style="-: #2C6CC3;" xmlns="http://javafx.com/javafx/8.0.112"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Controller">
+    <children>
+        <Text layoutX="14.0" layoutY="702.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="*Vos informations personnelles seront vendues au plus offrant"/>
+        <Text layoutX="477.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informations personnelles"
+              underline="true">
+            <font>
+                <Font size="30.0"/>
+            </font>
+        </Text>
+        <ImageView fitHeight="189.0" fitWidth="200.0" layoutX="540.0" layoutY="24.0">
+            <image>
+                <Image url="@../img/Autres/LOGO.png"/>
+            </image>
+        </ImageView>
+        <JFXButton buttonType="RAISED" layoutX="600.0" layoutY="609.0" mnemonicParsing="false" onAction="#toPref"
+                   prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #F82831;" text="Valider"
+                   textFill="WHITE">
+            <font>
+                <Font size="18.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+            <effect>
+                <DropShadow height="4.0" radius="1.5" width="4.0"/>
+            </effect>
+        </JFXButton>
+        <AnchorPane layoutX="288.0" layoutY="250.0" prefHeight="321.0" prefWidth="721.0"
+                    style="-fx-background-color: #2C6CC3; -fx-background-radius: 5 5 5 5; -fx-opacity: 80%;">
+            <children>
+                <JFXTextField focusColor="WHITE" layoutX="20.0" layoutY="14.0" prefHeight="34.0" prefWidth="167.0"
+                              promptText="Login" unFocusColor="#c5c5c5">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                </JFXTextField>
+                <JFXPasswordField focusColor="BLACK" layoutX="21.0" layoutY="88.0" prefHeight="34.0" prefWidth="167.0"
+                                  promptText="Password" unFocusColor="#c5c5c5">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                </JFXPasswordField>
+                <JFXPasswordField focusColor="BLACK" layoutX="245.0" layoutY="88.0" prefHeight="34.0" prefWidth="141.0"
+                                  promptText="Password" unFocusColor="#c5c5c5">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                </JFXPasswordField>
+                <JFXTextField focusColor="WHITE" layoutX="246.0" layoutY="14.0" prefHeight="34.0" prefWidth="140.0"
+                              promptText="Nom" unFocusColor="#c5c5c5">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                </JFXTextField>
+                <JFXPasswordField focusColor="WHITE" layoutX="21.0" layoutY="171.0" prefHeight="24.0" prefWidth="141.0"
+                                  promptText="E-Mail" unFocusColor="#c5c5c5">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                </JFXPasswordField>
+                <JFXTextField focusColor="WHITE" layoutX="474.0" layoutY="14.0" prefHeight="34.0" prefWidth="167.0"
+                              promptText="Prénom" unFocusColor="#c5c5c5">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                </JFXTextField>
+                <JFXPasswordField focusColor="WHITE" layoutX="13.0" layoutY="244.0" prefHeight="25.0" prefWidth="156.0"
+                                  promptText="N° tél *" unFocusColor="#c5c5c5">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                </JFXPasswordField>
+                <JFXCheckBox layoutX="462.0" layoutY="189.0" text="Mail"/>
+                <JFXCheckBox layoutX="596.0" layoutY="189.0" text="Téléphone"/>
+                <Text layoutX="462.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="Recevoir les informations par :">
+                    <font>
+                        <Font name="Wingdings 3" size="18.0"/>
+                    </font>
+                </Text>
+                <JFXPasswordField focusColor="WHITE" layoutX="245.0" layoutY="171.0" prefHeight="24.0" prefWidth="141.0"
+                                  promptText="E-Mail" unFocusColor="#c5c5c5">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                </JFXPasswordField>
+                <JFXPasswordField focusColor="WHITE" layoutX="246.0" layoutY="244.0" prefHeight="25.0" prefWidth="156.0"
+                                  promptText="N° tél *" unFocusColor="#c5c5c5">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                </JFXPasswordField>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
