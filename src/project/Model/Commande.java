@@ -19,6 +19,7 @@ public class Commande {
     }
 
     public double calcPrixCommande() {
+        prixCommande = 0.0;
         for (Item i : commande) {
             prixCommande += i.getPrix();
         }

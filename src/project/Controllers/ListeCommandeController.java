@@ -27,11 +27,18 @@ public class ListeCommandeController implements Initializable {
                 System.out.println("Un element added");
             }
         }
+
+        TotalCommande.setText(calculTotal());
+        System.out.println(Init_produits.c1.calcPrixCommande());
     }
+
 
 
     @FXML
     private JFXListView<String> ListeCommande = new JFXListView<>();
+
+    @FXML
+    private JFXTextField TotalCommande = new JFXTextField();
 
     private Item itTemp;
     private int i = Init_produits.c1.nbItem;
@@ -46,5 +53,11 @@ public class ListeCommandeController implements Initializable {
         itTemp = Init_produits.c1.getItem(idtemp);
         System.out.println("Ajout au tableau de : " + itTemp.getLibelle());
         ListeCommande.getItems().add(itTemp.getLibelle());
+        TotalCommande.setText(calculTotal());
+        System.out.println(Init_produits.c1.calcPrixCommande());
+    }
+
+    String calculTotal() {
+        return "Prix total : " + String.valueOf(Init_produits.c1.calcPrixCommande()) + "€";
     }
 }
