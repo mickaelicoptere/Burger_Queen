@@ -1,6 +1,7 @@
 package project.Model;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
 
 public class Item {
     private String libelle;
@@ -29,9 +30,10 @@ public class Item {
         Prix = prix;
     }
 
+
     public String toString() {
         return "Item{" +
-                "libelle='" + libelle + "'" +
+                "libelle='" + libelle + "\'" +
                 ", Prix=" + Prix + "\n" +
                 ", Promotion=" + promotions.toString() +
                 "}";

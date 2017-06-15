@@ -1,27 +1,27 @@
 package project.Model;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class Accompagnement extends Item {
-    private String taille;
+/**
+ * Created by Remy on 15/06/2017.
+ */
+public class APasCher extends Item {
+    private String description;
     private List<Ingredient> composition;
 
-    public Accompagnement(String taille, String libelle, double prix) {
+    public APasCher(String libelle, double prix, String description) {
         super(libelle, prix);
-        this.taille = taille;
+        this.description = description;
         composition = new ArrayList<Ingredient>();
     }
 
-    public String getTaille() {
-        return this.taille;
+    public String getDescription() {
+        return description;
     }
 
-    public String toString() {
-        return "Accompagnement " + this + "\n" +
-                "Taille='" + taille + '\''
-                ;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public void addIngredient(Ingredient newIngredient) {

@@ -1,17 +1,17 @@
 package project.Model;
 
 
-import java.util.ArrayList;
-
+import java.util.HashMap;
+import java.util.Map;
 
 public class Produit_principal extends Item {
     private String description;
-    private ArrayList<Ingredient> composition;
+    private Map<Ingredient, Composition> composition;
 
     public Produit_principal(String description, String libelle, double prix) {
         super(libelle, prix);
         this.description = description;
-        composition = new ArrayList<Ingredient>();
+        composition = new HashMap<Ingredient, Composition>();
     }
 
     public String getDescription() {
@@ -23,6 +23,7 @@ public class Produit_principal extends Item {
     }
 
 
+
     public String toString() {
         return "Produit_principal{" +
                 "description='" + description + '\'' +
@@ -31,7 +32,7 @@ public class Produit_principal extends Item {
     }
 
     public void addIngredient(Ingredient newIngredient, Composition newComposition) {
-        composition.add(newIngredient);
+        composition.put(newIngredient, newComposition);
     }
 
     public void delIngredient(Ingredient pastIngredient) {
@@ -44,8 +45,8 @@ public class Produit_principal extends Item {
 
     public String listAllergene() {
         String allergene = "";
-        for ( Ingredient I : composition ) {
-            allergene += I.listAllergene();
+        for ( Map.Entry<Ingredient, Composition> entry : composition.entrySet() ) {
+            allergene += entry.getKey().listAllergene();
         }
         return allergene;
     }

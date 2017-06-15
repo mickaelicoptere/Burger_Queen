@@ -7,6 +7,7 @@ public class Utilisateur {
 	private int tel;
 	private String mdp;
 	private boolean ice;
+	private Preference Sauce;
 
 
 	public Utilisateur(String nom, String prenom, String mail, int tel, String mdp, boolean ice) { this.nom=nom; this.prenom=prenom; this.mail=mail; this.tel=tel; this.mdp=mdp; this.ice=ice; }
@@ -46,6 +47,14 @@ public class Utilisateur {
 	}
 	public void setIce(boolean Ice) {
 		this.ice = Ice;
+	}
+
+	public Preference getSauce() {
+		return Sauce;
+	}
+
+	public void setSauce(Preference sauce) {
+		this.Sauce = sauce;
 	}
 
 	public String toString() {

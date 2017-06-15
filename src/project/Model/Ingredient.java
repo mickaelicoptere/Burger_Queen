@@ -1,12 +1,11 @@
 package project.Model;
 
-
-import java.util.Arrays;
+import java.util.List;
 
 public class Ingredient {
     private boolean presenceStock;
     private String libelle;
-    private Allergene[] allergene = {};
+    private List<Allergene> allergene;
 
     public Ingredient(String libelle) {
         this.libelle = libelle;
@@ -33,34 +32,23 @@ public class Ingredient {
         return "Ingredient{" +
                 "presenceStock=" + presenceStock +
                 ", libelle='" + libelle + '\'' +
-                ", allergene=" + Arrays.toString(allergene) +
+                ", allergene=" + allergene.toString() +
                 '}';
     }
 
     public void addAllergene(Allergene newAllergene) {
-        int i = 0;
-        while ((i < allergene.length) && (allergene[i] == null)) {
-            i++;
-        }
-        if (allergene[i] == null) {
-            allergene[i] = newAllergene;
-        }
+        allergene.add(newAllergene);
     }
 
     public void delAllerge(Allergene pastAllergene) {
-        int i = 0;
-        while ((i < allergene.length) && (allergene[i] != pastAllergene)) {
-            i++;
-            if (allergene[i].equals(pastAllergene)) {
-                allergene[i] = null;
-                for (int j = i; j < allergene.length; j++) {
-                    allergene[j] = allergene[j + 1];
-                }
-            }
-        }
+        allergene.remove(pastAllergene);
     }
 
     public String listAllergene() {
-        return Arrays.toString(allergene);
+        String listallergene = "";
+        for ( Allergene A : allergene ) {
+            listallergene += A.getLibelle();
+        }
+        return listallergene;
     }
 }
