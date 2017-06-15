@@ -7,6 +7,7 @@ public class Utilisateur {
 	private int tel;
 	private String mdp;
 	private boolean ice;
+	private Preference Sauce;
 
 
 	public Utilisateur(String nom, String prenom, String mail, int tel, String mdp, boolean ice) { this.nom=nom; this.prenom=prenom; this.mail=mail; this.tel=tel; this.mdp=mdp; this.ice=ice; }
@@ -15,14 +16,20 @@ public class Utilisateur {
 	public String getNom() {
 		return this.nom;
 	}
-    public void setNom(String nom) { this.nom = nom; }
 
-    public String getPrenom() {
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public String getPrenom() {
 		return this.prenom;
 	}
-    public void setPrenom(String prenom) { this.prenom = prenom; }
 
-    public String getMail() {
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+	public String getMail() {
 		return this.mail;
 	}
 	public void setMail(String aMail) { this.mail = aMail; }
@@ -48,15 +55,24 @@ public class Utilisateur {
 		this.ice = Ice;
 	}
 
+	public Preference getSauce() {
+		return Sauce;
+	}
+
+	public void setSauce(Preference sauce) {
+		this.Sauce = sauce;
+	}
+
 	public String toString() {
-	    return
-            "Utilisateur : "+this+"\n"+
-            "Nom : "+this.nom+"\n"+
-            "Prenom : "+this.prenom+"\n"+
-            "Mail : "+this.mail+"\n"+
-            "Tel : "+this.tel+"\n"+
-            "Mot de Passe : *************\n"+
-            "Glace : "+this.ice;}
+		return
+				"Utilisateur : " + this + "\n" +
+						"Nom : " + this.nom + "\n" +
+						"Prenom : " + this.prenom + "\n" +
+						"Mail : " + this.mail + "\n" +
+						"Tel : " + this.tel + "\n" +
+						"Mot de Passe : *************\n" +
+						"Glace : " + this.ice;
+	}
 
 	public void changeMdp(String newMdp) {
 		this.mdp = newMdp;

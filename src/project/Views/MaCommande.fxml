@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+
+<FlowPane id="FlowPane" layoutX="1057.0" layoutY="55.0" prefHeight="653.0" prefWidth="199.0"
+          xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="project.Controllers.ListeCommandeController">
+    <children>
+        <JFXButton prefHeight="31.0" prefWidth="199.0" style="-fx-background-color: #909090;" text="Ma commande"
+                   textFill="WHITE">
+            <effect>
+                <DropShadow/>
+            </effect>
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </JFXButton>
+        <AnchorPane id="PanierCommande" prefHeight="620.0" prefWidth="199.0">
+            <children>
+                <JFXButton layoutY="494.0" prefHeight="80.0" prefWidth="199.0" style="-fx-background-color: #909090;"
+                           text="Payer" textFill="WHITE">
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                    <font>
+                        <Font size="24.0"/>
+                    </font>
+                </JFXButton>
+                <JFXListView id="Order list" fx:id="ListeCommande" layoutY="1.0" prefHeight="487.0" prefWidth="199.0"
+                             style="-fx-border-color: black; -fx-border-radius: 5 5 5;"/>
+                <JFXButton layoutY="594.0" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: #F82831;"
+                           text="Annuler la commande" textFill="WHITE">
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </JFXButton>
+            </children>
+        </AnchorPane>
+    </children>
+</FlowPane>

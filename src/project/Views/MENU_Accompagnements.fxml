@@ -42,7 +42,7 @@
                 </Text>
             </children>
         </AnchorPane>
-        <JFXButton layoutX="14.0" layoutY="653.0" onAction="#toAccueil" prefHeight="30.0" prefWidth="199.0"
+        <JFXButton layoutX="14.0" layoutY="653.0" onAction="#previousPage" prefHeight="30.0" prefWidth="199.0"
                    style="-fx-background-color: #F82831; -fx-border-radius: 5 5 5;" text="Retour" textFill="WHITE">
             <cursor>
                 <Cursor fx:constant="HAND"/>
