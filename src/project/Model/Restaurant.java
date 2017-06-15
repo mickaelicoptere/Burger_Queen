@@ -54,10 +54,9 @@ public class Restaurant {
         this.boissons.add(new Boisson(Taille.Morbide, MarqueBoissons.EauMinerale.libelle, 9));
         this.boissons.add(new Boisson(Taille.TrèsGros, MarqueBoissons.limonade.libelle, 2.15));
 
-        this.produitprincipaux.add(new Produit_principal(Taille.Gros, ));
+        this.produitprincipaux.add(new Produit_principal("Blabla", "Burger1", 9.15));
 
-
-        this.produitprincipaux.add(new Produit_principal("Burger", ));
+        this.produitprincipaux.add(new Produit_principal("Blabla", "Burger2", 3.75));
         //TODO méthode pour ajouter Item as manager
 
     }

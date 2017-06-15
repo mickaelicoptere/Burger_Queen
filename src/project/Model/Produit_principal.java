@@ -1,14 +1,17 @@
 package project.Model;
 
-import java.util.Arrays;
+
+import java.util.ArrayList;
 
 
 public class Produit_principal extends Item {
     private String description;
-    private Ingredient[] composition = {};
+    private ArrayList<Ingredient> composition;
 
-    public Produit_principal(String description) {
+    public Produit_principal(String description, String libelle, double prix) {
+        super(libelle, prix);
         this.description = description;
+        composition = new ArrayList<Ingredient>();
     }
 
     public String getDescription() {
@@ -23,43 +26,28 @@ public class Produit_principal extends Item {
     public String toString() {
         return "Produit_principal{" +
                 "description='" + description + '\'' +
-                ", composition=" + Arrays.toString(composition) +
+                ", composition=" + composition.toString() +
                 '}';
     }
 
-    public void addIngredient(Ingredient newIngredient) {
-        int i = 0;
-        while ((i < composition.length) && (composition[i] == null)) {
-            i++;
-        }
-        if (composition[i] == null) {
-            composition[i] = newIngredient;
-        }
+    public void addIngredient(Ingredient newIngredient, Composition newComposition) {
+        composition.add(newIngredient);
     }
 
     public void delIngredient(Ingredient pastIngredient) {
-        int i = 0;
-        while ((i < composition.length) && (composition[i] != pastIngredient)) {
-            i++;
-            if (composition[i].equals(pastIngredient)) {
-                composition[i] = null;
-                for (int j = i; j < composition.length; j++) {
-                    composition[j] = composition[j + 1];
-                }
-            }
-        }
+        composition.remove(pastIngredient);
     }
 
-    public Ingredient[] listIngredient() {
-        return composition;
+    public String listIngredient() {
+        return composition.toString();
     }
 
-    public String listAllergne() {
-        String list = null;
-        for (int i = 0; i < composition.length; i++) {
-            list += composition[i].listAllergene();
+    public String listAllergene() {
+        String allergene = "";
+        for ( Ingredient I : composition ) {
+            allergene += I.listAllergene();
         }
-        return list;
+        return allergene;
     }
 
 }
