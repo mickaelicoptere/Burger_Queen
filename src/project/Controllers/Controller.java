@@ -1,40 +1,19 @@
 package project.Controllers;
 
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXPasswordField;
+import com.jfoenix.controls.JFXTextField;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.stage.Stage;
 import javafx.scene.layout.AnchorPane;
-import org.omg.CORBA.PUBLIC_MEMBER;
 import project.Main;
-
-import java.io.IOException;
-import java.awt.*;
-import java.lang.String;
-
-import com.jfoenix.controls.*;
-import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXPasswordField;
-import com.jfoenix.controls.JFXTextField;
-import javafx.fxml.FXML;
-import javafx.event.ActionEvent;
-
 
 import java.net.URL;
 import java.util.ResourceBundle;
-
-
-import java.awt.event.ActionListener;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-
-import project.Model.*;
 
 
 public class Controller implements Initializable {
@@ -44,16 +23,13 @@ public class Controller implements Initializable {
 
     public AnchorPane Payer;
     @FXML
-    private JFXButton connexion;
-
-    @FXML
     public JFXTextField user;
-
     @FXML
     public JFXPasswordField pass;
-
     @FXML
     public AnchorPane MainAnchor;
+    @FXML
+    private JFXButton connexion;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -103,7 +79,7 @@ public class Controller implements Initializable {
 
     @FXML
     public void toBoissons() throws Exception {
-        changePage("Boissons");
+        changePage("Boisson");
     }
 
     @FXML
