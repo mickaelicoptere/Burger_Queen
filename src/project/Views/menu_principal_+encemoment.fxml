@@ -173,35 +173,6 @@
             <DropShadow height="4.0" radius="1.5" width="4.0"/>
          </effect>
       </JFXButton>
-      <JFXButton layoutX="1044.0" layoutY="667.0" prefHeight="25.0" prefWidth="199.0"
-                 style="-fx-background-color: #F82831;" text="Annuler la commande" textFill="WHITE">
-         <effect>
-            <DropShadow/>
-         </effect>
-      </JFXButton>
-      <AnchorPane layoutX="1044.0" layoutY="52.0" prefHeight="579.0" prefWidth="203.0"
-                  style="-fx-border-color: black; -fx-border-radius: 5 5 5;">
-         <children>
-            <JFXButton layoutX="5.0" layoutY="494.0" prefHeight="80.0" prefWidth="199.0"
-                       style="-fx-background-color: #909090;" text="Payer" textFill="WHITE">
-               <effect>
-                  <DropShadow/>
-               </effect>
-               <font>
-                  <Font size="24.0"/>
-               </font>
-            </JFXButton>
-            <JFXButton layoutX="7.0" layoutY="-1.0" prefHeight="31.0" prefWidth="199.0"
-                       style="-fx-background-color: #909090;" text="Ma commande" textFill="WHITE">
-               <effect>
-                  <DropShadow/>
-               </effect>
-               <font>
-                  <Font size="15.0"/>
-               </font>
-            </JFXButton>
-         </children>
-      </AnchorPane>
       <Text layoutX="18.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue "
             wrappingWidth="280.9999809265137">
          <font>
@@ -216,5 +187,6 @@
             <Image url="@../img/Menus/menuburger.png"/>
          </image>
       </ImageView>
+      <fx:include source="MaCommande.fxml" fx:id="MaCommande"/>
    </children>
 </AnchorPane>

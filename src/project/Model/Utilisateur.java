@@ -16,16 +16,22 @@ public class Utilisateur {
 	public String getNom() {
 		return this.nom;
 	}
-    public void setNom(String nom) { this.nom = nom; }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
 
     public String getPrenom() {
-		return this.prenom;
-	}
-    public void setPrenom(String prenom) { this.prenom = prenom; }
+        return this.prenom;
+    }
+
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
+    }
 
     public String getMail() {
-		return this.mail;
-	}
+        return this.mail;
+    }
 	public void setMail(String aMail) { this.mail = aMail; }
 
 	public int getTel() {
@@ -58,14 +64,15 @@ public class Utilisateur {
 	}
 
 	public String toString() {
-	    return
-            "Utilisateur : "+this+"\n"+
-            "Nom : "+this.nom+"\n"+
-            "Prenom : "+this.prenom+"\n"+
-            "Mail : "+this.mail+"\n"+
-            "Tel : "+this.tel+"\n"+
-            "Mot de Passe : *************\n"+
-            "Glace : "+this.ice;}
+        return
+                "Utilisateur : " + this + "\n" +
+                        "Nom : " + this.nom + "\n" +
+                        "Prenom : " + this.prenom + "\n" +
+                        "Mail : " + this.mail + "\n" +
+                        "Tel : " + this.tel + "\n" +
+                        "Mot de Passe : *************\n" +
+                        "Glace : " + this.ice;
+    }
 
 	public void changeMdp(String newMdp) {
 		this.mdp = newMdp;

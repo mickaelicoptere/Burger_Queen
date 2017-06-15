@@ -1,19 +1,34 @@
 package project.Controllers;
 
-import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXPasswordField;
-import com.jfoenix.controls.JFXTextField;
-import javafx.event.ActionEvent;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.FlowPane;
+import project.Init_produits;
 import project.Main;
 
+import java.lang.String;
+
+import com.jfoenix.controls.*;
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXPasswordField;
+import com.jfoenix.controls.JFXTextField;
+import javafx.event.ActionEvent;
 import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.ResourceBundle;
+
+import project.Model.*;
 
 
 public class Controller implements Initializable {
@@ -21,15 +36,27 @@ public class Controller implements Initializable {
     private static String[] historique = new String[256];
     private static int lastHistorique;
 
+
     public AnchorPane Payer;
     @FXML
+    private JFXButton connexion;
+
+    @FXML
     public JFXTextField user;
+
     @FXML
     public JFXPasswordField pass;
+
     @FXML
     public AnchorPane MainAnchor;
+
     @FXML
-    private JFXButton connexion;
+    private FlowPane MaCommande;
+
+    @FXML
+    private ListeCommandeController MaCommandeController;
+
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -79,7 +106,7 @@ public class Controller implements Initializable {
 
     @FXML
     public void toBoissons() throws Exception {
-        changePage("Boisson");
+        changePage("Boissons");
     }
 
     @FXML
@@ -144,4 +171,12 @@ public class Controller implements Initializable {
         String pageToLoad = historique[i];
         changePage(pageToLoad);
     }
+
+    @FXML
+    public void addToList(MouseEvent evt) throws Exception {
+        String idtemp = evt.getPickResult().getIntersectedNode().getId();
+        MaCommandeController.addToCart(idtemp);
+    }
+
+
 }

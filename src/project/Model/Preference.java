@@ -1,5 +1,6 @@
 package project.Model;
 
+import java.util.Vector;
 
 public class Preference {
 	private String sauce;

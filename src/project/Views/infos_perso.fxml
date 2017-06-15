@@ -13,8 +13,8 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0"
-            prefWidth="1280.0" style="-: #2C6CC3;" xmlns="http://javafx.com/javafx/8.0.111"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.User">
+            prefWidth="1280.0" style="-: #2C6CC3;" xmlns="http://javafx.com/javafx/8.0.112"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Controller">
     <children>
         <Text layoutX="14.0" layoutY="702.0" strokeType="OUTSIDE" strokeWidth="0.0"
               text="*Vos informations personnelles seront vendues au plus offrant"/>
@@ -29,7 +29,7 @@
                 <Image url="@../img/Autres/LOGO.png"/>
             </image>
         </ImageView>
-        <JFXButton buttonType="RAISED" layoutX="600.0" layoutY="609.0" mnemonicParsing="false" onAction="#toSaveCreds"
+        <JFXButton buttonType="RAISED" layoutX="600.0" layoutY="609.0" mnemonicParsing="false" onAction="#toPref"
                    prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #F82831;" text="Valider"
                    textFill="WHITE">
             <font>
@@ -42,39 +42,51 @@
                 <DropShadow height="4.0" radius="1.5" width="4.0"/>
             </effect>
         </JFXButton>
-        <AnchorPane layoutX="280.0" layoutY="250.0" prefHeight="321.0" prefWidth="721.0"
+        <AnchorPane layoutX="288.0" layoutY="250.0" prefHeight="321.0" prefWidth="721.0"
                     style="-fx-background-color: #2C6CC3; -fx-background-radius: 5 5 5 5; -fx-opacity: 80%;">
             <children>
-                <JFXTextField fx:id="Login" focusColor="WHITE" layoutX="20.0" layoutY="14.0" prefHeight="34.0"
-                              prefWidth="167.0" promptText="Login" unFocusColor="#c5c5c5">
+                <JFXTextField focusColor="WHITE" layoutX="20.0" layoutY="14.0" prefHeight="34.0" prefWidth="167.0"
+                              promptText="Login" unFocusColor="#c5c5c5">
                     <font>
                         <Font size="17.0"/>
                     </font>
                 </JFXTextField>
-                <JFXPasswordField fx:id="Password1" focusColor="BLACK" layoutX="21.0" layoutY="88.0" prefHeight="34.0"
-                                  prefWidth="167.0" promptText="Password" unFocusColor="#c5c5c5">
+                <JFXPasswordField focusColor="BLACK" layoutX="21.0" layoutY="88.0" prefHeight="34.0" prefWidth="167.0"
+                                  promptText="Password" unFocusColor="#c5c5c5">
                     <font>
                         <Font size="17.0"/>
                     </font>
                 </JFXPasswordField>
-                <JFXPasswordField fx:id="Password2" focusColor="BLACK" layoutX="245.0" layoutY="88.0" prefHeight="34.0"
-                                  prefWidth="141.0" promptText="Password" unFocusColor="#c5c5c5">
+                <JFXPasswordField focusColor="BLACK" layoutX="245.0" layoutY="88.0" prefHeight="34.0" prefWidth="141.0"
+                                  promptText="Password" unFocusColor="#c5c5c5">
                     <font>
                         <Font size="17.0"/>
                     </font>
                 </JFXPasswordField>
-                <JFXTextField fx:id="Nom" focusColor="WHITE" layoutX="246.0" layoutY="20.0" prefHeight="34.0"
-                              prefWidth="140.0" promptText="Nom" unFocusColor="#c5c5c5">
+                <JFXTextField focusColor="WHITE" layoutX="246.0" layoutY="14.0" prefHeight="34.0" prefWidth="140.0"
+                              promptText="Nom" unFocusColor="#c5c5c5">
                     <font>
                         <Font size="17.0"/>
                     </font>
                 </JFXTextField>
-                <JFXTextField fx:id="Prenom" focusColor="WHITE" layoutX="474.0" layoutY="14.0" prefHeight="34.0"
-                              prefWidth="167.0" promptText="Prénom" unFocusColor="#c5c5c5">
+                <JFXPasswordField focusColor="WHITE" layoutX="21.0" layoutY="171.0" prefHeight="24.0" prefWidth="141.0"
+                                  promptText="E-Mail" unFocusColor="#c5c5c5">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                </JFXPasswordField>
+                <JFXTextField focusColor="WHITE" layoutX="474.0" layoutY="14.0" prefHeight="34.0" prefWidth="167.0"
+                              promptText="Prénom" unFocusColor="#c5c5c5">
                     <font>
                         <Font size="17.0"/>
                     </font>
                 </JFXTextField>
+                <JFXPasswordField focusColor="WHITE" layoutX="13.0" layoutY="244.0" prefHeight="25.0" prefWidth="156.0"
+                                  promptText="N° tél *" unFocusColor="#c5c5c5">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                </JFXPasswordField>
                 <JFXCheckBox layoutX="462.0" layoutY="189.0" text="Mail"/>
                 <JFXCheckBox layoutX="596.0" layoutY="189.0" text="Téléphone"/>
                 <Text layoutX="462.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0"
@@ -83,30 +95,18 @@
                         <Font name="Wingdings 3" size="18.0"/>
                     </font>
                 </Text>
-                <JFXTextField fx:id="Email1" focusColor="BLACK" layoutX="21.0" layoutY="155.0" prefHeight="34.0"
-                              prefWidth="140.0" promptText="Nom" text="Email" unFocusColor="#c5c5c5">
+                <JFXPasswordField focusColor="WHITE" layoutX="245.0" layoutY="171.0" prefHeight="24.0" prefWidth="141.0"
+                                  promptText="E-Mail" unFocusColor="#c5c5c5">
                     <font>
                         <Font size="17.0"/>
                     </font>
-                </JFXTextField>
-                <JFXTextField fx:id="Ntel1" focusColor="WHITE" layoutX="21.0" layoutY="241.0" prefHeight="34.0"
-                              prefWidth="140.0" promptText="Nom" text="N° Tel" unFocusColor="#c5c5c5">
+                </JFXPasswordField>
+                <JFXPasswordField focusColor="WHITE" layoutX="246.0" layoutY="244.0" prefHeight="25.0" prefWidth="156.0"
+                                  promptText="N° tél *" unFocusColor="#c5c5c5">
                     <font>
                         <Font size="17.0"/>
                     </font>
-                </JFXTextField>
-                <JFXTextField fx:id="Ntel2" focusColor="WHITE" layoutX="246.0" layoutY="241.0" prefHeight="34.0"
-                              prefWidth="140.0" promptText="Nom" text="N° Tel" unFocusColor="#c5c5c5">
-                    <font>
-                        <Font size="17.0"/>
-                    </font>
-                </JFXTextField>
-                <JFXTextField fx:id="Email2" focusColor="BLACK" layoutX="246.0" layoutY="155.0" prefHeight="34.0"
-                              prefWidth="140.0" promptText="Nom" text="Email" unFocusColor="#c5c5c5">
-                    <font>
-                        <Font size="17.0"/>
-                    </font>
-                </JFXTextField>
+                </JFXPasswordField>
             </children>
         </AnchorPane>
     </children>

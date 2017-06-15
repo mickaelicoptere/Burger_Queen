@@ -1,20 +1,23 @@
 package project.Model;
 
+import java.util.*;
 
 public class Boisson extends Item {
-    private Taille taille;
+    private String taille;
 
-    public Boisson(Taille taille, String libelle, double prix) {
+
+    public Boisson(String libelle, double prix, String taille) {
         super(libelle, prix);
         this.taille = taille;
     }
 
-    public Taille getTaille() {
+    public String getTaille() {
         return this.taille;
     }
 
-    public void setTaille(Taille taille) {
-        this.taille = taille;
+    public void setTaille(String Taille) {
+        this.taille = Taille;
     }
+
 
 }

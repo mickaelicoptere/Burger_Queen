@@ -1,6 +1,6 @@
 package project.Model;
 
-import java.util.Date;
+import java.util.*;
 
 public class Promotion {
 	private Date dateDebut;
@@ -16,7 +16,7 @@ public class Promotion {
 		this.dateDebut = DateDebut;
 	}
 
-	public Date getDateFin() {
+	Date getDateFin() {
 		return this.dateFin;
 	}
 
@@ -32,8 +32,8 @@ public class Promotion {
 		this.condition = Condition;
 	}
 
-
-    public String toString() {
+	@Override
+	public String toString() {
 		return "Promotion{" + this + " " +
 				"dateDebut=" + dateDebut +
 				", dateFin=" + dateFin +
