@@ -27,6 +27,7 @@ public class User extends Controller implements Initializable {
     public String mdpUser = new String();
     public String LoginUser = new String();
     private boolean inscription = false;
+
     @FXML
     private JFXTextField Login;
     @FXML

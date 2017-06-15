@@ -21,7 +21,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         try {
-            Init_produits.main();
+            //Init_produits.main();
             AnchorPane page = FXMLLoader.load(Main.class.getResource("../project/Views/AccueilBQ.fxml"));
             Scene scene = new Scene(page);
             stage.setScene(scene);
