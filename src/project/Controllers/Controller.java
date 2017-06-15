@@ -167,6 +167,7 @@ public class Controller implements Initializable {
         int i = lastHistorique - 2;
         String pageToLoad = historique[i];
         changePage(pageToLoad);
+        // TO FIX
     }
 
     @FXML
