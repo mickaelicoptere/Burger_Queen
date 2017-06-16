@@ -8,7 +8,7 @@ public enum Taille {
     TrèsGros("Très Gros"),
     Morbide("Morbide");
 
-    private final String libelle;
+    public final String libelle;
 
     Taille(String libelle) {
         this.libelle=libelle;

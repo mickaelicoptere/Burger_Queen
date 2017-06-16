@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import javafx.scene.Cursor?>
-<?import javafx.scene.control.ScrollBar?>
-<?import javafx.scene.effect.DropShadow?>
-<?import javafx.scene.effect.Reflection?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
-
-<AnchorPane fx:id="Payer" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.111"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Controller">
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="Payer" prefHeight="720.0" prefWidth="1280.0"
+            xmlns="http://javafx.com/javafx/8.0.111" fx:controller="project.Controllers.Controller">
     <children>
         <AnchorPane layoutX="77.0" layoutY="33.0" prefHeight="611.0" prefWidth="941.0">
             <children>
-                <Text layoutX="339.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Burger 3"/>
-                <Text layoutX="324.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Burger 1"/>
-                <Text layoutX="798.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Burger 2"/>
-                <Text layoutX="820.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Burger 4"/>
-                <ImageView id="Burgers" accessibleRole="BUTTON" fitHeight="148.0" fitWidth="200.0" layoutX="123.0"
-                           layoutY="40.0" preserveRatio="true">
+                <Text layoutX="321.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NotAWhooper - 4.5€"
+                      wrappingWidth="177.00000762939453">
+                    <font>
+                        <Font name="Vivaldi Italic" size="18.0"/>
+                    </font>
+                </Text>
+                <ImageView id="Burgers" fx:id="pp1" accessibleRole="BUTTON" fitHeight="148.0" fitWidth="200.0"
+                           layoutX="123.0" layoutY="40.0" onMouseClicked="#addToList" preserveRatio="true">
                     <image>
                         <Image url="@../img/Burgers/royaldeluxe_mcdonalds.png"/>
                     </image>
@@ -32,8 +29,8 @@
                         <Reflection fraction="0.44" topOpacity="0.43"/>
                     </effect>
                 </ImageView>
-                <ImageView id="Burgers" accessibleRole="BUTTON" fitHeight="183.0" fitWidth="200.0" layoutX="122.0"
-                           layoutY="306.0" preserveRatio="true">
+                <ImageView id="Burgers" fx:id="pp3" accessibleRole="BUTTON" fitHeight="183.0" fitWidth="200.0"
+                           layoutX="122.0" layoutY="306.0" onMouseClicked="#addToList" preserveRatio="true">
                     <image>
                         <Image url="@../img/Burgers/hamburger1.png"/>
                     </image>
@@ -44,8 +41,8 @@
                         <Reflection fraction="0.44" topOpacity="0.43"/>
                     </effect>
                 </ImageView>
-                <ImageView id="Burgers" accessibleRole="BUTTON" fitHeight="163.0" fitWidth="200.0" layoutX="587.0"
-                           layoutY="326.0">
+                <ImageView id="Burgers" fx:id="pp4" accessibleRole="BUTTON" fitHeight="163.0" fitWidth="200.0"
+                           layoutX="587.0" layoutY="326.0" onMouseClicked="#addToList">
                     <image>
                         <Image url="@../img/Burgers/Burger1.png"/>
                     </image>
@@ -56,8 +53,8 @@
                         <Reflection fraction="0.44" topOpacity="0.43"/>
                     </effect>
                 </ImageView>
-                <ImageView id="Burgers" accessibleRole="BUTTON" fitHeight="146.0" fitWidth="200.0" layoutX="588.0"
-                           layoutY="41.0" preserveRatio="true">
+                <ImageView id="Burgers" fx:id="pp2" accessibleRole="BUTTON" fitHeight="146.0" fitWidth="200.0"
+                           layoutX="588.0" layoutY="41.0" onMouseClicked="#addToList" preserveRatio="true">
                     <image>
                         <Image url="@../img/Burgers/hamburger2.png"/>
                     </image>
@@ -68,12 +65,28 @@
                         <Reflection fraction="0.44" topOpacity="0.43"/>
                     </effect>
                 </ImageView>
-                <ScrollBar layoutX="927.0" orientation="VERTICAL" prefHeight="611.0" prefWidth="14.0"
-                           visibleAmount="50.0"/>
                 <Text layoutX="-46.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Burgers"
                       wrappingWidth="176.99998092651367">
                     <font>
                         <Font name="Yu Gothic Regular" size="37.0"/>
+                    </font>
+                </Text>
+                <Text layoutX="794.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carnivor - 7.15€"
+                      wrappingWidth="130.1113224029541">
+                    <font>
+                        <Font name="Vivaldi Italic" size="18.0"/>
+                    </font>
+                </Text>
+                <Text layoutX="321.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carnivor - 5.35€"
+                      wrappingWidth="130.11131286621094">
+                    <font>
+                        <Font name="Vivaldi Italic" size="18.0"/>
+                    </font>
+                </Text>
+                <Text layoutX="794.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chick King - 6.7€"
+                      wrappingWidth="137.11131286621094">
+                    <font>
+                        <Font name="Vivaldi Italic" size="18.0"/>
                     </font>
                 </Text>
             </children>
@@ -90,6 +103,6 @@
                 <Font size="26.0"/>
             </font>
         </JFXButton>
-        <fx:include source="MaCommande.fxml"/>
+        <fx:include fx:id="MaCommande" source="MaCommande.fxml"/>
     </children>
 </AnchorPane>

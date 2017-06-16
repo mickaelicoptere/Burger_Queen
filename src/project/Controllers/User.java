@@ -4,7 +4,11 @@ import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import project.Main;
 import project.Model.Utilisateur;
 
 import java.io.BufferedWriter;
@@ -20,6 +24,8 @@ import java.util.ResourceBundle;
  */
 public class User extends Controller implements Initializable {
 
+    private static String[] historique = new String[256];
+    private static int lastHistorique;
     public String nomUser = new String();
     public String prenomUser = new String();
     public String mailUser = new String();
@@ -27,7 +33,6 @@ public class User extends Controller implements Initializable {
     public String mdpUser = new String();
     public String LoginUser = new String();
     private boolean inscription = false;
-
     @FXML
     private JFXTextField Login;
     @FXML
@@ -78,6 +83,34 @@ public class User extends Controller implements Initializable {
 
         }
         //TODO écrire dans un fichier les infos user
+    }
+
+    @FXML
+    public void toAccueil() throws Exception {
+        changePage("menu_principal_+encemoment");
+    }
+
+    @FXML
+    private void changePage(String unePage) throws Exception {
+        String pageLoaded = "../Views/".concat(unePage).concat(".fxml");
+        historique[lastHistorique] = unePage;
+        lastHistorique++;
+
+        FXMLLoader loader = new FXMLLoader(
+                getClass().getResource(
+                        pageLoaded
+                )
+        );
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        Main.primaryStage.setScene(scene);
+    }
+
+    @FXML
+    private void previousPage() throws Exception {
+        int i = lastHistorique - 2;
+        String pageToLoad = historique[i];
+        changePage(pageToLoad);
     }
 
     @Override
