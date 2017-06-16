@@ -13,7 +13,7 @@
         <fx:include fx:id="MaCommande" source="MaCommande.fxml"/>
         <AnchorPane layoutX="77.0" layoutY="33.0" prefHeight="611.0" prefWidth="941.0">
             <children>
-                <ImageView id="b2" fx:id="b2" fitHeight="199.0" fitWidth="110.0" layoutX="384.0" layoutY="147.0"
+                <ImageView fx:id="b2" fitHeight="199.0" fitWidth="110.0" layoutX="384.0" layoutY="147.0"
                            onMouseClicked="#addToList">
                     <image>
                         <Image url="@../img/Boissons/boisson.png"/>
