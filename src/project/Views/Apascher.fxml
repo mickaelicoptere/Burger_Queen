@@ -2,68 +2,103 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.Cursor?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="Payer" prefHeight="720.0" prefWidth="1280.0"
-            xmlns="http://javafx.com/javafx/8.0.111" fx:controller="project.Controllers.Controller">
+
+<AnchorPane fx:id="Payer" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Controller">
     <children>
         <AnchorPane layoutX="77.0" layoutY="33.0" prefHeight="611.0" prefWidth="941.0">
             <children>
-                <ImageView fitHeight="129.0" fitWidth="162.0" layoutX="66.0" layoutY="122.0">
+                <ImageView fx:id="apc1" fitHeight="129.0" fitWidth="162.0" layoutX="36.0" layoutY="182.0" onMouseClicked="#addToList">
                     <image>
-                        <Image url="@../img/Apascher/bagel.png"/>
+                        <Image url="@../img/Apascher/bagel.png" />
                     </image>
                     <effect>
-                        <Reflection/>
+                        <Reflection />
                     </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
                 </ImageView>
-                <ImageView fitHeight="93.0" fitWidth="200.0" layoutX="709.0" layoutY="158.0">
+                <ImageView fx:id="apc2" fitHeight="93.0" fitWidth="200.0" layoutX="614.0" layoutY="182.0" onMouseClicked="#addToList">
                     <image>
-                        <Image url="@../img/Apascher/cheeseburger.png"/>
+                        <Image url="@../img/Apascher/cheeseburger.png" />
                     </image>
                     <effect>
-                        <Reflection/>
+                        <Reflection />
                     </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
                 </ImageView>
-                <ImageView layoutX="401.0" layoutY="92.0">
+                <ImageView fx:id="apc4" layoutX="619.0" layoutY="371.0" onMouseClicked="#addToList">
                     <image>
-                        <Image url="@../img/Apascher/chickenburger.png"/>
+                        <Image url="@../img/Apascher/chickenburger.png" />
                     </image>
                     <effect>
-                        <Reflection/>
+                        <Reflection />
                     </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
                 </ImageView>
-                <ImageView fitHeight="129.0" fitWidth="200.0" layoutX="66.0" layoutY="396.0">
+                <ImageView fx:id="apc3" fitHeight="129.0" fitWidth="200.0" layoutX="29.0" layoutY="432.0" onMouseClicked="#addToList">
                     <image>
-                        <Image url="@../img/Apascher/wrap.png"/>
+                        <Image url="@../img/Apascher/wrap.png" />
                     </image>
                     <effect>
-                        <Reflection/>
+                        <Reflection />
                     </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
                 </ImageView>
-                <Text layoutX="-60.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apascher"
-                      wrappingWidth="176.99998092651367">
+                <Text layoutX="-60.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apascher" wrappingWidth="176.99998092651367">
                     <font>
-                        <Font name="Yu Gothic Regular" size="37.0"/>
+                        <Font name="Yu Gothic Regular" size="37.0" />
                     </font>
+               <effect>
+                  <Reflection />
+               </effect>
                 </Text>
+            <Text layoutX="71.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bagel - 4€" wrappingWidth="92.00000762939453">
+               <font>
+                  <Font name="Vivaldi Italic" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="641.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FishBurger - 2€" wrappingWidth="128.00000762939453">
+               <font>
+                  <Font name="Vivaldi Italic" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="644.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SmallMac - 1.95€" wrappingWidth="139.00000762939453">
+               <font>
+                  <Font name="Vivaldi Italic" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="39.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Poulet enroulé - 3€" wrappingWidth="156.00000762939453">
+               <font>
+                  <Font name="Vivaldi Italic" size="18.0" />
+               </font>
+            </Text>
             </children>
         </AnchorPane>
-        <JFXButton layoutX="14.0" layoutY="653.0" onAction="#previousPage" prefHeight="30.0" prefWidth="199.0"
-                   style="-fx-background-color: #F82831; -fx-border-radius: 5 5 5;" text="Retour" textFill="WHITE">
+        <JFXButton layoutX="14.0" layoutY="653.0" onAction="#previousPage" prefHeight="30.0" prefWidth="199.0" style="-fx-background-color: #F82831; -fx-border-radius: 5 5 5;" text="Retour" textFill="WHITE">
             <cursor>
-                <Cursor fx:constant="HAND"/>
+                <Cursor fx:constant="HAND" />
             </cursor>
             <effect>
-                <DropShadow/>
+                <DropShadow />
             </effect>
             <font>
-                <Font size="26.0"/>
+                <Font size="26.0" />
             </font>
         </JFXButton>
-        <fx:include source="MaCommande.fxml" fx:id="MaCommande"/>
+        <fx:include fx:id="MaCommande" source="MaCommande.fxml" />
     </children>
 </AnchorPane>

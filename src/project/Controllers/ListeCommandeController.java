@@ -31,7 +31,6 @@ public class ListeCommandeController implements Initializable {
                 System.out.println("Un element added");
             }
         }
-
         TotalCommande.setText(calculTotal());
         System.out.println(Init_produits.c1.calcPrixCommande());
     }
