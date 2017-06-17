@@ -27,7 +27,7 @@
       </ImageView>
       <ImageView accessibleRole="BUTTON" fitHeight="151.0" fitWidth="74.0" layoutX="158.0" layoutY="466.0">
          <image>
-            <Image url="@../img/Desserts/dessert.png"/>
+             <Image url="@../img/Desserts/dessert.png"/>
          </image>
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
@@ -51,8 +51,8 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <ImageView fx:id="ecm3" fitHeight="75.0" fitWidth="106.0" layoutX="395.0" onMouseClicked="#addToList"
-                       preserveRatio="true">
+             <ImageView fx:id="ecm3" fitHeight="75.0" fitWidth="106.0" layoutX="395.0" onMouseClicked="#addToList"
+                        preserveRatio="true">
                <image>
                   <Image url="@../img/Burgers/royaldeluxe_mcdonalds.png" />
                </image>
@@ -75,116 +75,116 @@
             <Image url="@../img/Apascher/cheeseburger.png" />
          </image>
       </ImageView>
-      <JFXButton buttonType="RAISED" layoutX="137.0" layoutY="322.0" mnemonicParsing="false" onAction="#toBoissons"
-                 prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: #F82831;" text="Boissons"
-                 textFill="WHITE">
+       <JFXButton buttonType="RAISED" layoutX="137.0" layoutY="322.0" mnemonicParsing="false" onAction="#toBoissons"
+                  prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: #F82831;" text="Boissons"
+                  textFill="WHITE">
          <font>
-            <Font size="18.0"/>
+             <Font size="18.0"/>
          </font>
          <cursor>
-            <Cursor fx:constant="HAND"/>
+             <Cursor fx:constant="HAND"/>
          </cursor>
          <effect>
-            <DropShadow height="4.0" radius="1.5" width="4.0"/>
+             <DropShadow height="4.0" radius="1.5" width="4.0"/>
          </effect>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="521.0" layoutY="322.0" mnemonicParsing="false" onAction="#toMenuBurgers"
-                 prefHeight="22.0" prefWidth="105.0" style="-fx-background-color: #F82831;" text="Menus"
-                 textFill="WHITE">
+       <JFXButton buttonType="RAISED" layoutX="521.0" layoutY="322.0" mnemonicParsing="false" onAction="#toMenuBurgers"
+                  prefHeight="22.0" prefWidth="105.0" style="-fx-background-color: #F82831;" text="Menus"
+                  textFill="WHITE">
          <font>
-            <Font size="18.0"/>
+             <Font size="18.0"/>
          </font>
          <cursor>
-            <Cursor fx:constant="HAND"/>
+             <Cursor fx:constant="HAND"/>
          </cursor>
          <effect>
-            <DropShadow height="4.0" radius="1.5" width="4.0"/>
+             <DropShadow height="4.0" radius="1.5" width="4.0"/>
          </effect>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="781.0" layoutY="322.0" mnemonicParsing="false"
-                 onAction="#toAccompagnements" prefHeight="38.0" prefWidth="192.0"
-                 style="-fx-background-color: #F82831;" text="Accompagnements" textFill="WHITE">
+       <JFXButton buttonType="RAISED" layoutX="781.0" layoutY="322.0" mnemonicParsing="false"
+                  onAction="#toAccompagnements" prefHeight="38.0" prefWidth="192.0"
+                  style="-fx-background-color: #F82831;" text="Accompagnements" textFill="WHITE">
          <font>
-            <Font size="18.0"/>
+             <Font size="18.0"/>
          </font>
          <cursor>
-            <Cursor fx:constant="HAND"/>
+             <Cursor fx:constant="HAND"/>
          </cursor>
          <effect>
-            <DropShadow height="4.0" radius="1.5" width="4.0"/>
+             <DropShadow height="4.0" radius="1.5" width="4.0"/>
          </effect>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="131.0" layoutY="626.0" mnemonicParsing="false" onAction="#toDesserts"
-                 prefHeight="39.0" prefWidth="117.0" style="-fx-background-color: #F82831;" text="Desserts"
-                 textFill="WHITE">
+       <JFXButton buttonType="RAISED" layoutX="131.0" layoutY="626.0" mnemonicParsing="false" onAction="#toDesserts"
+                  prefHeight="39.0" prefWidth="117.0" style="-fx-background-color: #F82831;" text="Desserts"
+                  textFill="WHITE">
          <font>
-            <Font size="18.0"/>
+             <Font size="18.0"/>
          </font>
          <cursor>
-            <Cursor fx:constant="HAND"/>
+             <Cursor fx:constant="HAND"/>
          </cursor>
          <effect>
-            <DropShadow height="4.0" radius="1.5" width="4.0"/>
+             <DropShadow height="4.0" radius="1.5" width="4.0"/>
          </effect>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="858.0" layoutY="626.0" mnemonicParsing="false" onAction="#toApascher"
-                 prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: #F82831;" text="Apascher"
-                 textFill="WHITE">
+       <JFXButton buttonType="RAISED" layoutX="858.0" layoutY="626.0" mnemonicParsing="false" onAction="#toApascher"
+                  prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: #F82831;" text="Apascher"
+                  textFill="WHITE">
          <font>
-            <Font size="18.0"/>
+             <Font size="18.0"/>
          </font>
          <cursor>
-            <Cursor fx:constant="HAND"/>
+             <Cursor fx:constant="HAND"/>
          </cursor>
          <effect>
-            <DropShadow height="4.0" radius="1.5" width="4.0"/>
+             <DropShadow height="4.0" radius="1.5" width="4.0"/>
          </effect>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="679.0" mnemonicParsing="false" onAction="#toLogin"
-                 prefHeight="30.0" prefWidth="101.0" style="-fx-background-color: grey;" text="Déconnexion"
-                 textFill="WHITE">
+       <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="679.0" mnemonicParsing="false" onAction="#toLogin"
+                  prefHeight="30.0" prefWidth="101.0" style="-fx-background-color: grey;" text="Déconnexion"
+                  textFill="WHITE">
          <font>
-            <Font size="14.0"/>
+             <Font size="14.0"/>
          </font>
          <cursor>
-            <Cursor fx:constant="HAND"/>
+             <Cursor fx:constant="HAND"/>
          </cursor>
          <effect>
-            <DropShadow height="4.0" radius="1.5" width="4.0"/>
+             <DropShadow height="4.0" radius="1.5" width="4.0"/>
          </effect>
       </JFXButton>
       <ImageView fitHeight="109.0" fitWidth="148.0" layoutX="492.0" layoutY="487.0">
          <image>
-            <Image url="@../img/Burgers/royaldeluxe_mcdonalds.png"/>
+             <Image url="@../img/Burgers/royaldeluxe_mcdonalds.png"/>
          </image>
       </ImageView>
-      <JFXButton buttonType="RAISED" layoutX="508.0" layoutY="626.0" mnemonicParsing="false" onAction="#toBurgers"
-                 prefHeight="39.0" prefWidth="117.0" style="-fx-background-color: #F82831;" text="Burgers"
-                 textFill="WHITE">
+       <JFXButton buttonType="RAISED" layoutX="508.0" layoutY="626.0" mnemonicParsing="false" onAction="#toBurgers"
+                  prefHeight="39.0" prefWidth="117.0" style="-fx-background-color: #F82831;" text="Burgers"
+                  textFill="WHITE">
          <font>
-            <Font size="18.0"/>
+             <Font size="18.0"/>
          </font>
          <cursor>
-            <Cursor fx:constant="HAND"/>
+             <Cursor fx:constant="HAND"/>
          </cursor>
          <effect>
-            <DropShadow height="4.0" radius="1.5" width="4.0"/>
+             <DropShadow height="4.0" radius="1.5" width="4.0"/>
          </effect>
       </JFXButton>
-      <Text layoutX="18.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue "
-            wrappingWidth="280.9999809265137">
+       <Text layoutX="18.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue "
+             wrappingWidth="280.9999809265137">
          <font>
-            <Font name="Yu Gothic Regular" size="37.0"/>
+             <Font name="Yu Gothic Regular" size="37.0"/>
          </font>
          <effect>
-            <Reflection/>
+             <Reflection/>
          </effect>
       </Text>
       <ImageView fitHeight="144.0" fitWidth="158.0" layoutX="495.0" layoutY="154.0">
          <image>
-            <Image url="@../img/Menus/menuburger.png"/>
+             <Image url="@../img/Menus/menuburger.png"/>
          </image>
       </ImageView>
-      <fx:include fx:id="MaCommande" source="MaCommande.fxml"/>
+       <fx:include fx:id="MaCommande" source="MaCommande.fxml"/>
    </children>
 </AnchorPane>
