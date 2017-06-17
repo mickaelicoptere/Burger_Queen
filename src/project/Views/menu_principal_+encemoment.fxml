@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import javafx.scene.Cursor?>
-<?import javafx.scene.effect.DropShadow?>
-<?import javafx.scene.effect.Reflection?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
-
-<AnchorPane fx:id="Payer" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Controller">
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="Payer" prefHeight="720.0" prefWidth="1280.0"
+            xmlns="http://javafx.com/javafx/8.0.111" fx:controller="project.Controllers.Controller">
    <children>
       <ImageView accessibleRole="BUTTON" fitHeight="151.0" fitWidth="74.0" layoutX="152.0" layoutY="150.0">
          <image>
@@ -38,7 +35,7 @@
       </ImageView>
       <AnchorPane layoutX="374.0" layoutY="20.0" prefHeight="109.0" prefWidth="502.0">
          <children>
-            <ImageView fitHeight="75.0" fitWidth="138.0" preserveRatio="true">
+            <ImageView fx:id="ecm1" fitHeight="75.0" fitWidth="138.0" onMouseClicked="#addToList" preserveRatio="true">
                <image>
                   <Image url="@../img/Autres/burger_zinger_black.png" />
                </image>
@@ -46,7 +43,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <ImageView fitHeight="75.0" fitWidth="101.0" layoutX="201.0">
+            <ImageView fx:id="ecm2" fitHeight="75.0" fitWidth="101.0" layoutX="201.0" onMouseClicked="#addToList">
                <image>
                   <Image url="@../img/Burgers/hamburger3.png" />
                </image>
@@ -54,7 +51,8 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <ImageView fitHeight="75.0" fitWidth="106.0" layoutX="395.0" preserveRatio="true">
+            <ImageView fx:id="ecm3" fitHeight="75.0" fitWidth="106.0" layoutX="395.0" onMouseClicked="#addToList"
+                       preserveRatio="true">
                <image>
                   <Image url="@../img/Burgers/royaldeluxe_mcdonalds.png" />
                </image>
@@ -187,6 +185,6 @@
             <Image url="@../img/Menus/menuburger.png"/>
          </image>
       </ImageView>
-      <fx:include source="MaCommande.fxml" fx:id="MaCommande"/>
+      <fx:include fx:id="MaCommande" source="MaCommande.fxml"/>
    </children>
 </AnchorPane>

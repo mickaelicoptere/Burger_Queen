@@ -72,12 +72,14 @@ public class User extends Controller implements Initializable {
         if (inscription == true) {
             //Utilisateur u1 = new Utilisateur(this.Nom.getAccessibleText(),this.Prenom.getAccessibleText() this.Email1.getAccessibleText(), this.Ntel1.getAccessibleText(), this.Password1.getAccessibleText(),true);
 
-            Utilisateur u1 = new Utilisateur(nomUser, prenomUser, mailUser, 22, mdpUser, true);
+            Utilisateur u1 = new Utilisateur(nomUser, prenomUser, mailUser, nomUser, mdpUser, true);
             System.out.println("Utilisateur enregistré :" + "\nNom : " + nomUser + "\nPrénom : " + prenomUser + "\nMail : " + mailUser + "\nNtel : " + telUser + "\nmdpUser : " + mdpUser);
+            //System.out.println(Utilisateur.toString(nomUser,prenomUser,));
             toPref();
 
             Path path = Paths.get("Userinfo.txt");
             try (BufferedWriter writer = Files.newBufferedWriter(path)) {
+                //writer.write(Utilisateur.toString(nomUser));
                 writer.write("Utilisateur enregistré :" + "\nNom : " + nomUser + "\nPrénom : " + prenomUser + "\nMail : " + mailUser + "\nNtel : " + telUser + "\nmdpUser : " + mdpUser);
             }
 

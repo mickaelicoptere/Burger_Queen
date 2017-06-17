@@ -4,14 +4,31 @@ public class Utilisateur {
 	private String nom;
 	private String prenom;
 	private String mail;
-	private int tel;
+	private String tel;
 	private String mdp;
 	private boolean ice;
 	private Preference Sauce;
 
 
-	public Utilisateur(String nom, String prenom, String mail, int tel, String mdp, boolean ice) { this.nom=nom; this.prenom=prenom; this.mail=mail; this.tel=tel; this.mdp=mdp; this.ice=ice; }
+	public Utilisateur(String nom, String prenom, String mail, String tel, String mdp, boolean ice) {
+		this.nom = nom;
+		this.prenom = prenom;
+		this.mail = mail;
+		this.tel = tel;
+		this.mdp = mdp;
+		this.ice = ice;
+	}
 
+	public static String toString(String nom, String prenom, String mail, String tel, String mdp, boolean ice) {
+		return
+				"Utilisateur : " + "\n" +
+						"Nom : " + nom + "\n" +
+						"Prenom : " + prenom + "\n" +
+						"Mail : " + mail + "\n" +
+						"Tel : " + tel + "\n" +
+						"Mot de Passe : *************\n" +
+						"Glace : " + ice;
+	}
 
 	public String getNom() {
 		return this.nom;
@@ -32,18 +49,21 @@ public class Utilisateur {
     public String getMail() {
         return this.mail;
     }
+
 	public void setMail(String aMail) { this.mail = aMail; }
 
-	public int getTel() {
+	public String getTel() {
 		return this.tel;
 	}
-	public void setTel(int aTel) {
+
+	public void setTel(String aTel) {
 		this.tel = aTel;
 	}
 
 	public String getMdp() {
 		return this.mdp;
 	}
+
 	public void setMdp(String Mdp) {
 		this.mdp = Mdp;
 	}
@@ -51,6 +71,7 @@ public class Utilisateur {
 	public boolean getIce() {
 		return this.ice;
 	}
+
 	public void setIce(boolean Ice) {
 		this.ice = Ice;
 	}
@@ -63,17 +84,6 @@ public class Utilisateur {
 		this.Sauce = sauce;
 	}
 
-	public String toString() {
-        return
-                "Utilisateur : " + this + "\n" +
-                        "Nom : " + this.nom + "\n" +
-                        "Prenom : " + this.prenom + "\n" +
-                        "Mail : " + this.mail + "\n" +
-                        "Tel : " + this.tel + "\n" +
-                        "Mot de Passe : *************\n" +
-                        "Glace : " + this.ice;
-    }
-
 	public void changeMdp(String newMdp) {
 		this.mdp = newMdp;
 	}
@@ -82,9 +92,8 @@ public class Utilisateur {
 		this.mail = newMail;
 	}
 
-	public void changeTel(int newTel) {
+	public void changeTel(String newTel) {
 		this.tel = newTel;
 	}
-
 
 }

@@ -13,28 +13,49 @@
     <children>
         <AnchorPane layoutX="77.0" layoutY="33.0" prefHeight="611.0" prefWidth="941.0">
             <children>
-                <ImageView fitHeight="160.0" fitWidth="200.0" layoutX="59.0" layoutY="159.0">
+                <ImageView fx:id="a1" fitHeight="160.0" fitWidth="200.0" layoutX="59.0" layoutY="159.0"
+                           onMouseClicked="#addToList">
                     <image>
                         <Image url="@../img/Accompagnements/Frites.png"/>
                     </image>
                     <effect>
                         <Reflection/>
                     </effect>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
                 </ImageView>
-                <ImageView fitHeight="200.0" fitWidth="175.0" layoutX="626.0" layoutY="139.0">
+                <ImageView fx:id="a2" fitHeight="200.0" fitWidth="175.0" layoutX="626.0" layoutY="139.0"
+                           onMouseClicked="#addToList">
                     <image>
                         <Image url="@../img/Accompagnements/potatoes.png"/>
                     </image>
                     <effect>
                         <Reflection/>
                     </effect>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
                 </ImageView>
-                <Text layoutX="285.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Frites"/>
-                <Text layoutX="816.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Potatoes"/>
                 <Text layoutX="-57.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accompagnements"
                       wrappingWidth="355.9999809265137">
                     <font>
                         <Font name="Yu Gothic Regular" size="37.0"/>
+                    </font>
+                    <effect>
+                        <Reflection/>
+                    </effect>
+                </Text>
+                <Text layoutX="288.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Frites - 2.5€"
+                      wrappingWidth="103.00000762939453">
+                    <font>
+                        <Font name="Vivaldi Italic" size="18.0"/>
+                    </font>
+                </Text>
+                <Text layoutX="811.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Potatoes - 2.5€"
+                      wrappingWidth="124.00000762939453">
+                    <font>
+                        <Font name="Vivaldi Italic" size="18.0"/>
                     </font>
                 </Text>
             </children>
@@ -51,6 +72,6 @@
                 <Font size="26.0"/>
             </font>
         </JFXButton>
-        <fx:include source="MaCommande.fxml" fx:id="MaCommande"/>
+        <fx:include fx:id="MaCommande" source="MaCommande.fxml"/>
     </children>
 </AnchorPane>
