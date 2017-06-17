@@ -108,12 +108,12 @@ public class User extends Controller implements Initializable {
         Main.primaryStage.setScene(scene);
     }
 
-    @FXML
-    private void previousPage() throws Exception {
-        int i = lastHistorique - 2;
-        String pageToLoad = historique[i];
-        changePage(pageToLoad);
-    }
+//    @FXML
+//    private void previousPage() throws Exception {
+//        int i = lastHistorique - 2;
+//        String pageToLoad = historique[i];
+//        changePage(pageToLoad);
+//    } TODO Fout la merde avec previousPage() du Controller.java, a decommenter quand fonctionnel
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

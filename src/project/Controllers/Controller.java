@@ -166,9 +166,9 @@ public class Controller implements Initializable {
     }
 
     @FXML
-    private void previousPage() throws Exception {
-        int i = lastHistorique - 2;
-        String pageToLoad = historique[i];
+    public void previousPage() throws Exception {
+        lastHistorique -= 2;
+        String pageToLoad = historique[lastHistorique];
         changePage(pageToLoad);
     }
 
