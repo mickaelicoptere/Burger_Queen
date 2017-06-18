@@ -1,19 +1,17 @@
 package project.Model;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
 
-public abstract class Item {
-    protected String libelle;
+public class Item {
+    private String libelle;
     private double Prix;
-    private Promotion[] listePromotion = {};
-
-//    HashMap<String, Double> items = new HashMap<String, Double>();
-//    items.put("burger1", 4.00);
-
+    private ArrayList<Promotion> promotions;
 
     public Item(String libelle, double prix) {
         this.libelle = libelle;
-        this.Prix = prix;
+        Prix = prix;
+        promotions = new ArrayList<Promotion>();
     }
 
     public String getLibelle() {
@@ -24,59 +22,38 @@ public abstract class Item {
         this.libelle = libelle;
     }
 
-    double getPrix() {
+    public double getPrix() {
         return Prix;
     }
 
-    public void setPrix(int prix) {
+    public void setPrix(double prix) {
         Prix = prix;
     }
 
 
     public String toString() {
         return "Item{" +
-                "libelle='" + libelle + '\'' +
-                ", Prix=" + Prix +
-                '}';
+                "libelle='" + libelle + "\'" +
+                ", Prix=" + Prix + "\n" +
+                ", Promotion=" + promotions.toString() +
+                "}";
     }
 
     public void addPromo(Promotion promo) {
-        int i = 0;
-        while ((i < listePromotion.length) && (listePromotion[i] == null)) {
-            i++;
-        }
-        if (listePromotion[i] == null) {
-            listePromotion[i] = promo;
-        }
+        promotions.add(promo);
     }
 
     public void delPromoFin() {
-        listePromotion[listePromotion.length - 1] = null;
+        promotions.remove(promotions.size() - 1);
     }
 
     public void delPromoDate(Date fin) {
-        for (int i = 0; i < listePromotion.length; i++) {
-            if (listePromotion[i].getDateFin().after(fin)) {
-                listePromotion[i] = null;
-                for (int j = i; j < listePromotion.length; j++) {
-                    listePromotion[j] = listePromotion[j + 1];
-                }
-            }
+        for ( Promotion p : promotions ) {
+            if (p.getDateFin().after(fin)) ;
         }
     }
 
     public void delPromo(Promotion promo) {
-        int i = 0;
-        while ((i < listePromotion.length) && (listePromotion[i] != promo)) {
-            i++;
-            if (listePromotion[i].equals(promo)) {
-                listePromotion[i] = null;
-                for (int j = i; j < listePromotion.length; j++) {
-                    listePromotion[j] = listePromotion[j + 1];
-                }
-            }
-        }
+        promotions.remove(promo);
     }
-
-
 }
