@@ -49,7 +49,9 @@ public abstract class Item {
 
     public void delPromoDate(Date fin) {
         for ( Promotion p : promotions ) {
-            if (p.getDateFin().after(fin)) ;
+            if (p.getDateFin().after(fin)) {
+                promotions.remove(p);
+            }
         }
     }
 
