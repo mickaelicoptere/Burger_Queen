@@ -1,5 +1,7 @@
 package project.Model;
 
+import java.util.List;
+
 public class Utilisateur {
 	private String nom;
 	private String prenom;
@@ -8,6 +10,8 @@ public class Utilisateur {
 	private String mdp;
 	private boolean ice;
 	private Preference Sauce;
+	private List<Commande> saveCommande;
+	private List<Commande> history;
 
 
 	public Utilisateur(String nom, String prenom, String mail, String tel, String mdp, boolean ice) {
@@ -19,43 +23,31 @@ public class Utilisateur {
 		this.ice = ice;
 	}
 
-	public static String toString(String nom, String prenom, String mail, String tel, String mdp, boolean ice) {
-		return
-				"Utilisateur : " + "\n" +
-						"Nom : " + nom + "\n" +
-						"Prenom : " + prenom + "\n" +
-						"Mail : " + mail + "\n" +
-						"Tel : " + tel + "\n" +
-						"Mot de Passe : *************\n" +
-						"Glace : " + ice;
-	}
 
 	public String getNom() {
 		return this.nom;
 	}
 
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
 
-    public String getPrenom() {
-        return this.prenom;
-    }
+	public String getPrenom() {
+		return this.prenom;
+	}
 
-    public void setPrenom(String prenom) {
-        this.prenom = prenom;
-    }
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
 
-    public String getMail() {
-        return this.mail;
-    }
-
+	public String getMail() {
+		return this.mail;
+	}
 	public void setMail(String aMail) { this.mail = aMail; }
 
 	public String getTel() {
 		return this.tel;
 	}
-
 	public void setTel(String aTel) {
 		this.tel = aTel;
 	}
@@ -63,7 +55,6 @@ public class Utilisateur {
 	public String getMdp() {
 		return this.mdp;
 	}
-
 	public void setMdp(String Mdp) {
 		this.mdp = Mdp;
 	}
@@ -71,7 +62,6 @@ public class Utilisateur {
 	public boolean getIce() {
 		return this.ice;
 	}
-
 	public void setIce(boolean Ice) {
 		this.ice = Ice;
 	}
@@ -82,6 +72,17 @@ public class Utilisateur {
 
 	public void setSauce(Preference sauce) {
 		this.Sauce = sauce;
+	}
+
+	public String toString() {
+		return
+				"Utilisateur : " + this + "\n" +
+						"Nom : " + this.nom + "\n" +
+						"Prenom : " + this.prenom + "\n" +
+						"Mail : " + this.mail + "\n" +
+						"Tel : " + this.tel + "\n" +
+						"Mot de Passe : *************\n" +
+						"Glace : " + this.ice;
 	}
 
 	public void changeMdp(String newMdp) {
@@ -96,4 +97,24 @@ public class Utilisateur {
 		this.tel = newTel;
 	}
 
+	public void addCommandeHistory(Commande newCommande) {
+		history.add(newCommande);
+	}
+
+	public boolean addCommandeSave(Commande newCommande) {
+		if (saveCommande.size() == 5) {
+			return false;
+		} else {
+			saveCommande.add(newCommande);
+			return true;
+		}
+	}
+
+	public void delCommandeSave(Commande pastCommande) {
+		saveCommande.remove(pastCommande);
+	}
+
+	public void delHistory() {
+		history.clear();
+	}
 }

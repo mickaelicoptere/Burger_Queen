@@ -1,18 +1,16 @@
 package project.Model;
 
-import java.util.Arrays;
-
+import java.util.HashMap;
+import java.util.Map;
 
 public class Produit_principal extends Item {
-
     private String description;
-    private Ingredient[] composition = {};
-
-//    public HashMap<String, Double> menuproduitprincipal = new HashMap<>(libelle, prix);
+    private Map<Ingredient, Composition> composition;
 
     public Produit_principal(String libelle, double prix, String description) {
         super(libelle, prix);
         this.description = description;
+        composition = new HashMap<Ingredient, Composition>();
     }
 
     public String getDescription() {
@@ -23,46 +21,32 @@ public class Produit_principal extends Item {
         this.description = description;
     }
 
+
     public String toString() {
         return "Produit_principal{" +
                 "description='" + description + '\'' +
-                ", composition=" + Arrays.toString(composition) +
+                ", composition=" + composition.toString() +
                 '}';
     }
 
-    public void addIngredient(Ingredient newIngredient) {
-        int i = 0;
-        while ((i < composition.length) && (composition[i] == null)) {
-            i++;
-        }
-        if (composition[i] == null) {
-            composition[i] = newIngredient;
-        }
+    public void addIngredient(Ingredient newIngredient, Composition newComposition) {
+        composition.put(newIngredient, newComposition);
     }
 
     public void delIngredient(Ingredient pastIngredient) {
-        int i = 0;
-        while ((i < composition.length) && (composition[i] != pastIngredient)) {
-            i++;
-            if (composition[i].equals(pastIngredient)) {
-                composition[i] = null;
-                for ( int j = i; j < composition.length; j++ ) {
-                    composition[j] = composition[j + 1];
-                }
-            }
-        }
+        composition.remove(pastIngredient);
     }
 
-    public Ingredient[] listIngredient() {
-        return composition;
+    public String listIngredient() {
+        return composition.toString();
     }
 
-    public String listAllergne() {
-        String list = null;
-        for ( int i = 0; i < composition.length; i++ ) {
-            list += composition[i].listAllergene();
+    public String listAllergene() {
+        String allergene = "";
+        for ( Map.Entry<Ingredient, Composition> entry : composition.entrySet() ) {
+            allergene += entry.getKey().listAllergene();
         }
-        return list;
+        return allergene;
     }
 
 }
