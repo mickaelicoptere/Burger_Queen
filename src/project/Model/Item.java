@@ -30,7 +30,6 @@ public abstract class Item {
         Prix = prix;
     }
 
-
     public String toString() {
         return "Item{" +
                 "libelle='" + libelle + "\'" +

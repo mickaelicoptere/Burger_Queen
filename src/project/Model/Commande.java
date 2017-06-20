@@ -5,11 +5,11 @@ import project.Init_produits;
 import java.util.ArrayList;
 
 public class Commande {
+    public int nbItem;
     private double prixCommande;
     private boolean aEmporter;
     private ArrayList<Item> commande;
     private Utilisateur buyer;
-    public int nbItem;
 
     public Commande(boolean aEmporter, Utilisateur buyer) {
         this.aEmporter = aEmporter;
@@ -26,6 +26,7 @@ public class Commande {
         return prixCommande;
     }
 
+    @Override
     public String toString() {
         return "Commande : " + this + "\n" +
                 "Prix : " + prixCommande + "\n" +
@@ -57,5 +58,11 @@ public class Commande {
         return this.commande.get(id).getLibelle();
     }
 
-
+    public String listCommande() {
+        String list = "";
+        for ( Item i : commande ) {
+            list += " - " + i.getLibelle() + " " + i.getPrix() + "\n";
+        }
+        return list;
+    }
 }

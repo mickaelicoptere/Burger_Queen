@@ -1,34 +1,21 @@
 package project.Controllers;
 
-import javafx.collections.ObservableList;
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXPasswordField;
+import com.jfoenix.controls.JFXTextField;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
-import project.Init_produits;
 import project.Main;
 
-import java.lang.String;
-
-import com.jfoenix.controls.*;
-import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXPasswordField;
-import com.jfoenix.controls.JFXTextField;
-import javafx.event.ActionEvent;
 import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.ResourceBundle;
-
-import project.Model.*;
 
 
 public class Controller implements Initializable {
@@ -39,17 +26,13 @@ public class Controller implements Initializable {
 
     public AnchorPane Payer;
     @FXML
-    private JFXButton connexion;
-
-    @FXML
     public JFXTextField user;
-
     @FXML
     public JFXPasswordField pass;
-
     @FXML
     public AnchorPane MainAnchor;
-
+    @FXML
+    private JFXButton connexion;
     @FXML
     private FlowPane MaCommande;
 
@@ -69,6 +52,9 @@ public class Controller implements Initializable {
         String password = pass.getText();
         if (username.equals("test") && password.equals("test")) {
             changePage("menu_principal_+encemoment");
+        }
+        if (username.equals("manager") && password.equals("manager")) {
+            changePage("menu_principal_manager");
         } else {
             System.out.println("Error");
         }
@@ -80,8 +66,14 @@ public class Controller implements Initializable {
     }
 
     @FXML
+    public void toMenuManager() throws Exception {
+        changePage("menu_principal_manager");
+    }
+
+
+    @FXML
     public void toAccueil() throws Exception {
-        changePage("AccueilBQ.fxml");
+        changePage("menu_principal_+encemoment");
     }
 
     @FXML
@@ -118,6 +110,12 @@ public class Controller implements Initializable {
     public void toBurgers() throws Exception {
         changePage("Burgers");
     }
+
+    @FXML
+    public void toAddBurgers() throws Exception {
+        changePage("AddBurgers");
+    }
+
 
     @FXML
     public void toDesserts() throws Exception {

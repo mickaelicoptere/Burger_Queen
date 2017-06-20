@@ -34,7 +34,6 @@ public class Main extends Application {
         } catch (Exception ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
-
         project.Model.Utilisateur user1 = new Utilisateur("Sopalin", "john", "john.sopalin@wesh.com", "6696969", "1234", true);
     }
 
