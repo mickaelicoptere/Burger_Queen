@@ -16,7 +16,7 @@
             <children>
                 <Text layoutX="321.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NotAWhooper - 4.5€" wrappingWidth="177.00000762939453">
                     <font>
-                        <Font name="Vivaldi Italic" size="18.0" />
+                        <Font name="Insaniburger" size="18.0"/>
                     </font>
                 </Text>
                 <ImageView fx:id="pp1" accessibleRole="BUTTON" fitHeight="148.0" fitWidth="200.0" layoutX="123.0" layoutY="40.0" onMouseClicked="#addToList" preserveRatio="true">
@@ -73,17 +73,17 @@
                 </Text>
                 <Text layoutX="794.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carnivor - 5.35€" wrappingWidth="130.1113224029541">
                     <font>
-                        <Font name="Vivaldi Italic" size="18.0" />
+                        <Font name="Insaniburger" size="18.0"/>
                     </font>
                 </Text>
                 <Text layoutX="321.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LE KASDALLEUR - 7.15€" wrappingWidth="198.84326934814453">
                     <font>
-                        <Font name="Vivaldi Italic" size="18.0" />
+                        <Font name="Insaniburger" size="18.0"/>
                     </font>
                 </Text>
                 <Text layoutX="794.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chick King - 6.7€" wrappingWidth="137.11131286621094">
                     <font>
-                        <Font name="Vivaldi Italic" size="18.0" />
+                        <Font name="Insaniburger" size="18.0"/>
                     </font>
                 </Text>
             </children>

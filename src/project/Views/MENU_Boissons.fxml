@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.Cursor?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.image.*?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.*?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="Payer" prefHeight="720.0" prefWidth="1280.0"
-            xmlns="http://javafx.com/javafx/8.0.111" fx:controller="project.Controllers.Controller">
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Payer" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.112"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Controller">
     <children>
         <AnchorPane layoutX="77.0" layoutY="33.0" prefHeight="611.0" prefWidth="941.0">
             <children>
@@ -38,9 +42,21 @@
                         <Reflection/>
                     </effect>
                 </ImageView>
-                <Text layoutX="169.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coca"/>
-                <Text layoutX="820.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Limonade"/>
-                <Text layoutX="483.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eau minérale"/>
+                <Text layoutX="169.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coca">
+                    <font>
+                        <Font name="Insaniburger" size="18.0"/>
+                    </font>
+                </Text>
+                <Text layoutX="820.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Limonade">
+                    <font>
+                        <Font name="Insaniburger" size="18.0"/>
+                    </font>
+                </Text>
+                <Text layoutX="483.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eau minérale">
+                    <font>
+                        <Font name="Insaniburger" size="18.0"/>
+                    </font>
+                </Text>
                 <Text layoutX="-51.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Boissons"
                       wrappingWidth="176.99998092651367">
                     <font>
@@ -74,6 +90,6 @@
                 <Font size="26.0"/>
             </font>
         </JFXButton>
-        <fx:include source="MaCommande.fxml" fx:id="MaCommande"/>
+        <fx:include fx:id="MaCommande" source="MaCommande.fxml"/>
     </children>
 </AnchorPane>

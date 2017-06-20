@@ -11,7 +11,7 @@ public abstract class Item {
     public Item(String libelle, double prix) {
         this.libelle = libelle;
         Prix = prix;
-        promotions = new ArrayList<Promotion>();
+        promotions = new ArrayList<>();
     }
 
     public String getLibelle() {

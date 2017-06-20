@@ -58,17 +58,17 @@
                 </Text>
                 <Text layoutX="168.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cola - 2.5€" wrappingWidth="103.00000762939453">
                     <font>
-                        <Font name="Vivaldi Italic" size="18.0" />
+                        <Font name="Insaniburger" size="18.0"/>
                     </font>
                 </Text>
                 <Text layoutX="473.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eau Minérale - 30€" wrappingWidth="157.00000762939453">
                     <font>
-                        <Font name="Vivaldi Italic" size="18.0" />
+                        <Font name="Insaniburger" size="18.0"/>
                     </font>
                 </Text>
                 <Text layoutX="819.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Limonade - 1.75€" wrappingWidth="157.00000762939453">
                     <font>
-                        <Font name="Vivaldi Italic" size="18.0" />
+                        <Font name="Insaniburger" size="18.0"/>
                     </font>
                 </Text>
             </children>
