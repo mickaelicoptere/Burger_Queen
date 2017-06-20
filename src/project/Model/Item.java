@@ -3,7 +3,7 @@ package project.Model;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Item {
+public abstract class Item {
     private String libelle;
     private double Prix;
     private ArrayList<Promotion> promotions;
