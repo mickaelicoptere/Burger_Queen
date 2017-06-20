@@ -1,13 +1,15 @@
 package project.Model;
 
+import java.awt.*;
+
 public class Menu extends Item {
     private Boisson Boisson;
     private Accompagnement Accompagnement;
     private Produit_principal Produit_principal;
 
 
-    public Menu(Produit_principal Sandwich, String libelle, double prix) {
-        super(libelle, prix);
+    public Menu(Produit_principal Sandwich, String libelle, double prix, Image img) {
+        super(libelle, prix, img);
         Produit_principal = Sandwich;
         Boisson = null;
         Accompagnement = null;

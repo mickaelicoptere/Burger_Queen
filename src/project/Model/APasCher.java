@@ -1,5 +1,6 @@
 package project.Model;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,8 +11,8 @@ public class APasCher extends Item {
     private String description;
     private List<Ingredient> composition;
 
-    public APasCher(String libelle, double prix, String description) {
-        super(libelle, prix);
+    public APasCher(String libelle, double prix, String description, Image img) {
+        super(libelle, prix, img);
         this.description = description;
         composition = new ArrayList<Ingredient>();
     }

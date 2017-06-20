@@ -79,5 +79,6 @@ public class ListeCommandeController implements Initializable {
         String toDel = ListeCommande.getSelectionModel().getSelectedItem();
         System.out.println("TODEL" + toDel);
         Init_produits.c1.delItemName(toDel);
+        ListeCommande.getItems().remove(itTemp.getLibelle());
     }
 }
