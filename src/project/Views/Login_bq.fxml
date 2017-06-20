@@ -79,7 +79,7 @@
                <DropShadow height="4.0" radius="1.5" width="4.0"/>
            </effect>
        </JFXButton>
-       <JFXButton buttonType="RAISED" layoutX="862.0" layoutY="14.0" mnemonicParsing="false" onAction="#toAccueil"
+       <JFXButton buttonType="RAISED" layoutX="862.0" layoutY="14.0" mnemonicParsing="false" onAction="#toMenus"
                   prefHeight="39.0" prefWidth="404.0" style="-fx-background-color: #F82831;"
                   text="Continuer en tant qu'utilisateur non authentifié" textFill="WHITE">
            <font>

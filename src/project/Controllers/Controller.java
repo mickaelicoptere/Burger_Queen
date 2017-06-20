@@ -81,7 +81,7 @@ public class Controller implements Initializable {
 
     @FXML
     public void toAccueil() throws Exception {
-        changePage("menu_principal_+encemoment");
+        changePage("AccueilBQ.fxml");
     }
 
     @FXML
@@ -150,7 +150,7 @@ public class Controller implements Initializable {
     }
 
     @FXML
-    private void changePage(String unePage) throws Exception {
+    public void changePage(String unePage) throws Exception {
         String pageLoaded = "../Views/".concat(unePage).concat(".fxml");
         historique[lastHistorique] = unePage;
         lastHistorique++;

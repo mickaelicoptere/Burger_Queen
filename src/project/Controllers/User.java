@@ -26,12 +26,12 @@ public class User extends Controller implements Initializable {
 
     private static String[] historique = new String[256];
     private static int lastHistorique;
-    public String nomUser = new String();
-    public String prenomUser = new String();
-    public String mailUser = new String();
-    public String telUser = new String();
-    public String mdpUser = new String();
-    public String LoginUser = new String();
+    public String nomUser = "";
+    public String prenomUser = "";
+    public String mailUser = "";
+    public String telUser = "";
+    public String mdpUser = "";
+    public String LoginUser = "";
     private boolean inscription = false;
     @FXML
     private JFXTextField Login;
@@ -69,7 +69,7 @@ public class User extends Controller implements Initializable {
         String mdpUser = this.Password1.getText();
         String LoginUser = this.Login.getText();
 
-        if (inscription == true) {
+        if (inscription) {
             //Utilisateur u1 = new Utilisateur(this.Nom.getAccessibleText(),this.Prenom.getAccessibleText() this.Email1.getAccessibleText(), this.Ntel1.getAccessibleText(), this.Password1.getAccessibleText(),true);
 
             Utilisateur u1 = new Utilisateur(nomUser, prenomUser, mailUser, nomUser, mdpUser, true);
@@ -89,31 +89,9 @@ public class User extends Controller implements Initializable {
 
     @FXML
     public void toAccueil() throws Exception {
-        changePage("menu_principal_+encemoment");
+        changePage("AccueilBQ");
     }
 
-    @FXML
-    private void changePage(String unePage) throws Exception {
-        String pageLoaded = "../Views/".concat(unePage).concat(".fxml");
-        historique[lastHistorique] = unePage;
-        lastHistorique++;
-
-        FXMLLoader loader = new FXMLLoader(
-                getClass().getResource(
-                        pageLoaded
-                )
-        );
-        Parent root = loader.load();
-        Scene scene = new Scene(root);
-        Main.primaryStage.setScene(scene);
-    }
-
-//    @FXML
-//    private void previousPage() throws Exception {
-//        int i = lastHistorique - 2;
-//        String pageToLoad = historique[i];
-//        changePage(pageToLoad);
-//    } TODO Fout la merde avec previousPage() du Controller.java, a decommenter quand fonctionnel
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
