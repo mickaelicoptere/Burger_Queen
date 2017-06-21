@@ -9,7 +9,7 @@ public class Menu extends Item {
 
 
     public Menu(Produit_principal Sandwich, String libelle, double prix, Image img) {
-        super(libelle, prix, img);
+        super(libelle, prix);
         Produit_principal = Sandwich;
         Boisson = null;
         Accompagnement = null;

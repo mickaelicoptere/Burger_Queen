@@ -9,20 +9,17 @@ import java.util.Date;
 
 public abstract class Item {
     private String libelle;
-    private double Prix;
     private ArrayList<Promotion> promotions;
     private String img;
     private double prix;
     private boolean promotion;
     private double prixPromo;
-    private Image img;
 
     public Item(String libelle, double prix) {
         this.libelle = libelle;
         this.prix = prix;
         promotion = false;
         prixPromo = Double.NaN;
-        this.img = img;
     }
 
     public String getLibelle() {
@@ -59,19 +56,6 @@ public abstract class Item {
         promotion = false;
         prixPromo = Double.NaN;
     }
-
-    public Image getImg() {
-        return img;
-    }
-
-    public void setImg(Image img) {
-        this.img = img;
-    }
-
-    public void delImg() {
-        img = null;
-    }
-
 
     public ImageView getImg(String debug) {
         Image img = new Image(Controller.class.getResourceAsStream(debug));

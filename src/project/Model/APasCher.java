@@ -11,8 +11,8 @@ public class APasCher extends Item {
     private String description;
     private List<Ingredient> composition;
 
-    public APasCher(String libelle, double prix, String description, Image img) {
-        super(libelle, prix, img);
+    public APasCher(String libelle, double prix, String description) {
+        super(libelle, prix);
         this.description = description;
         composition = new ArrayList<Ingredient>();
     }

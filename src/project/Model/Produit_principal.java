@@ -8,8 +8,8 @@ public class Produit_principal extends Item {
     private String description;
     private Map<Ingredient, Composition> composition;
 
-    public Produit_principal(String libelle, double prix, String description, Image img) {
-        super(libelle, prix, img);
+    public Produit_principal(String libelle, double prix, String description) {
+        super(libelle, prix);
         this.description = description;
         composition = new HashMap<Ingredient, Composition>();
     }
