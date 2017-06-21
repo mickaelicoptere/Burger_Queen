@@ -1,5 +1,9 @@
 package project.Model;
 
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import project.Controllers.Controller;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -7,6 +11,7 @@ public abstract class Item {
     private String libelle;
     private double Prix;
     private ArrayList<Promotion> promotions;
+    private String img;
 
     public Item(String libelle, double prix) {
         this.libelle = libelle;
@@ -58,4 +63,15 @@ public abstract class Item {
     public void delPromo(Promotion promo) {
         promotions.remove(promo);
     }
+
+
+    public ImageView getImg(String debug) {
+        Image img = new Image(Controller.class.getResourceAsStream(debug));
+        ImageView imgView = new ImageView();
+        imgView.setImage(img);
+        return imgView;
+
+    }
+
+
 }

@@ -2,96 +2,19 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.effect.Reflection?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="Payer" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.112"
+<AnchorPane fx:id="Payer" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.111"
             xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Controller">
     <children>
-        <AnchorPane layoutX="77.0" layoutY="33.0" prefHeight="611.0" prefWidth="941.0">
-            <children>
-                <Text layoutX="321.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NotAWhooper - 4.5€"
-                      wrappingWidth="184.00000762939453">
-                    <font>
-                        <Font name="Insaniburger" size="18.0"/>
-                    </font>
-                </Text>
-                <ImageView fx:id="pp1" accessibleRole="BUTTON" fitHeight="148.0" fitWidth="200.0" layoutX="123.0" layoutY="40.0" onMouseClicked="#addToList" preserveRatio="true">
-                    <image>
-                        <Image url="@../img/Burgers/royaldeluxe_mcdonalds.png" />
-                    </image>
-                    <cursor>
-                        <Cursor fx:constant="HAND" />
-                    </cursor>
-                    <effect>
-                        <Reflection fraction="0.44" topOpacity="0.43" />
-                    </effect>
-                </ImageView>
-                <ImageView fx:id="pp3" accessibleRole="BUTTON" fitHeight="183.0" fitWidth="200.0" layoutX="122.0" layoutY="306.0" onMouseClicked="#addToList" preserveRatio="true">
-                    <image>
-                        <Image url="@../img/Burgers/hamburger1.png" />
-                    </image>
-                    <cursor>
-                        <Cursor fx:constant="HAND" />
-                    </cursor>
-                    <effect>
-                        <Reflection fraction="0.44" topOpacity="0.43" />
-                    </effect>
-                </ImageView>
-                <ImageView fx:id="pp4" accessibleRole="BUTTON" fitHeight="163.0" fitWidth="200.0" layoutX="587.0" layoutY="326.0" onMouseClicked="#addToList">
-                    <image>
-                        <Image url="@../img/Burgers/Burger1.png" />
-                    </image>
-                    <cursor>
-                        <Cursor fx:constant="HAND" />
-                    </cursor>
-                    <effect>
-                        <Reflection fraction="0.44" topOpacity="0.43" />
-                    </effect>
-                </ImageView>
-                <ImageView fx:id="pp2" accessibleRole="BUTTON" fitHeight="146.0" fitWidth="200.0" layoutX="588.0" layoutY="41.0" onMouseClicked="#addToList" preserveRatio="true">
-                    <image>
-                        <Image url="@../img/Burgers/hamburger2.png" />
-                    </image>
-                    <cursor>
-                        <Cursor fx:constant="HAND" />
-                    </cursor>
-                    <effect>
-                        <Reflection fraction="0.44" topOpacity="0.43" />
-                    </effect>
-                </ImageView>
-                <Text layoutX="-46.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Burgers" wrappingWidth="176.99998092651367">
-                    <font>
-                        <Font name="Yu Gothic Regular" size="37.0" />
-                    </font>
-               <effect>
-                  <Reflection />
-               </effect>
-                </Text>
-                <Text layoutX="794.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carnivor - 5.35€"
-                      wrappingWidth="146.1113224029541">
-                    <font>
-                        <Font name="Insaniburger" size="18.0"/>
-                    </font>
-                </Text>
-                <Text layoutX="321.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LE KASDALLEUR - 7.15€" wrappingWidth="198.84326934814453">
-                    <font>
-                        <Font name="Insaniburger" size="18.0"/>
-                    </font>
-                </Text>
-                <Text layoutX="785.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chick King - 6.7€"
-                      wrappingWidth="146.1113166809082">
-                    <font>
-                        <Font name="Insaniburger" size="18.0"/>
-                    </font>
-                </Text>
-            </children>
-        </AnchorPane>
         <JFXButton layoutX="14.0" layoutY="653.0" onAction="#previousPage" prefHeight="30.0" prefWidth="199.0" style="-fx-background-color: #F82831; -fx-border-radius: 5 5 5;" text="Retour" textFill="WHITE">
             <cursor>
                 <Cursor fx:constant="HAND" />
@@ -104,5 +27,31 @@
             </font>
         </JFXButton>
         <fx:include fx:id="MaCommande" source="MaCommande.fxml" />
+        <Text layoutX="25.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Burgers"
+              wrappingWidth="176.99998092651367">
+            <font>
+                <Font name="Yu Gothic Regular" size="37.0"/>
+            </font>
+            <effect>
+                <Reflection/>
+            </effect>
+        </Text>
+        <ScrollPane layoutX="85.0" layoutY="53.0" prefHeight="574.0" prefWidth="923.0">
+            <content>
+                <GridPane fx:id="gridBurgers" prefHeight="573.0" prefWidth="886.0" style="-fx-grid-: true"
+                          onMouseClicked="#addToList">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="268.0" minHeight="268.0" prefHeight="268.0" vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="268.0" minHeight="268.0" prefHeight="268.0" vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="268.0" minHeight="268.0" prefHeight="268.0" vgrow="SOMETIMES"/>
+                        <RowConstraints maxHeight="268.0" minHeight="268.0" prefHeight="268.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                </GridPane>
+            </content>
+        </ScrollPane>
     </children>
 </AnchorPane>

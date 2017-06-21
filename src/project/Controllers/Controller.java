@@ -4,15 +4,25 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.image.Image;
 
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
 import project.Init_produits;
 import project.Main;
 
@@ -29,6 +39,10 @@ import java.util.Map;
 import java.util.ResourceBundle;
 
 import project.Model.*;
+
+import javax.imageio.ImageIO;
+
+import javafx.scene.image.ImageView;
 
 
 public class Controller implements Initializable {
@@ -56,11 +70,27 @@ public class Controller implements Initializable {
     @FXML
     private ListeCommandeController MaCommandeController;
 
+    @FXML
+    private GridPane gridBurgers = new GridPane();
+
+    @FXML
+    private JFXScrollPane scrollPane = new JFXScrollPane();
+
+    private int xGrid = 0;
+    private int yGrid = 0;
+    private int pos = 0;
+    private int incProduit = 1;
+    private ImageView imgTemp = new ImageView();
+
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        try {
+            initGrid();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
@@ -177,6 +207,73 @@ public class Controller implements Initializable {
         String idtemp = evt.getPickResult().getIntersectedNode().getId();
         MaCommandeController.addToCart(idtemp);
     }
+
+    @FXML
+    public void addToGrid(int x, int y) {
+        HBox imgRegion = new HBox();
+        Image img = new Image(Controller.class.getResourceAsStream("../img/Burgers/pp1.png"));
+        ImageView imgView = new ImageView();
+        imgView.setImage(img);
+        imgRegion.getChildren().add(imgView);
+        gridBurgers.add(imgRegion, 0, 0);
+    }
+
+    @FXML
+    public void initGrid() throws Exception {
+        Method method = gridBurgers.getClass().getDeclaredMethod("getNumberOfRows");
+        method.setAccessible(true);
+        Integer rows = (Integer) method.invoke(gridBurgers);
+        pos = rows;
+        if (Init_produits.nbBurgers / 2 > rows) {
+            int delta = Init_produits.nbBurgers / 2 - rows;
+            for (int i = 0; i < delta; i++) {
+                gridBurgers.addRow(pos);
+                pos++;
+            }
+        }
+
+        for (int i = 1; i <= Init_produits.nbBurgers; i++) {
+            HBox imgRegion = new HBox();
+
+            String idtemp = "pp" + i;
+            String typetemp = "Burgers";
+            String chemintemp = "../img/" + typetemp + "/" + idtemp + ".png";
+            imgTemp = Init_produits.items.get(idtemp).getImg(chemintemp);
+            imgTemp.setId(idtemp);
+
+
+            imgRegion.getChildren().add(imgTemp);
+            imgRegion.setAlignment(Pos.CENTER);
+            imgRegion.setId(idtemp);
+            gridBurgers.add(imgRegion, yGrid, xGrid);
+            System.out.println("On affiche : " + chemintemp);
+
+            if (i < Init_produits.nbBurgers) {
+                HBox imgRegion2 = new HBox();
+                i++;
+                idtemp = "pp" + i;
+                chemintemp = "../img/" + typetemp + "/" + idtemp + ".png";
+                imgTemp = Init_produits.items.get(idtemp).getImg(chemintemp);
+                imgRegion2.getChildren().add(imgTemp);
+                if (i == Init_produits.nbBurgers) {
+                    xGrid++;
+                }
+                imgRegion.setAlignment(Pos.CENTER);
+                imgTemp.setId(idtemp);
+                gridBurgers.add(imgRegion2, yGrid + 1, xGrid);
+            }
+
+            xGrid++;
+            System.out.println(i);
+
+        }
+        scrollPane.setContent(gridBurgers);
+        JFXScrollPane.smoothScrolling((ScrollPane) scrollPane.getChildren().get(0));
+
+
+    }
+
+
 
 
 }

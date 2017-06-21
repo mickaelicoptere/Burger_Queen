@@ -23,7 +23,7 @@ public class Init_produits extends Main {
     private static Ingredient i1, i2, i3, i4, i5, i6;
     //private static Allergene a1, a2, a3, a4, a5,a6, a7, a8;
     private static Preference p1, p2, p3, p4, p5, p6;
-    private static Produit_principal pp1, pp2, pp3, pp4, ecm1, ecm2, ecm3;
+    private static Produit_principal pp1, pp2, pp3, pp4, pp5, ecm1, ecm2, ecm3;
     private static APasCher apc1, apc2, apc3, apc4;
     private static Desserts d1, d2, d3;
     private static Accompagnement a1, a2;
@@ -33,6 +33,7 @@ public class Init_produits extends Main {
     private ArrayList<Allergene> allergenes;
     private ArrayList<Preference> preferences;
     private ArrayList<Produit_principal> produitprincipaux;
+    public static int nbBurgers;
 
 
 
@@ -49,6 +50,8 @@ public class Init_produits extends Main {
         pp2 = new Produit_principal("Carnivor", 5.35 ,"blabla");
         pp3 = new Produit_principal("LE KASDALLEUR", 7.15 ,"blabla");
         pp4 = new Produit_principal("Chick King", 6.70 ,"blabla");
+        pp5 = new Produit_principal("Test", 2, "blabla");
+        nbBurgers = 5;
 
         ecm1 = new Produit_principal("Dark Burger", 7, "blabla");
         ecm2 = new Produit_principal("Croissant Burger", 6.2, "blabla");
@@ -74,6 +77,7 @@ public class Init_produits extends Main {
         items.put("pp2", pp2);
         items.put("pp3", pp3);
         items.put("pp4", pp4);
+        items.put("pp5", pp5);
         items.put("ecm1", ecm1);
         items.put("ecm2", ecm2);
         items.put("ecm3", ecm3);
