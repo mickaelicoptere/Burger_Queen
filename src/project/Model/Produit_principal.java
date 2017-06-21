@@ -1,5 +1,6 @@
 package project.Model;
 
+import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -7,8 +8,8 @@ public class Produit_principal extends Item {
     private String description;
     private Map<Ingredient, Composition> composition;
 
-    public Produit_principal(String libelle, double prix, String description) {
-        super(libelle, prix);
+    public Produit_principal(String libelle, double prix, String description, Image img) {
+        super(libelle, prix, img);
         this.description = description;
         composition = new HashMap<Ingredient, Composition>();
     }

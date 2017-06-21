@@ -12,11 +12,17 @@ public abstract class Item {
     private double Prix;
     private ArrayList<Promotion> promotions;
     private String img;
+    private double prix;
+    private boolean promotion;
+    private double prixPromo;
+    private Image img;
 
     public Item(String libelle, double prix) {
         this.libelle = libelle;
-        Prix = prix;
-        promotions = new ArrayList<>();
+        this.prix = prix;
+        promotion = false;
+        prixPromo = Double.NaN;
+        this.img = img;
     }
 
     public String getLibelle() {
@@ -28,40 +34,42 @@ public abstract class Item {
     }
 
     public double getPrix() {
-        return Prix;
+        if (this.promotion)
+            return prixPromo;
+        else
+            return prix;
     }
 
     public void setPrix(double prix) {
-        Prix = prix;
+        this.prix = prix;
     }
-
 
     public String toString() {
         return "Item{" +
                 "libelle='" + libelle + "\'" +
-                ", Prix=" + Prix + "\n" +
-                ", Promotion=" + promotions.toString() +
-                "}";
+                ", Prix=" + prix + "\n" + "}";
     }
 
-    public void addPromo(Promotion promo) {
-        promotions.add(promo);
+    public void addPromo(double prix) {
+        promotion = true;
+        prixPromo = prix;
     }
 
-    public void delPromoFin() {
-        promotions.remove(promotions.size() - 1);
+    public void delPromo() {
+        promotion = false;
+        prixPromo = Double.NaN;
     }
 
-    public void delPromoDate(Date fin) {
-        for ( Promotion p : promotions ) {
-            if (p.getDateFin().after(fin)) {
-                promotions.remove(p);
-            }
-        }
+    public Image getImg() {
+        return img;
     }
 
-    public void delPromo(Promotion promo) {
-        promotions.remove(promo);
+    public void setImg(Image img) {
+        this.img = img;
+    }
+
+    public void delImg() {
+        img = null;
     }
 
 

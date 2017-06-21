@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXListView?>
-<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.*?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.text.Font?>
-
-<FlowPane id="FlowPane" layoutX="1057.0" layoutY="55.0" prefHeight="653.0" prefWidth="199.0"
-          xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+<FlowPane xmlns:fx="http://javafx.com/fxml/1" id="FlowPane" layoutX="1057.0" layoutY="55.0" prefHeight="653.0"
+          prefWidth="199.0" xmlns="http://javafx.com/javafx/8.0.111"
           fx:controller="project.Controllers.ListeCommandeController">
     <children>
         <JFXButton prefHeight="31.0" prefWidth="199.0" style="-fx-background-color: #909090;" text="Ma commande"
@@ -23,8 +20,8 @@
         </JFXButton>
         <AnchorPane id="PanierCommande" prefHeight="620.0" prefWidth="199.0">
             <children>
-                <JFXButton layoutY="494.0" prefHeight="80.0" prefWidth="199.0" style="-fx-background-color: #909090;"
-                           text="Payer" textFill="WHITE">
+                <JFXButton layoutY="494.0" onAction="#saveCommande" prefHeight="80.0" prefWidth="199.0"
+                           style="-fx-background-color: #909090;" text="Payer" textFill="WHITE">
                     <effect>
                         <DropShadow/>
                     </effect>
@@ -32,7 +29,8 @@
                         <Font size="24.0"/>
                     </font>
                 </JFXButton>
-                <JFXListView id="Order list" fx:id="ListeCommande" layoutY="1.0" prefHeight="462.0" prefWidth="199.0"
+                <JFXListView id="Order list" fx:id="ListeCommande" layoutY="1.0" onMouseClicked="#delItemSelected"
+                             prefHeight="462.0" prefWidth="199.0"
                              style="-fx-border-color: black; -fx-border-radius: 5 5 5;"/>
                 <JFXButton layoutY="594.0" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: #F82831;"
                            text="Annuler la commande" textFill="WHITE" textOverrun="CLIP">
@@ -40,8 +38,8 @@
                         <DropShadow/>
                     </effect>
                 </JFXButton>
-                <JFXTextField layoutY="463.0" prefHeight="25.0" prefWidth="199.0" promptText="Total"
-                              style="-fx-border-color: black; -fx-border-radius: 5 5 5;" fx:id="TotalCommande"/>
+                <JFXTextField fx:id="TotalCommande" layoutY="463.0" prefHeight="25.0" prefWidth="199.0"
+                              promptText="Total" style="-fx-border-color: black; -fx-border-radius: 5 5 5;"/>
             </children>
         </AnchorPane>
     </children>

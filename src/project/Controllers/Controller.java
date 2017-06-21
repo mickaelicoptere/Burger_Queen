@@ -1,6 +1,9 @@
 package project.Controllers;
 
-import javafx.collections.ObservableList;
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXPasswordField;
+import com.jfoenix.controls.JFXTextField;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -53,9 +56,6 @@ public class Controller implements Initializable {
 
     public AnchorPane Payer;
     @FXML
-    private JFXButton connexion;
-
-    @FXML
     public JFXTextField user;
 
     @FXML
@@ -63,7 +63,8 @@ public class Controller implements Initializable {
 
     @FXML
     public AnchorPane MainAnchor;
-
+    @FXML
+    private JFXButton connexion;
     @FXML
     private FlowPane MaCommande;
 
@@ -99,6 +100,9 @@ public class Controller implements Initializable {
         String password = pass.getText();
         if (username.equals("test") && password.equals("test")) {
             changePage("menu_principal_+encemoment");
+        }
+        if (username.equals("manager") && password.equals("manager")) {
+            changePage("menu_principal_manager");
         } else {
             System.out.println("Error");
         }
@@ -108,6 +112,12 @@ public class Controller implements Initializable {
     public void toMenus() throws Exception {
         changePage("menu_principal_+encemoment");
     }
+
+    @FXML
+    public void toMenuManager() throws Exception {
+        changePage("menu_principal_manager");
+    }
+
 
     @FXML
     public void toAccueil() throws Exception {
@@ -148,6 +158,12 @@ public class Controller implements Initializable {
     public void toBurgers() throws Exception {
         changePage("Burgers");
     }
+
+    @FXML
+    public void toAddBurgers() throws Exception {
+        changePage("AddBurgers");
+    }
+
 
     @FXML
     public void toDesserts() throws Exception {
