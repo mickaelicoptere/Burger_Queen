@@ -2,13 +2,14 @@ package project.Model;
 
 import project.Init_produits;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Commande {
     public int nbItem;
     private double prixCommande;
     private boolean aEmporter;
-    private ArrayList<Item> commande;
+    public ArrayList<Item> commande;
     private Utilisateur buyer;
 
     public Commande(boolean aEmporter, Utilisateur buyer) {
@@ -23,7 +24,17 @@ public class Commande {
         for (Item i : commande) {
             prixCommande += i.getPrix();
         }
+        prixCommande = round(prixCommande, 2);
         return prixCommande;
+    }
+
+    public static double round(double value, int places) {
+        if (places < 0) throw new IllegalArgumentException();
+
+        long factor = (long) Math.pow(10, places);
+        value = value * factor;
+        long tmp = Math.round(value);
+        return (double) tmp / factor;
     }
 
     @Override
@@ -45,8 +56,10 @@ public class Commande {
 
     public void delItemName(String nom) {
         for (Item i : commande) {
-            if (i.getLibelle() == nom)
-                commande.remove(i);
+            if (i.getLibelle() == nom) {
+                //                commande.remove(i);
+
+            }
         }
     }
 

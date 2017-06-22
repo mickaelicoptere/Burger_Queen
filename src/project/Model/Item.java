@@ -23,7 +23,7 @@ public abstract class Item {
     }
 
     public String getLibelle() {
-        return libelle;
+        return this.libelle;
     }
 
     public void setLibelle(String libelle) {

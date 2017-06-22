@@ -219,9 +219,17 @@ public class Controller implements Initializable {
     }
 
     @FXML
-    public void addToList(MouseEvent evt) throws Exception {
-        String idtemp = evt.getPickResult().getIntersectedNode().getId();
-        MaCommandeController.addToCart(idtemp);
+    public void addToList(MouseEvent evt) {
+        try {
+            String idtemp = evt.getPickResult().getIntersectedNode().getId();
+            if (idtemp != gridBurgers.getId() && idtemp != null) {
+                System.out.println(idtemp);
+                MaCommandeController.addToCart(idtemp);
+            }
+
+        } catch (Exception e1) {
+            System.out.println("Vous avez cliqué dans le vide !");
+        }
     }
 
     @FXML
@@ -262,7 +270,6 @@ public class Controller implements Initializable {
             imgRegion.setAlignment(Pos.CENTER);
             imgRegion.setId(idtemp);
             gridBurgers.add(imgRegion, yGrid, xGrid);
-            System.out.println("On affiche : " + chemintemp);
 
             if (i < Init_produits.nbBurgers) {
                 HBox imgRegion2 = new HBox();
@@ -280,7 +287,6 @@ public class Controller implements Initializable {
             }
 
             xGrid++;
-            System.out.println(i);
 
         }
         scrollPane.setContent(gridBurgers);

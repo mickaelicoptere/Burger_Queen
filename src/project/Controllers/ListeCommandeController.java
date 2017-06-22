@@ -33,11 +33,14 @@ public class ListeCommandeController implements Initializable {
     @FXML
     protected JFXTextField TotalCommande = new JFXTextField();
     protected Item itTemp;
-    protected int i = Init_produits.c1.nbItem;
+    protected int i = 0;
     private Map<String, String> correspondanceNom = new HashMap<>();
+
+    private int toDel;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        i = Init_produits.c1.nbItem;
         if (i != 0) {
             for (int j = 0; j < i; j++) {
                 ListeCommande.getItems().add(Init_produits.c1.getNameById(j));
@@ -45,7 +48,6 @@ public class ListeCommandeController implements Initializable {
             }
         }
         TotalCommande.setText(calculTotal());
-        System.out.println(Init_produits.c1.calcPrixCommande());
     }
 
     @FXML
@@ -76,9 +78,14 @@ public class ListeCommandeController implements Initializable {
 
     @FXML //TODO La méthode fonctionne, c'est seulement l'affichage qui merde
     public void delItemSelected() {
-        String toDel = ListeCommande.getSelectionModel().getSelectedItem();
-        System.out.println("TODEL" + toDel);
-        Init_produits.c1.delItemName(toDel);
-        ListeCommande.getItems().remove(itTemp.getLibelle());
+        toDel = ListeCommande.getSelectionModel().getSelectedIndex();
+        if (toDel != -1) {
+            System.out.println("EST SELECTIONNE " + toDel);
+            Init_produits.c1.commande.remove(toDel);
+            ListeCommande.getItems().remove(toDel);
+            Init_produits.c1.nbItem--;
+            toDel = 0;
+            TotalCommande.setText(calculTotal());
+        }
     }
 }

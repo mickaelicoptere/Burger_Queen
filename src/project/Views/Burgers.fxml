@@ -38,7 +38,8 @@
         </Text>
         <ScrollPane layoutX="85.0" layoutY="53.0" prefHeight="574.0" prefWidth="923.0">
             <content>
-                <GridPane fx:id="gridBurgers" prefHeight="573.0" prefWidth="886.0" style="-fx-grid-: true"
+                <GridPane fx:id="gridBurgers" prefHeight="573.0" prefWidth="886.0"
+                          style="-fx-grid-: true; -fx-grid-lines-visible: true;"
                           onMouseClicked="#addToList">
                     <columnConstraints>
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
