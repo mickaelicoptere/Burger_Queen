@@ -44,6 +44,7 @@ import java.util.ResourceBundle;
 import project.Model.*;
 
 import javax.imageio.ImageIO;
+import javax.swing.*;
 import javax.xml.bind.annotation.XmlAccessorOrder;
 
 import javafx.scene.image.ImageView;
@@ -85,6 +86,7 @@ public class Controller implements Initializable {
     private int yGrid = 0;
     private int pos = 0;
     private ImageView imgTemp = new ImageView();
+    private boolean flagMenu = true;
 
 
 
@@ -245,7 +247,14 @@ public class Controller implements Initializable {
     @FXML
     public void addToListe(String idtemp) {
         try {
-            MaCommandeController.addToCart(idtemp);
+            if (historique[lastHistorique - 1].contains("MENU") && flagMenu) {
+                MaCommandeController.addToCart(idtemp);
+                flagMenu = false;
+            } else if (historique[lastHistorique - 1].contains("MENU") != true) {
+                MaCommandeController.addToCart(idtemp);
+            } else if (historique[lastHistorique - 1].contains("MENU") && flagMenu == false) {
+                JOptionPane.showMessageDialog(null, "T'as cru tu pouvais prendre 3 burgers dans un menu FDP ?", "JSUIS PAS TA PUTE", JOptionPane.INFORMATION_MESSAGE);
+            }
         } catch (Exception e1) {
             System.out.println("Vous avez cliqué dans le vide !");
         }
