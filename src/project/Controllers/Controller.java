@@ -44,6 +44,7 @@ import java.util.ResourceBundle;
 import project.Model.*;
 
 import javax.imageio.ImageIO;
+import javax.xml.bind.annotation.XmlAccessorOrder;
 
 import javafx.scene.image.ImageView;
 
@@ -72,6 +73,9 @@ public class Controller implements Initializable {
     private ListeCommandeController MaCommandeController;
 
     @FXML
+    private ControllerBurgers BurgersController;
+
+    @FXML
     private GridPane gridBurgers = new GridPane();
 
     @FXML
@@ -80,18 +84,12 @@ public class Controller implements Initializable {
     private int xGrid = 0;
     private int yGrid = 0;
     private int pos = 0;
-    private int incProduit = 1;
     private ImageView imgTemp = new ImageView();
 
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        try {
-            initGrid();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
     @FXML
@@ -121,7 +119,7 @@ public class Controller implements Initializable {
 
     @FXML
     public void toAccueil() throws Exception {
-        changePage("AccueilBQ.fxml");
+        changePage("AccueilBQ");
     }
 
     @FXML
@@ -223,8 +221,9 @@ public class Controller implements Initializable {
         try {
             String idtemp = evt.getPickResult().getIntersectedNode().getId();
             if (idtemp != gridBurgers.getId() && idtemp != null) {
-                System.out.println(idtemp);
+                System.out.println("On va invoke" + idtemp);
                 MaCommandeController.addToCart(idtemp);
+                System.out.println("C invoke");
             }
 
         } catch (Exception e1) {
@@ -232,70 +231,24 @@ public class Controller implements Initializable {
         }
     }
 
-    @FXML
-    public void addToGrid(int x, int y) {
-        HBox imgRegion = new HBox();
-        Image img = new Image(Controller.class.getResourceAsStream("../img/Burgers/pp1.png"));
-        ImageView imgView = new ImageView();
-        imgView.setImage(img);
-        imgRegion.getChildren().add(imgView);
-        gridBurgers.add(imgRegion, 0, 0);
+    private static Controller instance;
+
+    public Controller() {
+        instance = this;
+    }
+
+    // static method to get instance of view
+    public static Controller getInstance() {
+        return instance;
     }
 
     @FXML
-    public void initGrid() throws Exception {
-        Method method = gridBurgers.getClass().getDeclaredMethod("getNumberOfRows");
-        method.setAccessible(true);
-        Integer rows = (Integer) method.invoke(gridBurgers);
-        pos = rows;
-        if (Init_produits.nbBurgers / 2 > rows) {
-            int delta = Init_produits.nbBurgers / 2 - rows;
-            for (int i = 0; i < delta; i++) {
-                gridBurgers.addRow(pos);
-                pos++;
-            }
+    public void addToListe(String idtemp) {
+        try {
+            MaCommandeController.addToCart(idtemp);
+        } catch (Exception e1) {
+            System.out.println("Vous avez cliqué dans le vide !");
         }
-
-        for (int i = 1; i <= Init_produits.nbBurgers; i++) {
-            HBox imgRegion = new HBox();
-
-            String idtemp = "pp" + i;
-            String typetemp = "Burgers";
-            String chemintemp = "../img/" + typetemp + "/" + idtemp + ".png";
-            imgTemp = Init_produits.items.get(idtemp).getImg(chemintemp);
-            imgTemp.setId(idtemp);
-
-
-            imgRegion.getChildren().add(imgTemp);
-            imgRegion.setAlignment(Pos.CENTER);
-            imgRegion.setId(idtemp);
-            gridBurgers.add(imgRegion, yGrid, xGrid);
-
-            if (i < Init_produits.nbBurgers) {
-                HBox imgRegion2 = new HBox();
-                i++;
-                idtemp = "pp" + i;
-                chemintemp = "../img/" + typetemp + "/" + idtemp + ".png";
-                imgTemp = Init_produits.items.get(idtemp).getImg(chemintemp);
-                imgRegion2.getChildren().add(imgTemp);
-                if (i == Init_produits.nbBurgers) {
-                    xGrid++;
-                }
-                imgRegion.setAlignment(Pos.CENTER);
-                imgTemp.setId(idtemp);
-                gridBurgers.add(imgRegion2, yGrid + 1, xGrid);
-            }
-
-            xGrid++;
-
-        }
-        scrollPane.setContent(gridBurgers);
-        JFXScrollPane.smoothScrolling((ScrollPane) scrollPane.getChildren().get(0));
-
-
     }
-
-
-
 
 }

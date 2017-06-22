@@ -33,7 +33,7 @@
                              prefHeight="462.0" prefWidth="199.0"
                              style="-fx-border-color: black; -fx-border-radius: 5 5 5;"/>
                 <JFXButton layoutY="594.0" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: #F82831;"
-                           text="Annuler la commande" textFill="WHITE" textOverrun="CLIP">
+                           text="Annuler la commande" textFill="WHITE" textOverrun="CLIP" onAction="#toAccueil">
                     <effect>
                         <DropShadow/>
                     </effect>

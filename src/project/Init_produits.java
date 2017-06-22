@@ -23,7 +23,7 @@ public class Init_produits extends Main {
     private static Ingredient i1, i2, i3, i4, i5, i6;
     //private static Allergene a1, a2, a3, a4, a5,a6, a7, a8;
     private static Preference p1, p2, p3, p4, p5, p6;
-    private static Produit_principal pp1, pp2, pp3, pp4, pp5, ecm1, ecm2, ecm3;
+    private static Produit_principal pp1, pp2, pp3, pp4, pp5, pp6, pp7, pp8, pp9, pp10, ecm1, ecm2, ecm3;
     private static APasCher apc1, apc2, apc3, apc4;
     private static Desserts d1, d2, d3;
     private static Accompagnement a1, a2;
@@ -33,7 +33,7 @@ public class Init_produits extends Main {
     private ArrayList<Allergene> allergenes;
     private ArrayList<Preference> preferences;
     private ArrayList<Produit_principal> produitprincipaux;
-    public static int nbBurgers;
+    public static int nbBurgers, nbBoissons, nbAccompagnements, nbApascher, nbDesserts, nbEncemoment;
 
 
 
@@ -45,29 +45,39 @@ public class Init_produits extends Main {
         b1 = new Boisson(MarqueBoissons.Cola.libelle,2.5 , Taille.TrèsGros.libelle);
         b2 = new Boisson(MarqueBoissons.EauMinerale.libelle, 30, Taille.Gros.libelle);
         b3 = new Boisson(MarqueBoissons.limonade.libelle, 1.75, Taille.Morbide.libelle);
+        nbBoissons = 3;
 
         pp1 = new Produit_principal("NotAWhooper", 4.5, "blabla");
         pp2 = new Produit_principal("Carnivor", 5.35 ,"blabla");
         pp3 = new Produit_principal("LE KASDALLEUR", 7.15 ,"blabla");
         pp4 = new Produit_principal("Chick King", 6.70 ,"blabla");
         pp5 = new Produit_principal("Test", 2, "blabla");
-        nbBurgers = 5;
+        pp6 = new Produit_principal("LE KASDALLEUR", 7.15, "blabla");
+        pp7 = new Produit_principal("Chick King", 6.70, "blabla");
+        pp8 = new Produit_principal("Test", 2, "blabla");
+        pp9 = new Produit_principal("LE KASDALLEUR", 7.15, "blabla");
+        pp10 = new Produit_principal("Chick King", 6.70, "blabla");
+        nbBurgers = 10;
 
         ecm1 = new Produit_principal("Dark Burger", 7, "blabla");
         ecm2 = new Produit_principal("Croissant Burger", 6.2, "blabla");
         ecm3 = new Produit_principal("Normal Burger", 6, "blabla");
+        nbEncemoment = 3;
 
         d1 = new Desserts("Milkshake", 5.30, Taille.Gros.libelle);
-        d2 = new Desserts("Madeleines", 2, Taille.Morbide.libelle);
-        d3 = new Desserts("The Cake is a Lie", 500, Taille.TrèsGros.libelle);
+        d2 = new Desserts("Madeleines IUT Nice", 2, Taille.Morbide.libelle);
+        d3 = new Desserts("Sucre d'orge ♥", 500, Taille.TrèsGros.libelle);
+        nbDesserts = 3;
 
         apc1 = new APasCher("Bagel", 4, "blabla");
         apc2 = new APasCher("FishBurger", 2, "blabla");
         apc3 = new APasCher("SmallMac", 1.95, "blabla");
         apc4 = new APasCher("Poulet enroulé", 3, "blabla");
+        nbApascher = 4;
 
         a1 = new Accompagnement("Frites", 2.5, Taille.TrèsGros.libelle);
         a2 = new Accompagnement("Potatoes", 2.5, Taille.Gros.libelle);
+        nbAccompagnements = 2;
 
         items.put("b1", b1);
         items.put("b2", b2);
@@ -78,6 +88,13 @@ public class Init_produits extends Main {
         items.put("pp3", pp3);
         items.put("pp4", pp4);
         items.put("pp5", pp5);
+        items.put("pp6", pp6);
+        items.put("pp7", pp7);
+        items.put("pp8", pp8);
+        items.put("pp9", pp9);
+        items.put("pp10", pp10);
+
+
         items.put("ecm1", ecm1);
         items.put("ecm2", ecm2);
         items.put("ecm3", ecm3);

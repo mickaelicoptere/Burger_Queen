@@ -4,8 +4,12 @@ import com.jfoenix.controls.JFXListView;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import project.Init_produits;
+import project.Main;
 import project.Model.Item;
 
 import java.io.BufferedWriter;
@@ -17,6 +21,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 import java.util.ResourceBundle;
+
+import project.Controllers.Controller;
 
 //import java.awt.event.ActionEvent;
 
@@ -34,7 +40,6 @@ public class ListeCommandeController implements Initializable {
     protected JFXTextField TotalCommande = new JFXTextField();
     protected Item itTemp;
     protected int i = 0;
-    private Map<String, String> correspondanceNom = new HashMap<>();
 
     private int toDel;
 
@@ -51,7 +56,7 @@ public class ListeCommandeController implements Initializable {
     }
 
     @FXML
-    void addToCart(String idtemp) throws Exception {
+    public void addToCart(String idtemp) throws Exception {
         System.out.println("Button clicked");
         Init_produits.c1.addItem(idtemp);
         itTemp = Init_produits.c1.getItem(idtemp);
@@ -76,7 +81,6 @@ public class ListeCommandeController implements Initializable {
         }
     }
 
-    @FXML //TODO La méthode fonctionne, c'est seulement l'affichage qui merde
     public void delItemSelected() {
         toDel = ListeCommande.getSelectionModel().getSelectedIndex();
         if (toDel != -1) {
@@ -88,4 +92,19 @@ public class ListeCommandeController implements Initializable {
             TotalCommande.setText(calculTotal());
         }
     }
+
+    @FXML
+    public void toAccueil() throws Exception {
+        String pageLoaded = ("../Views/AccueilBQ.fxml");
+        FXMLLoader loader = new FXMLLoader(
+                getClass().getResource(
+                        pageLoaded
+                )
+        );
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        Main.primaryStage.setScene(scene);
+    }
+
+
 }

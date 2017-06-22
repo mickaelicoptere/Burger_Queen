@@ -15,7 +15,7 @@
    <children>
       <ImageView accessibleRole="BUTTON" fitHeight="151.0" fitWidth="74.0" layoutX="152.0" layoutY="150.0">
          <image>
-            <Image url="@../img/Boissons/boisson.png" />
+             <Image url="@../img/Boissons/b2.png"/>
          </image>
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
@@ -23,7 +23,7 @@
       </ImageView>
       <ImageView accessibleRole="BUTTON" fitHeight="144.0" fitWidth="175.0" layoutX="806.0" layoutY="171.0">
          <image>
-            <Image url="@../img/Accompagnements/Frites.png" />
+             <Image url="@../img/Accompagnements/a1.png"/>
          </image>
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
@@ -31,7 +31,7 @@
       </ImageView>
       <ImageView accessibleRole="BUTTON" fitHeight="151.0" fitWidth="74.0" layoutX="158.0" layoutY="466.0">
          <image>
-             <Image url="@../img/Desserts/dessert.png"/>
+             <Image url="@../img/Desserts/d1.png"/>
          </image>
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
@@ -41,7 +41,7 @@
          <children>
             <ImageView fx:id="ecm1" fitHeight="75.0" fitWidth="138.0" onMouseClicked="#addToList" preserveRatio="true">
                <image>
-                  <Image url="@../img/Autres/burger_zinger_black.png" />
+                   <Image url="@../img/EnCeMoment/ecm1.png"/>
                </image>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -49,7 +49,7 @@
             </ImageView>
             <ImageView fx:id="ecm2" fitHeight="75.0" fitWidth="101.0" layoutX="201.0" onMouseClicked="#addToList">
                <image>
-                  <Image url="@../img/Burgers/hamburger3.png" />
+                   <Image url="@../img/EnCeMoment/ecm2.png"/>
                </image>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -76,7 +76,7 @@
       </AnchorPane>
       <ImageView fitHeight="130.0" fitWidth="200.0" layoutX="811.0" layoutY="466.0">
          <image>
-            <Image url="@../img/Apascher/cheeseburger.png" />
+             <Image url="@../img/Apascher/apc4.png"/>
          </image>
       </ImageView>
        <JFXButton buttonType="RAISED" layoutX="137.0" layoutY="322.0" mnemonicParsing="false" onAction="#toBoissons"

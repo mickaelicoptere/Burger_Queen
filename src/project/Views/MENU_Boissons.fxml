@@ -2,69 +2,15 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.Cursor?>
-<?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.effect.Reflection?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="Payer" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.112"
+<AnchorPane fx:id="Payer" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.111"
             xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controllers.Controller">
     <children>
-        <AnchorPane layoutX="77.0" layoutY="33.0" prefHeight="611.0" prefWidth="941.0">
-            <children>
-                <ScrollBar layoutX="927.0" orientation="VERTICAL" prefHeight="611.0" prefWidth="14.0"
-                           visibleAmount="50.0"/>
-                <ImageView fitHeight="199.0" fitWidth="110.0" layoutX="384.0" layoutY="147.0">
-                    <image>
-                        <Image url="@../img/Boissons/boisson.png"/>
-                    </image>
-                    <effect>
-                        <Reflection/>
-                    </effect>
-                </ImageView>
-                <ImageView fitHeight="200.0" fitWidth="62.0" layoutX="85.0" layoutY="146.0">
-                    <image>
-                        <Image url="@../img/Boissons/coca_cola.png"/>
-                    </image>
-                    <effect>
-                        <Reflection/>
-                    </effect>
-                </ImageView>
-                <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="682.0" layoutY="153.0">
-                    <image>
-                        <Image url="@../img/Boissons/Sprite.png"/>
-                    </image>
-                    <effect>
-                        <Reflection/>
-                    </effect>
-                </ImageView>
-                <Text layoutX="169.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coca">
-                    <font>
-                        <Font name="Insaniburger" size="18.0"/>
-                    </font>
-                </Text>
-                <Text layoutX="820.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Limonade">
-                    <font>
-                        <Font name="Insaniburger" size="18.0"/>
-                    </font>
-                </Text>
-                <Text layoutX="483.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eau minérale">
-                    <font>
-                        <Font name="Insaniburger" size="18.0"/>
-                    </font>
-                </Text>
-                <Text layoutX="-51.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Boissons"
-                      wrappingWidth="176.99998092651367">
-                    <font>
-                        <Font name="Yu Gothic Regular" size="37.0"/>
-                    </font>
-                </Text>
-            </children>
-        </AnchorPane>
         <JFXButton layoutX="14.0" layoutY="653.0" onAction="#previousPage" prefHeight="30.0" prefWidth="199.0"
                    style="-fx-background-color: #F82831; -fx-border-radius: 5 5 5;" text="Retour" textFill="WHITE">
             <cursor>
@@ -91,5 +37,15 @@
             </font>
         </JFXButton>
         <fx:include fx:id="MaCommande" source="MaCommande.fxml"/>
+        <fx:include source="BoissonInclude.fxml"/>
+        <Text layoutX="25.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Boissons"
+              wrappingWidth="176.99998092651367">
+            <font>
+                <Font name="Yu Gothic Regular" size="37.0"/>
+            </font>
+            <effect>
+                <Reflection/>
+            </effect>
+        </Text>
     </children>
 </AnchorPane>

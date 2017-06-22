@@ -17,7 +17,7 @@
             <children>
                 <ImageView fitHeight="160.0" fitWidth="200.0" layoutX="59.0" layoutY="159.0">
                     <image>
-                        <Image url="@../img/Accompagnements/Frites.png"/>
+                        <Image url="@../img/Accompagnements/a1.png"/>
                     </image>
                     <effect>
                         <Reflection/>
@@ -25,7 +25,7 @@
                 </ImageView>
                 <ImageView fitHeight="200.0" fitWidth="175.0" layoutX="626.0" layoutY="139.0">
                     <image>
-                        <Image url="@../img/Accompagnements/potatoes.png"/>
+                        <Image url="@../img/Accompagnements/a2.png"/>
                     </image>
                     <effect>
                         <Reflection/>
