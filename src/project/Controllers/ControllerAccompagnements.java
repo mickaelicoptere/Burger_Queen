@@ -64,6 +64,14 @@ public class ControllerAccompagnements implements Initializable {
         }
     }
 
+    /**
+     * Méthode compliquée au niveau algorithmique. Dans un premier temps on récupère le nombre de lignes du grid. Si le nombre d'accompagnements/2 (2 colonnes) est supérieur au nbre de lignes,
+     * on rajoute les lignes nécessaires pour pouvoir stocker tous les accompagnements. Pour chaque accompagnement, on stocke son image dans une HBox, on donne le bon fx:id à l'image puis on place la
+     * HBox dans une case du grid qui sera itérée selon le nombre de colonnes. On place ensuite le grid dans un scrollpane afin que l'on puisse scroll si besoin.
+     * Cette méthode est très verbeuse, je pense qu'on pourrait facilement l'optimiser et réduire sa taille.
+     *
+     * @throws Exception
+     */
     @FXML
     public void initGrid() throws Exception {
         Method method = gridAccompagnements.getClass().getDeclaredMethod("getNumberOfRows");

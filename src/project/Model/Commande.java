@@ -28,6 +28,13 @@ public class Commande {
         return prixCommande;
     }
 
+    /**
+     * Pour une raison très obscure, des fois le prix total prenait 10 décimales (ex: 10,00000000001€), donc cette méthode arrondira au nbre de décimales que l'on souhaite
+     *
+     * @param value  étant la valeur à arrondir
+     * @param places étant le nombre de décimales à garder
+     * @return un double correspondant à value arrondie à places décimales.
+     */
     public static double round(double value, int places) {
         if (places < 0) throw new IllegalArgumentException();
 

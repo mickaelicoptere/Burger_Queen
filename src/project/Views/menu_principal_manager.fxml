@@ -59,7 +59,7 @@
                 <ImageView fx:id="ecm3" fitHeight="75.0" fitWidth="106.0" layoutX="395.0" onMouseClicked="#addToList"
                            preserveRatio="true">
                     <image>
-                        <Image url="@../img/Burgers/royaldeluxe_mcdonalds.png"/>
+                        <Image url="@../img/Burgers/pp1.png"/>
                     </image>
                     <cursor>
                         <Cursor fx:constant="HAND"/>
@@ -157,7 +157,7 @@
         </JFXButton>
         <ImageView fitHeight="109.0" fitWidth="148.0" layoutX="492.0" layoutY="487.0">
             <image>
-                <Image url="@../img/Burgers/royaldeluxe_mcdonalds.png"/>
+                <Image url="@../img/Burgers/pp1.png"/>
             </image>
         </ImageView>
         <JFXButton buttonType="RAISED" layoutX="487.0" layoutY="626.0" mnemonicParsing="false" onAction="#toAddBurgers"

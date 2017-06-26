@@ -43,6 +43,12 @@ public class ListeCommandeController implements Initializable {
 
     private int toDel;
 
+    /**
+     * À chaque chargement d'une nouovelle page, on récupère les string correspondant aux libellés de chaque produits présents dans la commande c1.
+     *
+     * @param location
+     * @param resources
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         i = Init_produits.c1.nbItem;
@@ -53,8 +59,14 @@ public class ListeCommandeController implements Initializable {
             }
         }
         TotalCommande.setText(calculTotal());
+        TotalCommande.setEditable(false); // On pouvait éditer le prix total à la main, ce serait dommage de faire faillite sur une commande de 500.000 burgers à 0€.
     }
 
+    /**
+     * On rajoute le produit dans l'objet commande c1, et dans la listecommande correspondant au panier. On met à jour le prix total.
+     * @param idtemp correspond à l'id que l'on récupère lors du clic depuis la méthode AddToList du controller
+     * @throws Exception
+     */
     @FXML
     public void addToCart(String idtemp) throws Exception {
         System.out.println("Button clicked");
@@ -65,10 +77,16 @@ public class ListeCommandeController implements Initializable {
         TotalCommande.setText(calculTotal());
         System.out.println(Init_produits.c1.calcPrixCommande());
     }
+
     String calculTotal() {
         return "Prix total : " + String.valueOf(Init_produits.c1.calcPrixCommande()) + "€";
     }
 
+    /**
+     * Méthode simple pour sauvegarder la commande dans un .txt à défaut d'avoir une base de données
+     * @param event
+     * @throws Exception
+     */
     public void saveCommande(ActionEvent event) throws Exception {
         Random rnd = new Random();
         int index = rnd.nextInt();
@@ -81,6 +99,10 @@ public class ListeCommandeController implements Initializable {
         }
     }
 
+    /**
+     * On récupère l'id de la ligne sélectionné dans la ListView.
+     * Si l'on a bien sélectionné un produit (!= -1), alors on le retire de la commande, du panier, puis on décrémente nbItem de 1. On met ensuite à jour le prix total.
+     */
     public void delItemSelected() {
         toDel = ListeCommande.getSelectionModel().getSelectedIndex();
         if (toDel != -1) {

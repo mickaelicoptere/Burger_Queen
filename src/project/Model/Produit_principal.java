@@ -34,6 +34,7 @@ public class Produit_principal extends Item {
         composition.put(newIngredient, newComposition);
     }
 
+
     public void delIngredient(Ingredient pastIngredient) {
         composition.remove(pastIngredient);
     }

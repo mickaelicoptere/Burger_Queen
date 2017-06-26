@@ -1,5 +1,6 @@
 package project;
 
+import com.jfoenix.controls.JFXListView;
 import project.Model.*;
 
 import java.util.ArrayList;
@@ -18,9 +19,10 @@ import java.util.Map;
 public class Init_produits extends Main {
 
     public static Map<String, Item> items = new HashMap<>();
+    public static Map<String, Ingredient> ingredients = new HashMap<>();
+
     public static Commande c1;
     private static Boisson b1, b2, b3;
-    private static Ingredient i1, i2, i3, i4, i5, i6;
     //private static Allergene a1, a2, a3, a4, a5,a6, a7, a8;
     private static Preference p1, p2, p3, p4, p5, p6;
     private static Produit_principal pp1, pp2, pp3, pp4, pp5, pp6, pp7, pp8, pp9, pp10, ecm1, ecm2, ecm3;
@@ -29,18 +31,15 @@ public class Init_produits extends Main {
     private static Accompagnement a1, a2;
     private static Utilisateur u1;
     private static ArrayList<Boisson> boissons;
-    private ArrayList<Ingredient> ingredients;
+    private static Ingredient i1, i2, i3, i4, i5, i6;
     private ArrayList<Allergene> allergenes;
     private ArrayList<Preference> preferences;
     private ArrayList<Produit_principal> produitprincipaux;
-    public static int nbBurgers, nbBoissons, nbAccompagnements, nbApascher, nbDesserts, nbEncemoment;
+    public static int nbBurgers, nbBoissons, nbAccompagnements, nbApascher, nbDesserts, nbEncemoment, nbIngredients;
 
 
 
     static void main() {
-        //b1 = new Boisson("Coca cola", 2.5, Taille.TrèsGros);
-//        b2 = new Boisson("Sale vodka", 25, "XXXXXL");
-//        b3 = new Boisson("Limonade", 1, "Pafou");
 
         b1 = new Boisson(MarqueBoissons.Cola.libelle,2.5 , Taille.TrèsGros.libelle);
         b2 = new Boisson(MarqueBoissons.EauMinerale.libelle, 30, Taille.Gros.libelle);
@@ -51,13 +50,8 @@ public class Init_produits extends Main {
         pp2 = new Produit_principal("Carnivor", 5.35 ,"blabla");
         pp3 = new Produit_principal("LE KASDALLEUR", 7.15 ,"blabla");
         pp4 = new Produit_principal("Chick King", 6.70 ,"blabla");
-        pp5 = new Produit_principal("Test", 2, "blabla");
-        pp6 = new Produit_principal("LE KASDALLEUR", 7.15, "blabla");
-        pp7 = new Produit_principal("Chick King", 6.70, "blabla");
-        pp8 = new Produit_principal("Test", 2, "blabla");
-        pp9 = new Produit_principal("LE KASDALLEUR", 7.15, "blabla");
-        pp10 = new Produit_principal("Chick King", 6.70, "blabla");
-        nbBurgers = 10;
+
+        nbBurgers = 4;
 
         ecm1 = new Produit_principal("Dark Burger", 7, "blabla");
         ecm2 = new Produit_principal("Croissant Burger", 6.2, "blabla");
@@ -87,12 +81,7 @@ public class Init_produits extends Main {
         items.put("pp2", pp2);
         items.put("pp3", pp3);
         items.put("pp4", pp4);
-        items.put("pp5", pp5);
-        items.put("pp6", pp6);
-        items.put("pp7", pp7);
-        items.put("pp8", pp8);
-        items.put("pp9", pp9);
-        items.put("pp10", pp10);
+
 
 
         items.put("ecm1", ecm1);
@@ -111,9 +100,43 @@ public class Init_produits extends Main {
         items.put("a1", a1);
         items.put("a2", a2);
 
+        i1 = new Ingredient("Bacon");
+        i2 = new Ingredient("Salade");
+        i3 = new Ingredient("Pain");
+        i4 = new Ingredient("Tomate");
+        i5 = new Ingredient("Pain rouge");
+        i6 = new Ingredient("J't'ai casshé (steak haché, mdrrr");
+        ingredients.put("i1", i1);
+        ingredients.put("i2", i2);
+        ingredients.put("i3", i3);
+        ingredients.put("i4", i4);
+        ingredients.put("i5", i5);
+        ingredients.put("i6", i6);
+        nbIngredients = 6;
+
         u1 = new Utilisateur("Vivi", "Virgile", "virgile.bessiere@gmail.com", "0604074727", "fdpfdp83", false);
         c1 = new Commande(false, u1);
     }
 
+    public static Map<String, Ingredient> getHashmap() {
+        return ingredients;
+    }
+
+    public static void createBurger(ArrayList<Ingredient> listeRecette, String nom, double prix, String description) {
+        int i = 1;
+        while (items.get("pp" + i) != null) {
+            i++;
+        }
+        if (items.get("pp" + i) == null) {
+            items.put("pp" + i, new Produit_principal(nom, prix, description));
+            Produit_principal ptemp = (Produit_principal) items.get("pp" + i);
+            while (listeRecette.isEmpty() == false) {
+                ptemp.addIngredient(listeRecette.get(0), new Composition(true, false, false));
+                listeRecette.remove(0);
+            }
+            items.put("pp" + i, ptemp);
+            nbBurgers++;
+        }
+    }
 
 }

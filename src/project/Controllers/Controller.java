@@ -74,6 +74,9 @@ public class Controller implements Initializable {
     private ListeCommandeController MaCommandeController;
 
     @FXML
+    private JFXComboBox<String> ListeIngredients = new JFXComboBox<>();
+
+    @FXML
     private ControllerBurgers BurgersController;
 
     @FXML
@@ -82,18 +85,66 @@ public class Controller implements Initializable {
     @FXML
     private JFXScrollPane scrollPane = new JFXScrollPane();
 
+    @FXML
+    private JFXListView<String> Recette = new JFXListView<>();
+
+    private ArrayList<Ingredient> RecIng = new ArrayList<>();
+
+    @FXML
+    private JFXTextField Libelle;
+
+    @FXML
+    private JFXTextField Prix;
+
+    @FXML
+    private JFXTextArea Description;
+
     private int xGrid = 0;
     private int yGrid = 0;
     private int pos = 0;
     private ImageView imgTemp = new ImageView();
     private boolean flagMenu = true;
+    private String itemp;
+    private Map<String, Ingredient> hashTemp = Init_produits.getHashmap();
 
 
-
+    /**
+     * A l'initialisation, on récupère tous les ingredients de Init_produits pour les mettre dans la liste des ingrédients
+     *
+     * @param location
+     * @param resources
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        for (int i = 1; i <= Init_produits.nbIngredients; i++) {
+            itemp = "i" + i;
+            String libelleTemp = hashTemp.get(itemp).getLibelle();
+            ListeIngredients.getItems().add(libelleTemp);
+        }
     }
 
+    /**
+     * Lorsque l'on rajoute un ingrédient à la recette du burger, on l'ajoute également dans RecIng qui contient des ingredients pour passer RecIng plus tard dans Init_produits.createBurger
+     */
+    @FXML
+    void addIngredient() {
+        String str = ListeIngredients.getSelectionModel().getSelectedItem();
+        Recette.getItems().add(str);
+        Ingredient ingTemp = new Ingredient(str);
+        RecIng.add(ingTemp);
+    }
+
+    @FXML
+    void addBurger() throws Exception {
+        Init_produits.createBurger(RecIng, this.Libelle.getText(), Double.parseDouble(this.Prix.getText()), this.Description.getText());
+        changePage("menu_principal_manager");
+    }
+
+    /**
+     * Méthode simple qui vérifie uniquement deux comptes car on a pas de base de données alors on fait à la bonne franquette.
+     * @param event
+     * @throws Exception
+     */
     @FXML
     void makeLogin(ActionEvent event) throws Exception {
         String username = user.getText();
@@ -104,7 +155,7 @@ public class Controller implements Initializable {
         if (username.equals("manager") && password.equals("manager")) {
             changePage("menu_principal_manager");
         } else {
-            System.out.println("Error");
+            JOptionPane.showMessageDialog(null, "Mauvais identifiant/mot de passe", "#LaNullité", JOptionPane.ERROR_MESSAGE);
         }
     }
 
@@ -213,19 +264,22 @@ public class Controller implements Initializable {
 
     @FXML
     public void previousPage() throws Exception {
-        lastHistorique -= 2;
+        lastHistorique -= 2; // Sachant que lastHistorique stocke la prochaine page sur laquelle on va, lastHistorique-1 est notre page actuelle et lastHistorique-2 la page précédente
         String pageToLoad = historique[lastHistorique];
         changePage(pageToLoad);
     }
 
+    /**
+     * On récupère le fx:id de l'image fxml cliquée qui correspond logiquement à l'id du produit dans le programme. Avant de l'ajouter au panier, on vérifie qu'on ne clique pas dans le vide/sur le grid/que
+     * le fx:id est bien renseigné.
+     * @param evt
+     */
     @FXML
     public void addToList(MouseEvent evt) {
         try {
             String idtemp = evt.getPickResult().getIntersectedNode().getId();
             if (idtemp != gridBurgers.getId() && idtemp != null) {
-                System.out.println("On va invoke" + idtemp);
                 MaCommandeController.addToCart(idtemp);
-                System.out.println("C invoke");
             }
 
         } catch (Exception e1) {
@@ -239,11 +293,18 @@ public class Controller implements Initializable {
         instance = this;
     }
 
-    // static method to get instance of view
     public static Controller getInstance() {
         return instance;
     }
 
+    /**
+     * Au niveau algo : si la page actuelle (lastHistorique-1) contient "MENU" le produit s'ajoute normalement à la liste puis le booléen flagMenu passe en false pour éviter de pouvoir
+     * recommander un produit du même type.
+     * Si on ne commande pas de menu, le produit s'ajoute normalement à la liste.
+     * Si on commande un menu ET que le booléen est passé en false, un msg d'erreur s'affiche.
+     * On attrape l'exception lorsque String idtemp est null pour dire que l'on a cliqué dans le vide.
+     * @param idtemp
+     */
     @FXML
     public void addToListe(String idtemp) {
         try {
@@ -259,5 +320,7 @@ public class Controller implements Initializable {
             System.out.println("Vous avez cliqué dans le vide !");
         }
     }
+
+
 
 }
