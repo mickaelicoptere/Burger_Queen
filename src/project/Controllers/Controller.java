@@ -287,6 +287,9 @@ public class Controller implements Initializable {
         }
     }
 
+    /**
+     * Ces 3 lignes permettent de passer une instance du Controller à un enfant
+     */
     private static Controller instance;
 
     public Controller() {
